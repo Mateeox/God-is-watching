@@ -1,6 +1,6 @@
-# PodstawyGierKomputerowych
+# Koncepcje projektów
 
-# Platformówka 2D / 2.5D
+## Platformówka 2D / 2.5D
 
 ### Core
   * Poruszanie się
@@ -29,7 +29,7 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 
 
 
-# Rozbudowane szachy
+## Rozbudowane szachy
   
 ### Core
   * Mapa, z siatką służacą do poruszania się
