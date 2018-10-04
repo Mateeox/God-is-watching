@@ -25,12 +25,12 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 ### Core
   * Przełączanie trybu widzenia FPS (wieżyczka) / Top down - isometric (dowódca)
   * Przeciwnicy
-  * Ekonomia
   * Budowanie
   * Path finding dla przeciwników (opcjonalne)
-  * Strzelanie
+  * Strzelanie z wieżyczki
 ### Additions
   * Różni przeciwnicy
+  * Ekonomia
   * Więcej stref (więcej poziomów trundości)
   * System doświadczenia dowódcy
   * Upgradowanie obiektów w czasie rozgrywki
