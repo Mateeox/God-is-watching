@@ -56,4 +56,4 @@ Towerdefence z trybem pierwszosobowym
   * Podstawowi masterzy i slavy
   * Poruszanie i walka
 ### Additions
-  * Uzależnienie 
+
