@@ -25,6 +25,15 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 
 [Guacamelee!](https://store.steampowered.com/app/275390/Guacamelee_Super_Turbo_Championship_Edition/)
 
+### Notes
+  * Tryb boga to położona z boku kamera, gracz przez ograniczony czas może manipulować obiekatmi, takimi jak skały, skrzynie.
+W momencie, gdy czas się skończy gracz wraca do kamery 1st/3rd PP (person perspective).
+Zależnie od tego jak sobie poradził w trybie boga przejście poziomu będzie łatwe lub nieco trudniejsze. Jednakże zawsze, nieważne jak słabo mu pójdzie, będzie opcja przedostania się.
+Kiedy gracz będzie zbyt długo męczył się z 'zagadką' podpowiedzi zaczną się pojawiać.
+Oczywiście nie może być zbyt łatwo, na poziomie mogą być niespodzianki.
+	* mina pułapka, która wysadzi zapadnie - jeśli gracz w nią wpadnie trafi do bardziej skomplikowanego poziomu
+  * Zabezpieczając się przed takimi przypadkami, gracz może rozwijać swoje umiejętności, nie tylko walka czy stamina, ale również wykrywanie pułapek.
+
 ## Wieżyczka
 
 ### Core
