@@ -38,22 +38,3 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
   
 ### Description
 Towerdefence z trybem pierwszosobowym
-  
-
-
-
-
-
-
-
-
-## Rozbudowane szachy
-  
-### Core
-  * Mapa, z siatką służacą do poruszania się
-  * Gra podzielona na tury
-  * Podział na biomy
-  * Podstawowi masterzy i slavy
-  * Poruszanie i walka
-### Additions
-
