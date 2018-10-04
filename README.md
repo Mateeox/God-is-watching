@@ -20,6 +20,11 @@
 Liniowa mapa, bez poziomów, z różnym ukształtowaniem terenu.
 Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 
+### References
+[Never Alone](https://store.steampowered.com/app/295790/Never_Alone_Kisima_Ingitchuna/)
+
+[Guacamelee!](https://store.steampowered.com/app/275390/Guacamelee_Super_Turbo_Championship_Edition/)
+
 ## Wieżyczka
 
 ### Core
@@ -38,3 +43,6 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
   
 ### Description
 Towerdefence z trybem pierwszosobowym
+
+### References
+[Orcs Must Die!](https://orcsmustdie.com/#!/en/media)
