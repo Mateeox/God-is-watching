@@ -20,7 +20,21 @@
 Liniowa mapa, bez poziomów, z różnym ukształtowaniem terenu.
 Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 
+## Wierzyczka
 
+### Core
+  * Przełączanie trybu widzenia FPS / Top down - isometric
+  * Przeciwnicy
+  * Ekonomia
+  * Budowanie
+  * Path finding dla przeciwników (opcjonalne)
+  * Strzelanie
+### Additions
+  * Txt
+  
+### Description
+  * Txt
+  
 
 
 
