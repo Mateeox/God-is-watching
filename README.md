@@ -1,11 +1,12 @@
-# Koncepcje projektów
+# Platformówka
 
-## Platformówka 2D / 2.5D
+## Plan
 
 ### Core
   * Poruszanie się
   * Walka
   * Skakanie
+  * Przenoszenie przedmiotów
   * Zmiana trybu (przemieszczanie obiektów, coś jeszcze?)
   * Logika przeciwników
 ### Additions
@@ -20,40 +21,23 @@
 Liniowa mapa, bez poziomów, z różnym ukształtowaniem terenu.
 Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 
-## Wieżyczka
+### Beta
+  * GOD(2D): Kręcące się kolce, wrzucony między nie kamięń blokuje je tymczasowo, strefa spowolnienia robi to samo ale w krótkim okresie czasu
+  * FPP: Kamień może zostać rozłupany, położony na luźny grunt i wejście na niego powoduje zawalenie się ziemi i otworzenie przejścia. Tak samo z drzewem które będzie uschnięte.
 
-### Core
-  * Przełączanie trybu widzenia FPS (wieżyczka) / Top down - isometric (dowódca)
-  * Przeciwnicy
-  * Ekonomia
-  * Budowanie
-  * Path finding dla przeciwników (opcjonalne)
-  * Strzelanie
-### Additions
-  * Różni przeciwnicy
-  * Więcej stref (więcej poziomów trundości)
-  * System doświadczenia dowódcy
-  * Upgradowanie obiektów w czasie rozgrywki
-  * Skiny, microtransakcje
-  
-### Description
-Towerdefence z trybem pierwszosobowym
-  
+## Inspiration
 
+### References
+[Never Alone](https://store.steampowered.com/app/295790/Never_Alone_Kisima_Ingitchuna/)
 
+[Guacamelee!](https://store.steampowered.com/app/275390/Guacamelee_Super_Turbo_Championship_Edition/)
 
-
-
-
-
-
-## Rozbudowane szachy
-  
-### Core
-  * Mapa, z siatką służacą do poruszania się
-  * Gra podzielona na tury
-  * Podział na biomy
-  * Podstawowi masterzy i slavy
-  * Poruszanie i walka
-### Additions
-  * Uzależnienie 
+### Notes
+  * Tryb boga to położona z boku kamera. Będąc w tym trybie gracz może manipulować obiekatmi takimi jak skały, skrzynie, drzewa (możliwość ruszenia obiektem na odległość X od pozycji startowej). Jest w stanie stworzyć strefę spowalniającą czas na danym obszarze. Niszczenie bytów za pomocą pioruna.
+  * Tryb bohatera, perspektywa pierwszoosobowa, która pozwala na dostrzenie większej ilości szczegółów niż sam bóg. 
+  * Gracz może bez przeszkód przełączać się między trybami.
+  * Na drodze bohater może spotkać postaci inspirowane 'mitologią' słowiańską. Na przykład będzie walczył z duchem króla Popiela i myszami które go zjadły.
+  * Pomiędzy walką, a przestawianiu przedmiotów w celu pokonania przeszkód, na bohatera czekają również różnego rodzaju łamigłówki i zagadki, które zmuszają do chwili zastanowienia
+  * Zniszczalne obiekty np. belka blokujące kamienie, po których później można przejść dalej
+Dwa sposoby zniszczenia - z pierwszej osoby - za pomocą broni dystansowej, w trybie boga - za pomocą umiejętności (piorun)
+  * Groteskowa, prosta grafika - bronie - drewniany miecz, proca/coś do rzucania
