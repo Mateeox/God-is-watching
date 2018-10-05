@@ -34,24 +34,8 @@ Oczywiście nie może być zbyt łatwo, na poziomie mogą być niespodzianki.
 	* mina pułapka, która wysadzi zapadnie - jeśli gracz w nią wpadnie trafi do bardziej skomplikowanego poziomu
   * Zabezpieczając się przed takimi przypadkami, gracz może rozwijać swoje umiejętności, nie tylko walka czy stamina, ale również wykrywanie pułapek.
 
-## Wieżyczka
-
-### Core
-  * Przełączanie trybu widzenia FPS (wieżyczka) / Top down - isometric (dowódca)
-  * Przeciwnicy
-  * Budowanie
-  * Path finding dla przeciwników (opcjonalne)
-  * Strzelanie z wieżyczki
-### Additions
-  * Różni przeciwnicy
-  * Ekonomia
-  * Więcej stref (więcej poziomów trundości)
-  * System doświadczenia dowódcy
-  * Upgradowanie obiektów w czasie rozgrywki
-  * Skiny, microtransakcje
-  
-### Description
-Towerdefence z trybem pierwszosobowym
-
-### References
-[Orcs Must Die!](https://orcsmustdie.com/#!/en/media)
+### Ideas
+  * Lista przeszkód
+	* Kamień
+  * Zniszczalne obiekty np. belka blokujące kamienie, po których później można przejść dalej
+Dwa sposoby zniszczenia jej - z pierwszej osoby - za pomocą broni dystansowej, w trybie boga - za pomocą umiejętności (piorun ?)
