@@ -1,6 +1,6 @@
-# Koncepcje projektów
+# Platformówka
 
-## Platformówka
+## Plan
 
 ### Core
   * Poruszanie się
@@ -21,6 +21,12 @@
 Liniowa mapa, bez poziomów, z różnym ukształtowaniem terenu.
 Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 
+### Beta
+  * GOD(2D): Kręcące się kolce, wrzucony między nie kamięń blokuje je tymczasowo, strefa spowolnienia robi to samo ale w krótkim okresie czasu
+  * FPP: Kamień może zostać rozłupany, położony na luźny grunt i wejście na niego powoduje zawalenie się ziemi i otworzenie przejścia. Tak samo z drzewem które będzie uschnięte.
+
+## Inspiration
+
 ### References
 [Never Alone](https://store.steampowered.com/app/295790/Never_Alone_Kisima_Ingitchuna/)
 
@@ -32,7 +38,3 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
   * Gracz może bez przeszkód przełączać się między trybami.
   * Na drodze bohater może spotkać postaci inspirowane 'mitologią' słowiańską. Na przykład będzie walczył z duchem króla Popiela i myszami które go zjadły.
   * Pomiędzy walką, a przestawianiu przedmiotów w celu pokonania przeszkód, na bohatera czekają również różnego rodzaju łamigłówki i zagadki, które zmuszają do chwili zastanowienia
-
-### Beta Ideas
-  * GOD(2D): Kręcące się kolce, wrzucony między nie kamięń blokuje je tymczasowo, strefa spowolnienia robi to samo ale w krótkim okresie czasu
-  * FPP: Kamień może zostać rozłupany, położony na luźny grunt i wejście na niego powoduje zawalenie się ziemi i otworzenie przejścia. Tak samo z drzewem które będzie uschnięte.
