@@ -1,11 +1,12 @@
 # Koncepcje projektów
 
-## Platformówka 2D / 2.5D
+## Platformówka
 
 ### Core
   * Poruszanie się
   * Walka
   * Skakanie
+  * Przenoszenie przedmiotów
   * Zmiana trybu (przemieszczanie obiektów, coś jeszcze?)
   * Logika przeciwników
 ### Additions
@@ -26,16 +27,12 @@ Bohater pokonuje kolejne poziomy, celem jest zakończenie poziomu.
 [Guacamelee!](https://store.steampowered.com/app/275390/Guacamelee_Super_Turbo_Championship_Edition/)
 
 ### Notes
-  * Tryb boga to położona z boku kamera, gracz przez ograniczony czas może manipulować obiekatmi, takimi jak skały, skrzynie.
-W momencie, gdy czas się skończy gracz wraca do kamery 1st/3rd PP (person perspective).
-Zależnie od tego jak sobie poradził w trybie boga przejście poziomu będzie łatwe lub nieco trudniejsze. Jednakże zawsze, nieważne jak słabo mu pójdzie, będzie opcja przedostania się.
-Kiedy gracz będzie zbyt długo męczył się z 'zagadką' podpowiedzi zaczną się pojawiać.
-Oczywiście nie może być zbyt łatwo, na poziomie mogą być niespodzianki.
-	* mina pułapka, która wysadzi zapadnie - jeśli gracz w nią wpadnie trafi do bardziej skomplikowanego poziomu
-  * Zabezpieczając się przed takimi przypadkami, gracz może rozwijać swoje umiejętności, nie tylko walka czy stamina, ale również wykrywanie pułapek.
+  * Tryb boga to położona z boku kamera. Będąc w tym trybie gracz może manipulować obiekatmi takimi jak skały, skrzynie, drzewa.
+  * Tryb bohatera, perspektywa pierwszoosobowa, która pozwala na dostrzenie większej ilości szczegółów niż sam bóg. 
+  * Gracz może bez przeszkód przełączać się między trybami.
+  * Na drodze bohater może spotkać postaci inspirowane 'mitologią' słowiańską. Na przykład będzie walczył z duchem króla Popiela i myszami które go zjadły.
+  * Pomiędzy walką, a przestawianiu przedmiotów w celu pokonania przeszkód, na bohatera czekają również różnego rodzaju łamigłówki i zagadki, które zmuszają do chwili zastanowienia
 
-### Ideas
-  * Lista przeszkód
-	* Kamień
-  * Zniszczalne obiekty np. belka blokujące kamienie, po których później można przejść dalej
-Dwa sposoby zniszczenia jej - z pierwszej osoby - za pomocą broni dystansowej, w trybie boga - za pomocą umiejętności (piorun ?)
+### Beta Ideas
+  * GOD(2D): Kręcące się kolce, wrzucony między nie kamięń blokuje je tymczasowo, strefa spowolnienia robi to samo ale w krótkim okresie czasu
+  * FPP: Kamień może zostać rozłupany, położony na luźny grunt i wejście na niego powoduje zawalenie się ziemi i otworzenie przejścia. Tak samo z drzewem które będzie uschnięte.
