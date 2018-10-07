@@ -18,4 +18,4 @@
   #### Poziom drugi
   * Zadanie drugie może wydawać się nieco problematyczne dla gracza, ponieważ będzie musiał w trybie boga zauważyć chmury na niebie, które nie będą zupełnie przypadkowe. W trybie bohatera natomiast będzie on musiał ustawić kamienie na platformach tak, aby odwzorować ułożenie chmur.
 ## Zakończenie
-  * Liczymy, że gra, którą stworzymy będzie równie ciekawa i ekscytująca jak ta, którą teraz wspólnie przed chwilą sobie wyobraziliśmy.
+  * Liczymy, że gra, którą stworzymy będzie równie ciekawa i ekscytująca jak ta, którą wspólnie przed chwilą sobie wyobraziliśmy.
