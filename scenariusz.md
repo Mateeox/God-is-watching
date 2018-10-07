@@ -6,8 +6,13 @@
   * To od gracza zależy czyich umiejętności użyje.
 ## Szczegóły
   ### Tryb Boga
-  * Tryb boga to położona z boku kamera. Będący w tej roli gracz może manipulować obiekatmi takimi jak skały, skrzynie, drzewa. Jest również w stanie stworzyć strefę spowalniającą czas oraz niszczyć byty za pomocą pioruna, 
+  * Tryb boga to położona z boku kamera. Będący w tej roli gracz może manipulować obiekatmi takimi jak skały, skrzynie, drzewa. Jest również w stanie stworzyć strefę spowalniającą czas oraz niszczyć byty za pomocą pioruna.
+ * Krótki filmik z trybu boga
   ### Tryb Bohatera
+  * Tryb bohatera to rozgrywka z perspektywy pierwszej oosoby, która pozwala dostrzec więcej szczegółów. W tym trybie, gracz ma również większą precyzję ruchów.
+ * Krótki filmik z trybu bohatera
   ### Omówienie Tutorialu
+  * Poziom pierwszy
+  * Poziom drugi
 ## Zakończenie
   * Liczymy, że gra wam się spodoba ;)
