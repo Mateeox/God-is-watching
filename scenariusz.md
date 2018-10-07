@@ -5,8 +5,8 @@
   * W czasie wędrówki, bohater będzie musiał stawić czoła wrogom, zagadkom i przeszkodom stworzonym przez trudne środowisko.
   * To od gracza zależy czyich umiejętności użyje.
 ## Szczegóły
-  * Umiejętności Boga
-  * Umiejętności Bohatera
-  * Omówienie Tutorialu
+  ### Umiejętności Boga
+  ### Umiejętności Bohatera
+  ### Omówienie Tutorialu
 ## Zakończenie
   * Liczymy, że gra wam się spodoba ;)
