@@ -14,7 +14,6 @@ public class FPPMove : MonoBehaviour {
         backwardSpeed = 3.0f;
         sideSpeed = 5.0f;
         rotationSpeed = 120.0f;
-        Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
