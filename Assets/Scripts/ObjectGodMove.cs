@@ -4,59 +4,54 @@ using UnityEngine;
 
 public class ObjectGodMove : MonoBehaviour{
 
-    public float moveSpeed;
+    public float objectsDistanceFromCamera;
     private bool isSelected;
-    private float lastMousePositionX;
-    private float lastMousePositionY;
-    private Vector3 startPosition;
     private Rigidbody rigidbody;
+    private Vector3 point;
 
-
-    // Use this for initialization
+    
     void Start()
     {
-        moveSpeed = 0.03f;
+        objectsDistanceFromCamera = 15.0f;
         isSelected = false;
-        lastMousePositionX = 0;
-        lastMousePositionY = 0;
-        startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         rigidbody = GetComponent<Rigidbody>();
+        point = new Vector3();
 
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if (isSelected)
+        if (GameVariables.GameMode == GameVariables.GameModes.God && isSelected)
         {
-            float currentMousePositionY = Input.mousePosition.y;
-            float currentMousePositionX = Input.mousePosition.x;
-            transform.position = new Vector3(transform.position.x + moveSpeed * (currentMousePositionX - lastMousePositionX),
-                transform.position.y + moveSpeed * (currentMousePositionY - lastMousePositionY), transform.position.z);
-
-            lastMousePositionX = currentMousePositionX;
-            lastMousePositionY = currentMousePositionY;
+            point = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, objectsDistanceFromCamera));
+                       
+            transform.position = new Vector3(point.x, point.y, transform.position.z);
+           
         }
     }
 
     void OnMouseDown()
     {
         //highlight object on mouse button down
-        GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
-
-        rigidbody.isKinematic = true;
-
-        this.isSelected = true;
-        lastMousePositionY = Input.mousePosition.y;
-        lastMousePositionX = Input.mousePosition.x;
+        if (GameVariables.GameMode == GameVariables.GameModes.God)
+        {
+            GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
+            rigidbody.isKinematic = true;
+            this.isSelected = true;
+        }
+                
     }
 
     void OnMouseUp()
     {
         //disable object highligth on mouse button up
-        GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.black);
+        if (GameVariables.GameMode == GameVariables.GameModes.God)
+        {
+            GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.black);
+
+            rigidbody.isKinematic = false;
+            this.isSelected = false;
+        }
         
-        rigidbody.isKinematic = false;
-        this.isSelected = false;
     }
 }

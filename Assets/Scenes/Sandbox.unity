@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &143085671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &509286714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &534472761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &635977834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -740,7 +740,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 729141564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: -74.8}
+  m_LocalPosition: {x: 0, y: 2.53, z: -79.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &963924997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &989092069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1134445169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1271,6 +1271,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1151269141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1151269143}
+  - component: {fileID: 1151269142}
+  m_Layer: 0
+  m_Name: GameVariables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1151269142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151269141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f2ccb3f6b4c784dab9ae588b724c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1151269143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151269141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.622578, y: -28.192577, z: 35.32596}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1192035454
 Prefab:
@@ -1369,7 +1409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1261117407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1483,7 +1523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1292145107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1597,7 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1310510834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1711,7 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1400929801
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1891,7 +1931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1630930487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2092,7 +2132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &1707562284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2256,7 +2296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &2016515773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2420,7 +2460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3e107e37cd0d64a94f9c1fa04776e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  objectsDistanceFromCamera: 0
 --- !u!65 &2132834419
 BoxCollider:
   m_ObjectHideFlags: 0
