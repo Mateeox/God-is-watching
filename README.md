@@ -7,8 +7,10 @@
   * Walka
   * Skakanie
   * Przenoszenie przedmiotów
-  * Zmiana trybu (przemieszczanie obiektów, coś jeszcze?)
-  * Logika przeciwników
+  * Strefa spowolnienia
+  * Piorun
+  * Zmiana trybu HERO / GOD
+   * Przeciwnicy
 ### Additions
   * Umiejętności (niszczenie obiektów, miażdżenie przeciwników)
   * Negatywne i pozytywne efekty umiejętności (GOD)
