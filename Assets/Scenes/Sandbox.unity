@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!20 &123664998 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20884255066957080, guid: 2ff0f1d95ae0c47499c4effc1bc71517,
+    type: 2}
+  m_PrefabInternal: {fileID: 1192035454}
 --- !u!1 &143085668
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +704,7 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 729141564}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1281,6 +1286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151269143}
   - component: {fileID: 1151269142}
+  - component: {fileID: 1151269144}
   m_Layer: 0
   m_Name: GameVariables
   m_TagString: Untagged
@@ -1312,6 +1318,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1151269144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151269141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce53de6c5a8bc8846965674b84568a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroCam: {fileID: 123664998}
+  godCam: {fileID: 729141567}
 --- !u!1001 &1192035454
 Prefab:
   m_ObjectHideFlags: 0
@@ -1358,7 +1377,7 @@ Prefab:
     - target: {fileID: 20884255066957080, guid: 2ff0f1d95ae0c47499c4effc1bc71517,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff0f1d95ae0c47499c4effc1bc71517, type: 2}

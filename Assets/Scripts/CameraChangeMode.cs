@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CameraChangeMode : MonoBehaviour {
 
-    private Camera camera;
+    public Camera heroCam;
+    public Camera godCam;
 
 	void Start () {
-        camera = GetComponent<Camera>();
+        heroCam.enabled = true;
 	}
 	
 	void Update () {
@@ -15,8 +16,9 @@ public class CameraChangeMode : MonoBehaviour {
         //Change camera during changing game mode
         if (Input.GetButtonDown("ChangeMode"))
         {
-            camera.enabled = !camera.enabled;
+            heroCam.enabled = !heroCam.enabled;
+            godCam.enabled = !godCam.enabled;
+            
         }
-
     }
 }

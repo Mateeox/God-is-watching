@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class GameVariables : MonoBehaviour {
 
-    public enum GameModes { Herose, God};
+    public enum GameModes { Hero, God };
     public static GameModes GameMode { get; private set; }
 
     void Start () {
-        GameMode = GameModes.Herose;
+        GameMode = GameModes.Hero;
 	}
 	
 	void Update () {
         if (Input.GetButtonDown("ChangeMode"))
         {
-            if(GameMode == GameModes.Herose)
+            if(GameMode == GameModes.Hero)
             {
                 GameMode = GameModes.God;
             }
             else
             {
-                GameMode = GameModes.Herose;
+                GameMode = GameModes.Hero;
             }
         }
 	}
