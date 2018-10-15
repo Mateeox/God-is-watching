@@ -12,9 +12,11 @@ public class FPPMove : MonoBehaviour {
     public float rotationSpeed;
     public float jumpForce;
     private Rigidbody rigidbody;
+    public bool inAir;
 
 	// Use this for initialization
 	void Start () {
+        inAir = false;
         maxForwardSpeed = 6.0f;
         maxBackwardSpeed = 4.0f;
         maxSideSpeed = 5.0f;
@@ -32,11 +34,11 @@ public class FPPMove : MonoBehaviour {
         if(GameVariables.GameMode == GameVariables.GameModes.Hero)
         {
             //Moving
-            if (Input.GetAxis("Vertical") > 0 && transform.InverseTransformDirection(rigidbody.velocity).z < maxForwardSpeed)
+            if (Input.GetAxis("Vertical") > 0 && !inAir && transform.InverseTransformDirection(rigidbody.velocity).z < maxForwardSpeed)
             {
                 rigidbody.AddRelativeForce(0, 0, forwardSpeed);
             }
-            else if(Input.GetAxis("Vertical") < 0 && transform.InverseTransformDirection(rigidbody.velocity).z > -maxBackwardSpeed)
+            else if(Input.GetAxis("Vertical") < 0 && !inAir &&  transform.InverseTransformDirection(rigidbody.velocity).z > -maxBackwardSpeed)
             { 
                 rigidbody.AddRelativeForce(0, 0, -backwardSpeed);
             }else if(Input.GetAxis("Vertical") == 0)
@@ -45,11 +47,11 @@ public class FPPMove : MonoBehaviour {
                 rigidbody.velocity = transform.TransformDirection(localVelocity.x, localVelocity.y, 0);
             }
 
-            if (Input.GetAxis("Horizontal") > 0 && transform.InverseTransformDirection(rigidbody.velocity).x < maxSideSpeed)
+            if (Input.GetAxis("Horizontal") > 0 && !inAir && transform.InverseTransformDirection(rigidbody.velocity).x < maxSideSpeed)
             {
                 rigidbody.AddRelativeForce(sideSpeed, 0, 0);
             }
-            else if(Input.GetAxis("Horizontal") < 0 && transform.InverseTransformDirection(rigidbody.velocity).x > -maxSideSpeed)
+            else if(Input.GetAxis("Horizontal") < 0 && !inAir && transform.InverseTransformDirection(rigidbody.velocity).x > -maxSideSpeed)
             {
                 rigidbody.AddRelativeForce(-sideSpeed, 0, 0);
             }else if(Input.GetAxis("Horizontal") == 0)
@@ -59,7 +61,7 @@ public class FPPMove : MonoBehaviour {
             }
 
             //Jumping
-            if (Input.GetButtonDown("Jump") && rigidbody.velocity.y < 0.05 && rigidbody.velocity.y > -0.05)
+            if (Input.GetButtonDown("Jump") && !inAir)
             {
                 rigidbody.AddRelativeForce(new Vector3(0, jumpForce, 0));
             }
@@ -67,8 +69,15 @@ public class FPPMove : MonoBehaviour {
             //Player rotation
             transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
         }
-        
+    }
 
+    void OnTriggerEnter(Collider other)
+    {
+        inAir = false;
+    }
 
+    void OnTriggerExit(Collider other)
+    {
+        inAir = true;
     }
 }
