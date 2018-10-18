@@ -11,6 +11,7 @@ public class FPPMove : MonoBehaviour {
     public float maxSideSpeed;
     public float rotationSpeed;
     public float jumpForce;
+    public static bool enableJump = false;
     private Rigidbody rigidbody;
     public bool inAir;
 
@@ -61,7 +62,7 @@ public class FPPMove : MonoBehaviour {
             }
 
             //Jumping
-            if (Input.GetButtonDown("Jump") && !inAir)
+            if (Input.GetButtonDown("Jump") && !inAir && enableJump)
             {
                 rigidbody.AddRelativeForce(new Vector3(0, jumpForce, 0));
             }
