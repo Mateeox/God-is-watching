@@ -29,6 +29,7 @@ public class ObjectGodMove : MonoBehaviour{
         point = new Vector3();
         boundLeftUpCorner = bound.transform.position + bound.transform.localScale / 2;
         boundRightDownCorner = bound.transform.position - bound.transform.localScale / 2;
+        rigidbody.useGravity = true;
     }
     
     void Update()
@@ -73,10 +74,17 @@ public class ObjectGodMove : MonoBehaviour{
             transform.position = point;
         }
 
-        //End moving object when player change mod to herose
+        //End moving object when player changed mode to herose
         if(GameVariables.GameMode == GameVariables.GameModes.God && Input.GetButtonDown("ChangeMode"))
         {
             disableMoving();
+        }
+
+        //Enable movement when player change mode to god
+        if (GameVariables.GameMode == GameVariables.GameModes.Hero && Input.GetButtonDown("ChangeMode"))
+        {
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
+                RigidbodyConstraints.FreezeRotationY;
         }
 
 
@@ -102,5 +110,22 @@ public class ObjectGodMove : MonoBehaviour{
             disableMoving();
         }
         
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+          if(GameVariables.GameMode == GameVariables.GameModes.Hero && collision.gameObject == Player.pickedObject)
+          {
+            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+          }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (GameVariables.GameMode == GameVariables.GameModes.Hero && collision.gameObject == Player.pickedObject)
+        {
+            rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
+               RigidbodyConstraints.FreezeRotationY;
+        }
     }
 }

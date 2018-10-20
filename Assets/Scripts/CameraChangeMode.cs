@@ -9,7 +9,7 @@ public class CameraChangeMode : MonoBehaviour {
 
 	void Start () {
         heroCam.enabled = true;
-	}
+    }
 	
 	void Update () {
 
@@ -17,7 +17,7 @@ public class CameraChangeMode : MonoBehaviour {
         if (Input.GetButtonDown("ChangeMode"))
         {
             heroCam.enabled = !heroCam.enabled;
-            godCam.enabled = !godCam.enabled;
+            godCam.enabled = !godCam.enabled;           
             
         }
     }
