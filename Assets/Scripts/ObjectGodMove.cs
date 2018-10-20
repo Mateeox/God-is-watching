@@ -8,6 +8,7 @@ public class ObjectGodMove : MonoBehaviour{
     private bool isSelected;
     private Rigidbody rigidbody;
     private Vector3 point;
+	private Camera godCamera;
 
     
     void Start()
@@ -16,24 +17,22 @@ public class ObjectGodMove : MonoBehaviour{
         isSelected = false;
         rigidbody = GetComponent<Rigidbody>();
         point = new Vector3();
-
+		godCamera = GameObject.FindGameObjectWithTag("GodCamera").GetComponent<Camera>() as Camera;
     }
     
     void Update()
     {
         if (GameVariables.GameMode == GameVariables.GameModes.God && isSelected)
         {
-            point = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, objectsDistanceFromCamera));
-                       
+            point = godCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, objectsDistanceFromCamera));
             transform.position = new Vector3(point.x, point.y, transform.position.z);
-           
         }
     }
 
     void OnMouseDown()
     {
         //highlight object on mouse button down
-        if (GameVariables.GameMode == GameVariables.GameModes.God)
+        if (GameVariables.GameMode == GameVariables.GameModes.God && GameVariables.Ability == GameVariables.Abilities.Move)
         {
             GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
             rigidbody.isKinematic = true;

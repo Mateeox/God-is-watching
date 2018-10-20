@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 64738270161104470}
   - component: {fileID: 54831864279869722}
   - component: {fileID: 114377492933470054}
+  - component: {fileID: 114421937062125180}
   m_Layer: 0
   m_Name: stone_1
   m_TagString: Untagged
@@ -127,3 +128,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsDistanceFromCamera: 0
+--- !u!114 &114421937062125180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375919741237516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1b81b9d3243a941970e297df1d9d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AfterThunderRemainder: {fileID: 1985017061530508, guid: e5af8ef43866444429ab01ef83233f83,
+    type: 2}
