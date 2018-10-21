@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 729141567}
   - component: {fileID: 729141566}
   - component: {fileID: 729141565}
+  - component: {fileID: 729141569}
   m_Layer: 0
   m_Name: GodCamera
   m_TagString: GodCamera
@@ -637,6 +638,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729141569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729141564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7357fe5c56d8f434a923acddcd6955eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &849966521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,6 +1350,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroCam: {fileID: 123664998}
   godCam: {fileID: 729141567}
+  distance: 30
+  speed: 100
+  angle: 15
+  hideLayer: 8
 --- !u!1001 &1192035454
 Prefab:
   m_ObjectHideFlags: 0
@@ -1389,6 +1405,10 @@ Prefab:
     - target: {fileID: 1850178642963224, guid: 2ff0f1d95ae0c47499c4effc1bc71517, type: 2}
       propertyPath: m_TagString
       value: PlayerCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850178642963224, guid: 2ff0f1d95ae0c47499c4effc1bc71517, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff0f1d95ae0c47499c4effc1bc71517, type: 2}
