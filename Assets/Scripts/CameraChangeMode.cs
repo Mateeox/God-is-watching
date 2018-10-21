@@ -39,7 +39,7 @@ public class CameraChangeMode : MonoBehaviour
             }
             else
             {
-                if (GameVariables.GameMode == GameVariables.GameModes.Hero)
+                if (GameVariables.GameMode == GameVariables.GameModes.God)
                     AnimationToGod(heroCam, godCam);
                 else
                     AnimationToHero(heroCam, godCam);
