@@ -15,7 +15,7 @@ public class JumpTutorialCanvasScript : MonoBehaviour
     void Start()
     {
         spaceImage = GameObject.Find("imageSpace");
-        FPPMove.enableJump = true;
+       // FPPMove.enableJump = true;
 
     }
 
