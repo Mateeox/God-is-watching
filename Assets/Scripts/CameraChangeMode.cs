@@ -9,9 +9,9 @@ public class CameraChangeMode : MonoBehaviour
     [SerializeField]
     public Camera godCam;
 
-    public float distance = 30f;
-    public float speed = 100f;
-    public float angle = 15f;
+    public float distance = 20.0f;
+    public float speed = 30.0f;
+    public float angle = 25.0f;
     public int hideLayer = 8;
 
     private bool _animation = false;
@@ -73,8 +73,9 @@ public class CameraChangeMode : MonoBehaviour
     private float _distance;
     private void AnimationToGod(Camera heroCam, Camera godCam)
     {
+        Debug.Log(godCam.transform.rotation);
         _lastPos = heroCam.transform.position;
-        Vector3 playerPos = heroCam.transform.position;
+        Vector3 playerPos = heroCam.transform.parent.transform.position;
         _cam = Component.Instantiate<Camera>(godCam);
         _cam.GetComponent<GodCamera>().SetAnimation(true);
         _cam.transform.position = playerPos;
@@ -87,13 +88,13 @@ public class CameraChangeMode : MonoBehaviour
         //        _list.Add(obj);
         //}
         _cam.enabled = true;
-        //Vector3 angles = _cam.transform.rotation.eulerAngles;
-        //_animtionsPos.Add(new Vector3(-1.0f * (Mathf.Cos(angles.y / 180 * Mathf.PI)) * 5.0f + playerPos.x, -1.0f * (Mathf.Sin(angles.y / 180 * Mathf.PI) * 5.0f) + playerPos.y, playerPos.z));
+        Vector3 angles = _cam.transform.rotation.eulerAngles;
+        _animtionsPos.Add(new Vector3(-1.0f * (Mathf.Cos(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.x, -1.0f * (Mathf.Sin(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.y, playerPos.z));
         Vector3 pos;
-        pos = new Vector3(Mathf.Cos(angle / 180 * Mathf.PI) * distance + playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y, playerPos.z);
+        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y, playerPos.z - Mathf.Cos(angle / 180 * Mathf.PI) * distance );
         _animtionsPos.Add(pos);
         godCam.transform.position = pos;
-        godCam.transform.rotation = new Quaternion(-0.1f, 0.7f, -0.1f, -0.7f);
+        godCam.transform.rotation = new Quaternion(0.25f, 0, 0, 1.0f);
         //_distance = Vector3.Distance(playerPos, pos);
         Animate(_cam);
     }
@@ -123,9 +124,10 @@ public class CameraChangeMode : MonoBehaviour
             //        m.color = new Color(1.0f, 1.0f, 1.0f, Vector3.Distance(cam.transform.position, _animtionsPos[0]) / distance);
             //    }
             //}
-            Vector3 vector = Vector3.MoveTowards(cam.transform.position, _animtionsPos[0], 0.01f * speed / (Mathf.Pow(3.0f, _animtionsPos.Count)));
+            Vector3 vector = Vector3.MoveTowards(cam.transform.position, _animtionsPos[0], 0.01f * speed * (Mathf.Pow(2.0f, _animtionsPos.Count)));
             cam.transform.position = vector;
-            cam.transform.LookAt(heroCam.transform.position);
+            if(_animtionsPos.Count == 1) 
+                cam.transform.LookAt(heroCam.transform.position);
         }
         else
         {

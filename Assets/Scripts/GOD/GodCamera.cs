@@ -23,7 +23,7 @@ public class GodCamera : MonoBehaviour
         {
             Vector3 pos = Input.mousePosition;
             Camera cam = this.GetComponent<Camera>();
-            cam.transform.position += new Vector3(0, (pos.y - movedHeight) / 1000.0f, (pos.x - movedWidth) / 1000.0f);
+            cam.transform.position += new Vector3((pos.x - movedWidth) / 1000.0f, (pos.y - movedHeight) / 1000.0f, 0);
             movedHeight = pos.y;
             movedWidth = pos.x;
         }
