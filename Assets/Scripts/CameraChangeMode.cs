@@ -12,7 +12,6 @@ public class CameraChangeMode : MonoBehaviour
     public float distance = 20.0f;
     public float speed = 30.0f;
     public float angle = 25.0f;
-    public int hideLayer = 8;
 
     private bool _animation = false;
     private Camera _cam;
@@ -22,7 +21,6 @@ public class CameraChangeMode : MonoBehaviour
     void Start()
     {
         _animtionsPos = new List<Vector3>();
-        godCam.cullingMask = 7 << 0;
     }
 
     void Update()
@@ -39,7 +37,7 @@ public class CameraChangeMode : MonoBehaviour
             }
             else
             {
-                if (GameVariables.GameMode == GameVariables.GameModes.God)
+                if (GameVariables.GameMode == GameVariables.GameModes.Hero)
                     AnimationToGod(heroCam, godCam);
                 else
                     AnimationToHero(heroCam, godCam);
@@ -91,7 +89,7 @@ public class CameraChangeMode : MonoBehaviour
         Vector3 angles = _cam.transform.rotation.eulerAngles;
         _animtionsPos.Add(new Vector3(-1.0f * (Mathf.Cos(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.x, -1.0f * (Mathf.Sin(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.y, playerPos.z));
         Vector3 pos;
-        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y, playerPos.z - Mathf.Cos(angle / 180 * Mathf.PI) * distance );
+        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y, playerPos.z - Mathf.Cos(angle / 180 * Mathf.PI) * distance);
         _animtionsPos.Add(pos);
         godCam.transform.position = pos;
         godCam.transform.rotation = new Quaternion(0.25f, 0, 0, 1.0f);
@@ -126,7 +124,7 @@ public class CameraChangeMode : MonoBehaviour
             //}
             Vector3 vector = Vector3.MoveTowards(cam.transform.position, _animtionsPos[0], 0.01f * speed * (Mathf.Pow(2.0f, _animtionsPos.Count)));
             cam.transform.position = vector;
-            if(_animtionsPos.Count == 1) 
+            if (_animtionsPos.Count == 1)
                 cam.transform.LookAt(heroCam.transform.position);
         }
         else

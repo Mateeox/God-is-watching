@@ -127,3 +127,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsDistanceFromCamera: 0
+  bound: {fileID: 0}

@@ -12,7 +12,7 @@ public class FPPCameraRotate : MonoBehaviour {
     void Start () {
         rotationSpeed = 100.0f;
         maxRotateAngle = 320.0f;
-        minRotateAngle = 45.0f;
+        minRotateAngle = 70.0f;
     }
 	
 	// Update is called once per frame
