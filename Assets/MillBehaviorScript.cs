@@ -34,11 +34,19 @@ public class MillBehaviorScript : MonoBehaviour {
         {
             Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), GameObject.Find("Player").GetComponent<Collider>());
         }
+        if (collision.gameObject.name == "SlowZone")
+        {
+            currentSpeed = zeroSpeed;
+        }
     }
 
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.name == "MillStone")
+        {
+            currentSpeed = speed;
+        }
+        if (collision.gameObject.name == "SlowZone")
         {
             currentSpeed = speed;
         }
