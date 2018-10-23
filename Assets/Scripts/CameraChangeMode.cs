@@ -71,7 +71,6 @@ public class CameraChangeMode : MonoBehaviour
     private float _distance;
     private void AnimationToGod(Camera heroCam, Camera godCam)
     {
-        Debug.Log(godCam.transform.rotation);
         _lastPos = heroCam.transform.position;
         Vector3 playerPos = heroCam.transform.parent.transform.position;
         _cam = Component.Instantiate<Camera>(godCam);
