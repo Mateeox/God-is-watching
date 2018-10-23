@@ -38,29 +38,30 @@ public class SlowZone : MonoBehaviour {
                     Vector3 point = Input.mousePosition;
                     _currZone.transform.position = _godCam.ScreenToWorldPoint(new Vector3(point.x, point.y, Distance));
                 }
-                else if (_set)
-                {
-                    if (DateTime.Now.Subtract(_timer).Seconds == Time)
-                    {
-                        Destroy(_currZone);
-                        _attched = false;
-                        _set = false;
-                    }
-                }
                 
                 if(Input.GetButtonDown("Fire1"))
                 {
+                    _attched = false;
                     _set = true;
                 }
             } else
             {
                 if (_attched && !_set)
                 {
+                    _currZone.transform.position = _currZone.transform.position + new Vector3(0, 100.0f, 0);
                     Destroy(_currZone);
                     _attched = false;
-                    _set = false;
                 }
             }
         }
-	}
+        if (_set)
+        {
+            if (DateTime.Now.Subtract(_timer).Seconds == Time)
+            {
+                _currZone.transform.position = _currZone.transform.position + new Vector3(0, 100.0f, 0);
+                Destroy(_currZone);
+                _set = false;
+            }
+        }
+    }
 }

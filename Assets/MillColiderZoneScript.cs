@@ -22,7 +22,7 @@ public class MillColiderZoneScript : MonoBehaviour {
         }
         if(other.gameObject.tag == "SlowZone")
         {
-            MillBehaviorScript.SlowDown(2.0f);
+            MillBehaviorScript.SlowDown(4.0f);
         }
     }
 
