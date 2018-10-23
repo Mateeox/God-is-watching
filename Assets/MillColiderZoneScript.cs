@@ -20,11 +20,19 @@ public class MillColiderZoneScript : MonoBehaviour {
         {
             MillBehaviorScript.SetSpeed(0);
         }
+        if(other.gameObject.tag == "SlowZone")
+        {
+            MillBehaviorScript.SlowDown(2.0f);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "rockBig")
+        {
+            MillBehaviorScript.SetSpeed(150);
+        }
+        if(other.gameObject.tag == "SlowZone")
         {
             MillBehaviorScript.SetSpeed(150);
         }

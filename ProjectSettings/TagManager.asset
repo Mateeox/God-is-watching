@@ -8,6 +8,11 @@ TagManager:
   - GodCamera
   - PlayerCamera
   - LightningBolt
+  - ObjectMoveBoundries
+  - rockMedium
+  - rockSmall
+  - rockBig
+  - SlowZone
   layers:
   - Default
   - TransparentFX

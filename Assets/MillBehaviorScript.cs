@@ -24,31 +24,36 @@ public class MillBehaviorScript : MonoBehaviour {
         currentSpeed = newSpeed;
     }
 
-    void OnCollisionEnter(Collision collision)
+    public static void SlowDown(float divider)
     {
-        if (collision.gameObject.name == "MillStone")
-        {
-            currentSpeed = zeroSpeed;
-        }
-        if (collision.gameObject.name == "Player")
-        {
-            Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), GameObject.Find("Player").GetComponent<Collider>());
-        }
-        if (collision.gameObject.name == "SlowZone")
-        {
-            currentSpeed = zeroSpeed;
-        }
+        currentSpeed /= divider;
     }
 
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.name == "MillStone")
-        {
-            currentSpeed = speed;
-        }
-        if (collision.gameObject.name == "SlowZone")
-        {
-            currentSpeed = speed;
-        }
-    }
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.name == "MillStone")
+    //    {
+    //        currentSpeed = zeroSpeed;
+    //    }
+    //    if (collision.gameObject.name == "Player")
+    //    {
+    //        Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), GameObject.Find("Player").GetComponent<Collider>());
+    //    }
+    //    if (collision.gameObject.name == "SlowZone")
+    //    {
+    //        currentSpeed = zeroSpeed;
+    //    }
+    //}
+
+    //void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.gameObject.name == "MillStone")
+    //    {
+    //        currentSpeed = speed;
+    //    }
+    //    if (collision.gameObject.name == "SlowZone")
+    //    {
+    //        currentSpeed = speed;
+    //    }
+    //}
 }
