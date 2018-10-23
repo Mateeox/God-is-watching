@@ -5,10 +5,9 @@ using UnityEngine;
 public class MillBehaviorScript : MonoBehaviour {
 
     public GameObject collisionZone;
-    private static float currentSpeed = 300;
-    private readonly float zeroSpeed = 0;
-    public float speed = 150;
-
+    public static float speed = 250;
+    private static float currentSpeed = speed;
+    private static float zeroSpeed = 0;
     // Use this for initialization
     void Start () {
 
@@ -22,6 +21,11 @@ public class MillBehaviorScript : MonoBehaviour {
     public static void SetSpeed(float newSpeed)
     {
         currentSpeed = newSpeed;
+    }
+    
+    public static void SetMaxSpeed()
+    {
+        currentSpeed = speed;
     }
 
     public static void SlowDown(float divider)

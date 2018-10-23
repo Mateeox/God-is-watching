@@ -16,7 +16,7 @@ public class MillColiderZoneScript : MonoBehaviour {
 	void Update () {
 		if(slowDown && !slowZone)
         {
-            MillBehaviorScript.SetSpeed(150);
+            MillBehaviorScript.SetMaxSpeed();
         }
 	}
 
@@ -38,11 +38,11 @@ public class MillColiderZoneScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "rockBig")
         {
-            MillBehaviorScript.SetSpeed(150);
+            MillBehaviorScript.SetMaxSpeed();
         }
         if(other.gameObject.tag == "SlowZone")
         {
-            MillBehaviorScript.SetSpeed(150);
+            MillBehaviorScript.SetMaxSpeed();
         }
     }
 }

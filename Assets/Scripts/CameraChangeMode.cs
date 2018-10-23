@@ -14,6 +14,7 @@ public class CameraChangeMode : MonoBehaviour
     public float speed = 30.0f;
     public float angle = 25.0f;
 
+    private bool _god = false;
     private bool _animation = false;
     private Camera _cam;
     private Vector3 _lastPos;
@@ -28,7 +29,7 @@ public class CameraChangeMode : MonoBehaviour
         speed = 30.0f;
         angle = 0.0f;
         playerStartPositionZ = heroCam.transform.position.z;
-}
+    }
 
     void Update()
     {
@@ -44,7 +45,7 @@ public class CameraChangeMode : MonoBehaviour
             }
             else
             {
-                if (GameVariables.GameMode != GameVariables.GameModes.Hero)
+                if (!_god)
                     AnimationToGod(heroCam, godCam);
                 else
                     AnimationToHero(heroCam, godCam);
@@ -78,6 +79,7 @@ public class CameraChangeMode : MonoBehaviour
     private float _distance;
     private void AnimationToGod(Camera heroCam, Camera godCam)
     {
+        _god = true;
         _lastPos = heroCam.transform.position;
         Vector3 playerPos = heroCam.transform.parent.transform.position;
         _cam = Component.Instantiate<Camera>(godCam);
@@ -105,6 +107,7 @@ public class CameraChangeMode : MonoBehaviour
 
     private void AnimationToHero(Camera heroCam, Camera godCam)
     {
+        _god = false;
         _lastPos = godCam.transform.position;
         Vector3 playerPos = heroCam.transform.position;
         _cam = Component.Instantiate<Camera>(godCam);
