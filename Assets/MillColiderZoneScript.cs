@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MillColiderZoneScript : MonoBehaviour {
 
+    private bool slowDown = false;
+    private Collider slowZone;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,7 +14,10 @@ public class MillColiderZoneScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(slowDown && !slowZone)
+        {
+            MillBehaviorScript.SetSpeed(150);
+        }
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -22,7 +28,9 @@ public class MillColiderZoneScript : MonoBehaviour {
         }
         if(other.gameObject.tag == "SlowZone")
         {
-            MillBehaviorScript.SlowDown(4.0f);
+            slowZone = other;
+            slowDown = true;
+            MillBehaviorScript.SlowDown(4);
         }
     }
 

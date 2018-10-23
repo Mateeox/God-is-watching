@@ -48,7 +48,6 @@ public class SlowZone : MonoBehaviour {
             {
                 if (_attched && !_set)
                 {
-                    _currZone.transform.position = _currZone.transform.position + new Vector3(0, 100.0f, 0);
                     Destroy(_currZone);
                     _attched = false;
                 }
@@ -58,7 +57,6 @@ public class SlowZone : MonoBehaviour {
         {
             if (DateTime.Now.Subtract(_timer).Seconds == Time)
             {
-                _currZone.transform.position = _currZone.transform.position + new Vector3(0, 100.0f, 0);
                 Destroy(_currZone);
                 _set = false;
             }
