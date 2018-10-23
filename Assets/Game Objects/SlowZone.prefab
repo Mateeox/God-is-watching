@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23173870952577788}
   - component: {fileID: 65131917919037148}
   - component: {fileID: 54209029376063520}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: SlowZone
   m_TagString: SlowZone
   m_Icon: {fileID: 0}

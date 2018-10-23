@@ -5,12 +5,15 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour {
 
     public string tagName = "rockSmall";
+    public bool isActivated;
     private Vector3 startPosition;
     private bool colided = false;
+ 
 
     // Use this for initialization
     void Start () {
         startPosition = this.gameObject.transform.position;
+        isActivated = false;
     }
 
     // Update is called once per frame
@@ -20,18 +23,22 @@ public class PressurePlate : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        
+        Vector3 target = new Vector3(startPosition.x, 0, startPosition.z);
+        transform.position = Vector3.MoveTowards(transform.position, target, 4);
+
         if (other.gameObject.tag == tagName)
         {
-            Vector3 target = new Vector3(startPosition.x, 0, startPosition.z);
-            transform.position = Vector3.MoveTowards(transform.position, target, 4);
+            isActivated = true;
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == tagName)
+        transform.position = startPosition;
+        if (other.gameObject.tag == tagName && isActivated)
         {
-            transform.position = startPosition;
+            isActivated = false;
         }
     }
 }

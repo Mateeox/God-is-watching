@@ -5,14 +5,14 @@ using UnityEngine;
 public class MillBehaviorScript : MonoBehaviour {
 
     public GameObject collisionZone;
-    private static float currentSpeed = 150;
+    private static float currentSpeed = 300;
     private readonly float zeroSpeed = 0;
     public float speed = 150;
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

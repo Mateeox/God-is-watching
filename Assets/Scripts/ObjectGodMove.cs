@@ -23,7 +23,7 @@ public class ObjectGodMove : MonoBehaviour{
     
     void Start()
     {
-        objectsDistanceFromCamera = 50.0f;
+        objectsDistanceFromCamera = 35.0f;
         isSelected = false;
         rigidbody = GetComponent<Rigidbody>();
         point = new Vector3();

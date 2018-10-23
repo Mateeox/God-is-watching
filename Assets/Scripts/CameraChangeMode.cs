@@ -10,6 +10,7 @@ public class CameraChangeMode : MonoBehaviour
     public Camera godCam;
 
     public float distance = 20.0f;
+    public float height;
     public float speed = 30.0f;
     public float angle = 25.0f;
 
@@ -17,11 +18,17 @@ public class CameraChangeMode : MonoBehaviour
     private Camera _cam;
     private Vector3 _lastPos;
     private List<Vector3> _animtionsPos;
+    private float playerStartPositionZ;
 
     void Start()
     {
         _animtionsPos = new List<Vector3>();
-    }
+        distance = 35.0f;
+        height = 5.0f;
+        speed = 30.0f;
+        angle = 0.0f;
+        playerStartPositionZ = heroCam.transform.position.z;
+}
 
     void Update()
     {
@@ -88,10 +95,10 @@ public class CameraChangeMode : MonoBehaviour
         Vector3 angles = _cam.transform.rotation.eulerAngles;
         _animtionsPos.Add(new Vector3(-1.0f * (Mathf.Cos(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.x, -1.0f * (Mathf.Sin(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.y, playerPos.z));
         Vector3 pos;
-        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y, playerPos.z - Mathf.Cos(angle / 180 * Mathf.PI) * distance);
+        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y + height, playerStartPositionZ - Mathf.Cos(angle / 180 * Mathf.PI) * distance);
         _animtionsPos.Add(pos);
         godCam.transform.position = pos;
-        godCam.transform.rotation = new Quaternion(0.25f, 0, 0, 1.0f);
+        godCam.transform.eulerAngles = new Vector3(angle, 0, 0);
         //_distance = Vector3.Distance(playerPos, pos);
         Animate(_cam);
     }

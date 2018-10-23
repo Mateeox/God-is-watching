@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         pickedObject = null;
-        maxPickUpDistance = 2.25f;
+        maxPickUpDistance = 4.0f;
 	}
 	
 	// Update is called once per frame
