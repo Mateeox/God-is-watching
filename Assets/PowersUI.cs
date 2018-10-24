@@ -17,13 +17,21 @@ public class PowersUI : MonoBehaviour {
             print("Clicked");
             if (GameVariables.Ability == GameVariables.Abilities.Move)
             {
-                GameObject.Find("TimeImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100); ;
+                GameObject.Find("TimeImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+                GameObject.Find("ThunderImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 GameObject.Find("MoveImage").GetComponent<Image>().color = new Color32(0, 0, 0, 255);
             }
             else if (GameVariables.Ability == GameVariables.Abilities.Time)
             {
-                GameObject.Find("MoveImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100); ;
+                GameObject.Find("MoveImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+                GameObject.Find("ThunderImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
                 GameObject.Find("TimeImage").GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+            } else if (GameVariables.Ability == GameVariables.Abilities.Thunder)
+            {
+                GameObject.Find("MoveImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+                GameObject.Find("TimeImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
+                GameObject.Find("ThunderImage").GetComponent<Image>().color = new Color32(0, 0, 0, 255);
+
             }
         }
 	}
