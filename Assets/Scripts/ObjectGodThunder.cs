@@ -19,7 +19,8 @@ public class ObjectGodThunder : MonoBehaviour {
 			lightningBolt.Trigger();
 			if (this.CompareTag("Terrain"))
 			{
-				Instantiate(AfterThunderRemainder, GameVariables.getPos(), Quaternion.identity);
+				Vector3 pos = GameVariables.getPos();
+				Instantiate(AfterThunderRemainder, new Vector3(pos.x, 0.01f, pos.z), Quaternion.identity);
 			}
 			else
 			{

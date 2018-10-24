@@ -35,7 +35,7 @@ public class ObjectGodMove : MonoBehaviour{
     void Update()
     {
         bool positionChanged = false;
-        if (GameVariables.GameMode == GameVariables.GameModes.God && isSelected)
+        if (GameVariables.GameMode == GameVariables.GameModes.God && GameVariables.Ability == GameVariables.Abilities.Move && isSelected)
         {
             Camera godCam = GameObject.Find("God Camera").GetComponent<Camera>();
             point = GameVariables.godCam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, objectsDistanceFromCamera));
