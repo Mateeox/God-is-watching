@@ -4,32 +4,28 @@ using UnityEngine;
 
 public class MillColiderZoneScript : MonoBehaviour {
 
-    private bool slowDown = false;
-    private Collider slowZone;
+    private bool isSlowed = false;
+    private bool isBlocked = false;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		if(slowDown && !slowZone)
-        {
-            MillBehaviorScript.SetMaxSpeed();
-        }
+		
 	}
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "rockBig")
         {
+            isBlocked = true;
             MillBehaviorScript.SetSpeed(0);
         }
         if(other.gameObject.tag == "SlowZone")
         {
-            slowZone = other;
-            slowDown = true;
+            isSlowed = true;
             MillBehaviorScript.SlowDown(4);
         }
     }
@@ -38,11 +34,21 @@ public class MillColiderZoneScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "rockBig")
         {
+            isBlocked = false;
             MillBehaviorScript.SetMaxSpeed();
+            if (isSlowed)
+            {
+                MillBehaviorScript.SlowDown(4);
+            }
         }
         if(other.gameObject.tag == "SlowZone")
         {
-            MillBehaviorScript.SetMaxSpeed();
+            isSlowed = false;
+            if (!isBlocked)
+            {
+                MillBehaviorScript.SetMaxSpeed();
+            }
+            
         }
     }
 }
