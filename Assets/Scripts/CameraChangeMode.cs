@@ -40,6 +40,7 @@ public class CameraChangeMode : MonoBehaviour
             DisableAll();
             if (_animation)
             {
+                _god = !_god;
                 _animtionsPos.Clear();
                 _animtionsPos.Add(_lastPos);
             }
