@@ -18,7 +18,7 @@ public class FPPMove : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         forwardSpeed = 9.0f;
-        sideSpeed = 3.0f;
+        sideSpeed = 6.0f;
         jumpSpeed = 9.0f;
         rotationSpeed = 120.0f;
         gravity = 20.0f;
