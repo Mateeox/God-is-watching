@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MillColiderZoneScript : MonoBehaviour {
 
-    private bool isSlowed = false;
-    private bool isBlocked = false;
+    public static bool isSlowed = false;
+    public static bool isBlocked = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,11 @@ public class MillColiderZoneScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public bool GetBlocked()
+    {
+        return isBlocked;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,6 +37,7 @@ public class MillColiderZoneScript : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("Left");
         if (other.gameObject.tag == "rockBig")
         {
             isBlocked = false;

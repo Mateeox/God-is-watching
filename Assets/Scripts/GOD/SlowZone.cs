@@ -50,6 +50,7 @@ public class SlowZone : MonoBehaviour {
                 {
                     Destroy(_currZone);
                     _attched = false;
+
                 }
             }
         }
@@ -59,7 +60,13 @@ public class SlowZone : MonoBehaviour {
             {
                 Destroy(_currZone);
                 _set = false;
+                
+                if (!MillColiderZoneScript.isBlocked)
+                {
+                    MillBehaviorScript.SetMaxSpeed();
+                }
             }
         }
     }
+    
 }

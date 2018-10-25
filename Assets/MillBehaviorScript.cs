@@ -25,7 +25,7 @@ public class MillBehaviorScript : MonoBehaviour {
     
     public static void SetMaxSpeed()
     {
-        currentSpeed = speed;
+            currentSpeed = speed;
     }
 
     public static void SlowDown(float divider)
