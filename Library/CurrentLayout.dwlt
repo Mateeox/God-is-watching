@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 30398
+  controlID: 5186
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 30399
+  controlID: 5165
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 30305
+  controlID: 5088
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,9 +394,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -32.935574, y: 6.5701637, z: 3.0729923}
+    m_Target: {x: 10.387344, y: 63.585594, z: 11.3135605}
     speed: 2
-    m_Value: {x: -32.935574, y: 6.5701637, z: 3.0729923}
+    m_Value: {x: 10.387344, y: 63.585594, z: 11.3135605}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -428,9 +428,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.2597349, y: 0.36960828, z: -0.10841264, w: 0.88553613}
   m_Size:
-    m_Target: 36.63087
+    m_Target: 71.71706
     speed: 2
-    m_Value: 36.63087
+    m_Value: 71.71706
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -468,10 +468,10 @@ MonoBehaviour:
     height: 357
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 32}
-    m_SelectedIDs: 
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ba0a0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 9681f7ffee3dfeffe462feff187ffeffac11ffff54c6ffff98e1ffff0000000042320000
+    m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -532,20 +532,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/stones/stone_1
+    - Assets/Game Objects/AfterThunderObjects
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Models/stones/stone_1
+  - Assets/Game Objects/AfterThunderObjects
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Maciek\Desktop\pgk\God-is-watching
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 33}
-    m_SelectedIDs: 00310000
-    m_LastClickedID: 12544
-    m_ExpandedIDs: 00000000782d0000982d0000862e0000882e0000802f00009a300000d23000008237000000ca9a3b
+    scrollPos: {x: 0, y: 101}
+    m_SelectedIDs: be090000
+    m_LastClickedID: 2494
+    m_ExpandedIDs: 0000000088090000b0090000cc0a0000ce0a0000d40b00000a0d0000440d0000a635000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,7 +573,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000782d0000982d0000862e0000882e0000802f00009a300000d23000008237000000ca9a3b
+    m_ExpandedIDs: 0000000088090000b0090000cc0a0000ce0a0000d40b00000a0d0000440d0000a635000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -600,7 +600,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: a02b0000ec4b0000bc2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

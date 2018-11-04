@@ -7605,10 +7605,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053592927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc1b81b9d3243a941970e297df1d9d66, type: 3}
+  m_Script: {fileID: 11500000, guid: 33826e429357e8a4b9c7c67b132129cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AfterThunderRemainder: {fileID: 1297298514206420, guid: f2bf2cda717639a4cb059d0ed551dd13,
+  afterThunderRemainder: {fileID: 1297298514206420, guid: f2bf2cda717639a4cb059d0ed551dd13,
     type: 2}
 --- !u!4 &1062202895 stripped
 Transform:
