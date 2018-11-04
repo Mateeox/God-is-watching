@@ -94,7 +94,7 @@ public class ObjectGodMove : MonoBehaviour{
     void OnMouseDown()
     {
         //highlight object on mouse button down
-        if (GameVariables.GameMode == GameVariables.GameModes.God)
+        if (GameVariables.GameMode == GameVariables.GameModes.God && GameVariables.Ability == GameVariables.Abilities.Move)
         {
             GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
             rigidbody.isKinematic = true;
@@ -106,7 +106,7 @@ public class ObjectGodMove : MonoBehaviour{
     void OnMouseUp()
     {
         //disable object highligth on mouse button up
-        if (GameVariables.GameMode == GameVariables.GameModes.God)
+        if (GameVariables.GameMode == GameVariables.GameModes.God && GameVariables.Ability == GameVariables.Abilities.Move)
         {
             disableMoving();
         }

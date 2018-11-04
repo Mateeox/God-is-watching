@@ -280,7 +280,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 56
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!54 &54850524661481778
 Rigidbody:
@@ -295,7 +295,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 56
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!54 &54906911533395198
 Rigidbody:
@@ -310,7 +310,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 56
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &65154586614453334
 BoxCollider:
@@ -360,6 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsDistanceFromCamera: 0
+  bound: {fileID: 1929196297962394, guid: 275e94e9942fdff4b9075dc290cbaf22, type: 2}
 --- !u!114 &114765712698329834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsDistanceFromCamera: 0
+  bound: {fileID: 1929196297962394, guid: 275e94e9942fdff4b9075dc290cbaf22, type: 2}
 --- !u!114 &114887089558510994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -384,3 +386,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsDistanceFromCamera: 0
+  bound: {fileID: 1929196297962394, guid: 275e94e9942fdff4b9075dc290cbaf22, type: 2}
