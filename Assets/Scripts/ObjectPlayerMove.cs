@@ -44,6 +44,7 @@ public class ObjectPlayerMove : MonoBehaviour {
                 spot = gameObject.AddComponent<Light>();
                 spot.range = 3f;
                 spot.type = LightType.Spot;
+                spot.intensity = 0.3f;
                 spot.color = new Color(229, 143, 33, 50f);
                 spot.transform.rotation = Quaternion.Euler(90.0f, 0, 0);
             }           
