@@ -17,6 +17,7 @@ public class ObjectPlayerMove : MonoBehaviour {
     {
         if (Input.GetButtonUp("PickUpObject") && Player.pickedObject == gameObject)
         {
+            gameObject.GetComponent<MeshRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
             gameObject.transform.SetParent(null);
             rigidbody.isKinematic = false;
             Player.pickedObject = null;
@@ -37,6 +38,7 @@ public class ObjectPlayerMove : MonoBehaviour {
                 rigidbody.isKinematic = true;
                 gameObject.transform.localPosition = new Vector3(0.25f, 0.25f, 1.5f);
                 Player.pickedObject = gameObject;
+                gameObject.GetComponent<MeshRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
             }           
            
         }       
