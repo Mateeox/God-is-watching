@@ -115,7 +115,7 @@ public class ObjectGodMove : MonoBehaviour{
 
     void OnCollisionEnter(Collision collision)
     {
-          if(GameVariables.GameMode == GameVariables.GameModes.Hero && collision.gameObject == Player.pickedObject)
+          if(GameVariables.GameMode == GameVariables.GameModes.God && collision.gameObject == Player.pickedObject)
           {
             rigidbody.constraints = RigidbodyConstraints.FreezeAll;
           }
@@ -123,7 +123,7 @@ public class ObjectGodMove : MonoBehaviour{
 
     void OnCollisionExit(Collision collision)
     {
-        if (GameVariables.GameMode == GameVariables.GameModes.Hero && collision.gameObject == Player.pickedObject)
+        if (GameVariables.GameMode == GameVariables.GameModes.God && collision.gameObject == Player.pickedObject)
         {
             rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
                RigidbodyConstraints.FreezeRotationY;
