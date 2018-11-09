@@ -6,7 +6,7 @@ public class GameVariables : MonoBehaviour
 {
 
     public enum GameModes { Hero, God };
-    public enum Abilities { Move, Thunder, Time };
+    public enum Abilities { Move, Thunder=10, Time=40 };
     public static Abilities Ability { get; private set; }
     public static GameModes GameMode { get; private set; }
     public static Camera godCam;
@@ -14,6 +14,7 @@ public class GameVariables : MonoBehaviour
     void Start()
     {
         GameMode = GameModes.Hero;
+		Ability = Abilities.Move;
         godCam = GameObject.FindGameObjectWithTag("GodCamera").GetComponent<Camera>() as Camera;
     }
 

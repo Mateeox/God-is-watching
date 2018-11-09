@@ -22,7 +22,8 @@ public class SlowZone : MonoBehaviour {
     private GameObject _currZone;
 
 	// Update is called once per frame
-	void Update () {
+	public bool manualUpdate (float currentMana, ref bool isTooLittleMana) {
+		bool abilityUsed = false;
 		if(TimePrefab && _godCam)
         {
             if(GameVariables.Ability == GameVariables.Abilities.Time && GameVariables.GameMode == GameVariables.GameModes.God)
@@ -32,6 +33,7 @@ public class SlowZone : MonoBehaviour {
                     _attched = true;
                     _currZone = Instantiate(TimePrefab);
                     _timer = DateTime.Now;
+
                 }
                 else if (!_set)
                 {
@@ -39,10 +41,20 @@ public class SlowZone : MonoBehaviour {
                     _currZone.transform.position = _godCam.ScreenToWorldPoint(new Vector3(point.x, point.y, Distance));
                 }
                 
-                if(Input.GetButtonDown("Fire1"))
+                if(Input.GetButtonDown("Fire1") && !_set)
                 {
-                    _attched = false;
-                    _set = true;
+					if(currentMana >= (int)GameVariables.Abilities.Time)
+					{
+						abilityUsed = true;
+						_attched = false;
+						_set = true;
+					}
+					else
+					{
+						//not enough mana!!!oneoneone
+						Debug.Log("Too little mana for slow zone");
+						isTooLittleMana = true;
+					}
                 }
             } else
             {
@@ -67,6 +79,7 @@ public class SlowZone : MonoBehaviour {
                 }
             }
         }
+		return abilityUsed;
     }
     
 }
