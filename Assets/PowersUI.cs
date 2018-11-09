@@ -14,7 +14,6 @@ public class PowersUI : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2) || Input.GetKey(KeyCode.Alpha3))
         {
-            print("Clicked");
             if (GameVariables.Ability == GameVariables.Abilities.Move)
             {
                 GameObject.Find("TimeImage").GetComponent<Image>().color = new Color32(0, 0, 0, 100);
