@@ -6,7 +6,7 @@ public class ObjectPlayerMove : MonoBehaviour {
 
     public static GameObject player;
     private Rigidbody rigidbody;
-    private Light spot;
+    private GameObject spot;
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
@@ -20,7 +20,9 @@ public class ObjectPlayerMove : MonoBehaviour {
         {
             DestroyImmediate(spot);
             spot = null;
-            gameObject.GetComponent<MeshRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            Color currColor = gameObject.GetComponent<MeshRenderer>().material.color;
+            currColor.a = 1.0f;
+            gameObject.GetComponent<MeshRenderer>().material.color = currColor;
             gameObject.transform.SetParent(null);
             rigidbody.isKinematic = false;
             Player.pickedObject = null;
@@ -40,13 +42,18 @@ public class ObjectPlayerMove : MonoBehaviour {
                 rigidbody.isKinematic = true;
                 gameObject.transform.localPosition = new Vector3(0.25f, 0.25f, 1.5f);
                 Player.pickedObject = gameObject;
-                gameObject.GetComponent<MeshRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
-                spot = gameObject.AddComponent<Light>();
-                spot.range = 3f;
-                spot.type = LightType.Spot;
-                spot.intensity = 0.3f;
-                spot.color = new Color(229, 143, 33, 50f);
-                spot.transform.rotation = Quaternion.Euler(90.0f, 0, 0);
+                Color currColor = gameObject.GetComponent<MeshRenderer>().material.color;
+                currColor.a = 0.4f;
+                gameObject.GetComponent<MeshRenderer>().material.color = currColor;
+                spot = new GameObject("SpotLight");
+                Light lit = spot.AddComponent<Light>();
+                lit.range = 3f;
+                lit.type = LightType.Spot;
+                lit.intensity = 0.3f;
+                lit.color = new Color(229, 143, 33, 50f);
+                lit.transform.rotation = Quaternion.Euler(90.0f, 0, 0);
+                lit.transform.position = gameObject.transform.position;
+                spot.transform.parent = gameObject.transform;
             }           
         }       
     }
