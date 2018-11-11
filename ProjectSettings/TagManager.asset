@@ -13,6 +13,7 @@ TagManager:
   - rockSmall
   - rockBig
   - SlowZone
+  - Weapon
   layers:
   - Default
   - TransparentFX
