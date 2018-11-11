@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,15 +7,18 @@ public class GameVariables : MonoBehaviour
 {
 
     public enum GameModes { Hero, God };
+    public enum PlayerWeapons { None, Range, Close};
     public enum Abilities { Move, Thunder=10, Time=40 };
     public static Abilities Ability { get; private set; }
     public static GameModes GameMode { get; private set; }
+    public static PlayerWeapons PlayerWeapon { get; private set; }
     public static Camera godCam;
 
     void Start()
     {
         GameMode = GameModes.Hero;
 		Ability = Abilities.Move;
+        PlayerWeapon = PlayerWeapons.None;
         godCam = GameObject.FindGameObjectWithTag("GodCamera").GetComponent<Camera>() as Camera;
     }
 
@@ -42,6 +46,33 @@ public class GameVariables : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Ability = Abilities.Time;
+        }
+
+        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+           
+            if(PlayerWeapon == PlayerWeapons.Close)
+            {
+                PlayerWeapon = PlayerWeapons.None;
+            }
+            else
+            {
+                PlayerWeapon++;
+            }
+        }
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            if (PlayerWeapon == PlayerWeapons.None)
+            {
+                PlayerWeapon = PlayerWeapons.Close;
+            }
+            else
+            {
+                PlayerWeapon--;
+            }
+          
+            
         }
     }
 
