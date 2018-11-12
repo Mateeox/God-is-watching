@@ -84,7 +84,7 @@ public class CameraChangeMode : MonoBehaviour
         _lastPos = heroCam.transform.position;
         Vector3 playerPos = heroCam.transform.parent.transform.position;
         _cam = Component.Instantiate<Camera>(godCam);
-        _cam.GetComponent<GodCamera>().SetAnimation(true);
+        //_cam.GetComponent<GodCamera>().SetAnimation(true);
         _cam.transform.position = playerPos;
         _cam.transform.rotation = heroCam.transform.rotation;
         //GameObject[] array = GameObject.FindObjectsOfType<GameObject>();
