@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4153067622799938}
   - component: {fileID: 114205558830512374}
   - component: {fileID: 114350815585276474}
+  - component: {fileID: 114198419056542034}
+  - component: {fileID: 114955248054607068}
   m_Layer: 0
   m_Name: GameVariables
   m_TagString: Untagged
@@ -41,6 +43,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114198419056542034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336327483741450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9cc2496e50ad24e9abeb9d4a669885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimePrefab: {fileID: 1422461323649090, guid: e5d4dc5029b47854390dc194598cc3c0, type: 2}
+  Distance: 30
+  Time: 10
 --- !u!114 &114205558830512374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65,7 +81,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroCam: {fileID: 0}
   godCam: {fileID: 0}
-  distance: 40
-  speed: 30
+  distance: 30
+  height: 0
+  speed: 40
   angle: 30
-  hideLayer: 8
+--- !u!114 &114955248054607068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336327483741450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882e2d2b38af2fa4181ec8be12e9105a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
