@@ -15,7 +15,6 @@ public class ObjectGodMove : MonoBehaviour{
     private void disableMoving()
     {
         GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.black);
-
         rigidbody.isKinematic = false;
         this.isSelected = false;
     }
@@ -128,5 +127,11 @@ public class ObjectGodMove : MonoBehaviour{
             rigidbody.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
                RigidbodyConstraints.FreezeRotationY;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        rigidbody.isKinematic = false;
+        disableMoving();
     }
 }
