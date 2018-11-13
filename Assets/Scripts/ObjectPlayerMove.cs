@@ -7,17 +7,20 @@ public class ObjectPlayerMove : MonoBehaviour {
     public static GameObject player;
     private Rigidbody rigidbody;
     private GameObject spot;
+    private bool flag;
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
         rigidbody = GetComponent<Rigidbody>();
+        flag = false;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetButtonUp("PickUpObject") && Player.pickedObject == gameObject)
+        if ((Input.GetButtonUp("PickUpObject") && Player.pickedObject == gameObject) || flag)
         {
+            flag = false;
             DestroyImmediate(spot);
             spot = null;
             Color currColor = gameObject.GetComponent<MeshRenderer>().material.color;
@@ -57,4 +60,11 @@ public class ObjectPlayerMove : MonoBehaviour {
             }           
         }       
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        flag = true;
+        rigidbody.isKinematic = false;
+    }
+
 }
