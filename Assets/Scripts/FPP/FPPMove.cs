@@ -10,8 +10,13 @@ public class FPPMove : MonoBehaviour
     public float jumpSpeed;
     public float rotationSpeed;
     public float gravity;
+    public float dodgeSpeed = 30.0f;
+    public float dodgeMaxTime = 0.2f;
+    public float dodgeMaxCooldown = 2.0f;
     private CharacterController characterController;
     private Vector3 moveDirections;
+    public float dodgeTime;
+    public float dodgeCooldown;
 
     // Use this for initialization
     void Start()
@@ -23,6 +28,8 @@ public class FPPMove : MonoBehaviour
         rotationSpeed = 120.0f;
         gravity = 20.0f;
         moveDirections = new Vector3(0, 0, 0);
+        dodgeTime = dodgeMaxTime;
+        dodgeCooldown = 0;
     }
 
     // Update is called once per frame
@@ -32,12 +39,25 @@ public class FPPMove : MonoBehaviour
         {
             //Player rotation
             transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * rotationSpeed);
-
+            if(dodgeCooldown > 0)
+            {
+                dodgeCooldown -= Time.deltaTime;
+            }
+            
             if (characterController.isGrounded)
             {
-
                 moveDirections = transform.forward * forwardSpeed * Input.GetAxis("Vertical")
-                     + transform.right * sideSpeed * Input.GetAxis("Horizontal");
+                    + transform.right * sideSpeed * Input.GetAxis("Horizontal");
+                if (Input.GetButton("Dodge") && dodgeCooldown <=0 && dodgeTime > 0)
+                {
+                    dodgeTime -= Time.deltaTime;
+                    moveDirections += transform.right * dodgeSpeed * Input.GetAxis("Horizontal");
+                }else if ((Input.GetButtonUp("Dodge") && dodgeCooldown < 0) || dodgeTime <= 0)
+                {
+                    dodgeTime = dodgeMaxTime;
+                    dodgeCooldown = dodgeMaxCooldown;
+                }
+               
 
                 if (Input.GetButtonDown("Jump"))
                 {
