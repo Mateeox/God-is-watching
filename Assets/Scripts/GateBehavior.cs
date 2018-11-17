@@ -8,11 +8,14 @@ public class GateBehavior : MonoBehaviour {
     public float openSpeed = 10.0f;
     private float closeAngle;
 
+    public AudioSource MusicSource;
+
 
     // Use this for initialization
     void Start () {
         closeAngle = gameObject.transform.eulerAngles.y;
 
+        MusicSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class GateBehavior : MonoBehaviour {
             gameObject.transform.Rotate(new Vector3(0, openSpeed * Time.deltaTime, 0));
         }else if(!isActivated && gameObject.transform.eulerAngles.y > closeAngle)
         {
+            MusicSource.Play();
             Debug.Log(gameObject.transform.eulerAngles.y);
             gameObject.transform.Rotate(new Vector3(0, -1 * openSpeed * Time.deltaTime, 0));
         }
