@@ -10,6 +10,9 @@ public class mouseBehavior : MonoBehaviour {
     // Speed in units per sec.
     public float speed;
     Animator anim;
+    float detectionDistance = 10.0f;
+    private float damageDelay = 0;
+    public float amountOfDelay = 2.0f;
 
     private void Start()
     {
@@ -19,8 +22,9 @@ public class mouseBehavior : MonoBehaviour {
 
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) < 30)
+        if (Vector3.Distance(target.position, transform.position) < detectionDistance && Vector3.Distance(target.position, transform.position) > 0.5f)
         {
+            detectionDistance = 30.0f;
             anim.SetTrigger("running");
             Vector3 targetDir = target.position - transform.position;
             // The step size is equal to speed times frame time.
@@ -39,11 +43,25 @@ public class mouseBehavior : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(newDir);
             transform.position = Vector3.MoveTowards(transform.position, originPosition, step);
         }
-        if (Vector3.Distance(this.gameObject.transform.position, originPosition) == 0 )
-        {
-            Debug.Log("XXX");
+        if (Vector3.Distance(transform.position, originPosition) == 0)
             anim.ResetTrigger("running");
+        float distance = Vector3.Distance(target.position, transform.position);
+        if (distance > 3.0f && distance < 5.0f)
+        {
+            Attack(target.gameObject);
         }
-
 	}
+
+    private void Attack(GameObject target)
+    {
+        if (damageDelay <= 0)
+        {
+            target.GetComponent<Player>().takeDamage(10);
+            //animation
+            damageDelay = amountOfDelay;
+        } else if(damageDelay > 0)
+        {
+            damageDelay -= Time.deltaTime;
+        }
+    }
 }
