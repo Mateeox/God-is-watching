@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 125
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 126
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 127
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Studies\Basics_of_computer_games\Reopsitory\God-is-watching
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 112}
-    m_SelectedIDs: 9c350000
-    m_LastClickedID: 13724
-    m_ExpandedIDs: 00000000e8300000123100007e320000d2330000da3300006a34000052350000083f000000ca9a3b
+    scrollPos: {x: 0, y: 164}
+    m_SelectedIDs: 40310000
+    m_LastClickedID: 12608
+    m_ExpandedIDs: 00000000fe3000002831000094320000e8330000f0330000843400006c350000943f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8300000123100007e320000d2330000da3300006a34000052350000083f0000
+    m_ExpandedIDs: 00000000fe3000002831000094320000e8330000f0330000843400006c350000943f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -479,10 +479,10 @@ MonoBehaviour:
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 704}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4e86fdffb23bffffe8d8ffffeed8ffffc2d9ffff00000000fa390000
+    m_ExpandedIDs: d0d7ffff000000001c360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -532,14 +532,14 @@ MonoBehaviour:
     height: 552
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2693.6595078724604
+  lastFramingTime: 307.537693978993
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 123.3318, y: 5.042785, z: 10.988977}
+    m_Target: {x: 40.46963, y: -7.537564, z: 6.8485765}
     speed: 2
-    m_Value: {x: 123.3318, y: 5.042785, z: 10.988977}
+    m_Value: {x: 40.46963, y: -7.537564, z: 6.8485765}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -567,13 +567,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.17855044, y: -0.30570728, z: 0.058466725, w: -0.9334197}
+    m_Target: {x: -0.1445913, y: -0.6566678, z: 0.1303102, w: -0.72862726}
     speed: 2
-    m_Value: {x: -0.17854795, y: -0.305703, z: 0.05846591, w: -0.9334067}
+    m_Value: {x: -0.14459147, y: -0.65666854, z: 0.13031034, w: -0.7286281}
   m_Size:
-    m_Target: 38.26095
+    m_Target: 80.88648
     speed: 2
-    m_Value: 38.26095
+    m_Value: 80.88648
   m_Ortho:
     m_Target: 0
     speed: 2
