@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
 
     public static GameObject pickedObject;
     public static float maxPickUpDistance;
+    private GameObject Checkpoint;
 	
 	//Abilities
 	[SerializeField]
@@ -110,15 +111,36 @@ public class Player : MonoBehaviour {
 	}
 	
 	
-	void takeDamage(float damage)
+	public void takeDamage(float damage)
 	{
 		healthBar.addValue(-damage);
 		if (healthBar.Value < 0.0001f)
 		{
-			//player is dead...
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-		}
+            Camera heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            heroCam.enabled = false;
+            //player is dead...
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (Checkpoint != null)
+            {
+                Vector3 checkpointPos = Checkpoint.transform.position;
+                this.transform.position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z - 5.0f);
+                this.transform.rotation = new Quaternion(0, 0.7f, 0, 1.0f);
+            }
+            FullHealthMana();
+            heroCam.enabled = true;
+        }
 	}
+
+    public void SetCheckpoint(GameObject checkpoint)
+    {
+        this.Checkpoint = checkpoint;
+    }
+    
+    private void FullHealthMana()
+    {
+        healthBar.addValue(healthBar.MaxValue - healthBar.Value);
+        manaBar.addValue(manaBar.MaxValue - manaBar.Value);
+    }
 	
 	void useMana(float amount)
 	{
