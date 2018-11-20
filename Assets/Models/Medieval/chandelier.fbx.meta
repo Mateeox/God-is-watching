@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 56a270d1a2a124949aad21c712f5b902
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: candle1
+    100002: candle2
+    100004: candle3
+    100006: candle4
+    100008: candle5
+    100010: candle6
+    100012: chain1
+    100014: chain1 1
+    100016: chain1 2
+    100018: chain2
+    100020: chain2 1
+    100022: chain2 2
+    100024: chainHolder1
+    100026: chainHolder2
+    100028: //RootNode
+    100030: chandelierBase
+    400000: candle1
+    400002: candle2
+    400004: candle3
+    400006: candle4
+    400008: candle5
+    400010: candle6
+    400012: chain1
+    400014: chain1 1
+    400016: chain1 2
+    400018: chain2
+    400020: chain2 1
+    400022: chain2 2
+    400024: chainHolder1
+    400026: chainHolder2
+    400028: //RootNode
+    400030: chandelierBase
+    2100000: candle
+    2100002: candleWick
+    2100004: lambert1
+    2100006: base
+    2100008: chain3
+    2300000: candle1
+    2300002: candle2
+    2300004: candle3
+    2300006: candle4
+    2300008: candle5
+    2300010: candle6
+    2300012: chain1 1
+    2300014: chain1 2
+    2300016: chain2 1
+    2300018: chain2 2
+    2300020: chainHolder1
+    2300022: chainHolder2
+    2300024: chandelierBase
+    3300000: candle1
+    3300002: candle2
+    3300004: candle3
+    3300006: candle4
+    3300008: candle5
+    3300010: candle6
+    3300012: chain1 1
+    3300014: chain1 2
+    3300016: chain2 1
+    3300018: chain2 2
+    3300020: chainHolder1
+    3300022: chainHolder2
+    3300024: chandelierBase
+    4300000: candle6
+    4300002: candle5
+    4300004: candle4
+    4300006: candle3
+    4300008: candle2
+    4300010: candle1
+    4300012: chainHolder1
+    4300014: chainHolder2
+    4300016: chandelierBase
+    4300018: chain2
+    4300020: chain1
+    4300022: chain2
+    4300024: chain1
+    6400000: candle1
+    6400002: candle2
+    6400004: candle3
+    6400006: candle4
+    6400008: candle5
+    6400010: candle6
+    6400012: chain1 1
+    6400014: chain1 2
+    6400016: chain2 1
+    6400018: chain2 2
+    6400020: chainHolder1
+    6400022: chainHolder2
+    6400024: chandelierBase
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

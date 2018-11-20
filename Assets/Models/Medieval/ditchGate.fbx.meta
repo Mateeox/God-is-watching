@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: 6a1407c76b4af94489f4d4644d8ae0d3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: chain
+    100002: chain 1
+    100004: chain5
+    100006: chain5 1
+    100008: chain6
+    100010: chain6 1
+    100012: chainHolder1
+    100014: chainHolder1 1
+    100016: chainHolder3
+    100018: chainHolder3 1
+    100020: ditchGate
+    100022: //RootNode
+    100024: ditchGateWall
+    100026: gateChainLeft
+    100028: gateChainRight
+    400000: chain
+    400002: chain 1
+    400004: chain5
+    400006: chain5 1
+    400008: chain6
+    400010: chain6 1
+    400012: chainHolder1
+    400014: chainHolder1 1
+    400016: chainHolder3
+    400018: chainHolder3 1
+    400020: ditchGate
+    400022: //RootNode
+    400024: ditchGateWall
+    400026: gateChainLeft
+    400028: gateChainRight
+    2100000: lambert1
+    2100002: chain3
+    2100004: base
+    2300000: chain5
+    2300002: chain5 1
+    2300004: chain6
+    2300006: chain6 1
+    2300008: chainHolder1
+    2300010: chainHolder1 1
+    2300012: chainHolder3
+    2300014: chainHolder3 1
+    2300016: ditchGate
+    2300018: ditchGateWall
+    3300000: chain5
+    3300002: chain5 1
+    3300004: chain6
+    3300006: chain6 1
+    3300008: chainHolder1
+    3300010: chainHolder1 1
+    3300012: chainHolder3
+    3300014: chainHolder3 1
+    3300016: ditchGate
+    3300018: ditchGateWall
+    4300000: ditchGateWall
+    4300002: chainHolder1
+    4300004: chain5
+    4300006: chainHolder3
+    4300008: chain6
+    4300010: chainHolder1
+    4300012: chain6
+    4300014: chain5
+    4300016: chainHolder3
+    4300018: ditchGate
+    6400000: chain5
+    6400002: chain5 1
+    6400004: chain6
+    6400006: chain6 1
+    6400008: chainHolder1
+    6400010: chainHolder1 1
+    6400012: chainHolder3
+    6400014: chainHolder3 1
+    6400016: ditchGate
+    6400018: ditchGateWall
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
