@@ -129,4 +129,10 @@ public class ObjectGodMove : MonoBehaviour{
                RigidbodyConstraints.FreezeRotationY;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        rigidbody.isKinematic = false;
+        disableMoving();
+    }
 }
