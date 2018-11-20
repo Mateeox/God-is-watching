@@ -23,8 +23,13 @@ public class Player : MonoBehaviour {
 	//used for health <--> mana convesrion (both ways)
 	private float addFactor = 0.4f;
 	private float subtractFactor = 0.8f;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
+        if (GlobalControl.Position != null && GlobalControl.Rotation != null)
+        {
+            transform.position = GlobalControl.Position;
+            transform.rotation = GlobalControl.Rotation;
+        }
         pickedObject = null;
         maxPickUpDistance = 4.0f;
 		healthBar.init(100.0f, 100.0f);
@@ -119,20 +124,20 @@ public class Player : MonoBehaviour {
             Camera heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             heroCam.enabled = false;
             //player is dead...
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             if (Checkpoint != null)
             {
                 Vector3 checkpointPos = Checkpoint.transform.position;
-                this.transform.position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z - 5.0f);
-                this.transform.rotation = new Quaternion(0, 0.7f, 0, 1.0f);
+                GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
+                GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
             FullHealthMana();
-            heroCam.enabled = true;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 	}
 
     public void SetCheckpoint(GameObject checkpoint)
     {
+        FullHealthMana();
         this.Checkpoint = checkpoint;
     }
     

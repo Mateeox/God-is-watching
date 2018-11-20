@@ -17,7 +17,7 @@ public class SetCheckpoint : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" && _checkpointCaptured)
+        if (other.gameObject.name == "Player" && !_checkpointCaptured)
         {
             _checkpointCaptured = true;
             other.GetComponentInParent<Player>().SetCheckpoint(this.gameObject);
