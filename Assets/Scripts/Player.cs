@@ -110,7 +110,7 @@ public class Player : MonoBehaviour {
 	}
 	
 	
-	void takeDamage(float damage)
+	public void takeDamage(float damage)
 	{
 		healthBar.addValue(-damage);
 		if (healthBar.Value < 0.0001f)
