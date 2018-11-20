@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 70
+  controlID: 67
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 328
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 71
+  controlID: 68
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 72
+  controlID: 69
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,20 +323,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Game Objects/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Game Objects/Prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Studies\Basics_of_computer_games\God-is-watching
+  m_LastProjectPath: E:\Unity\God-is-watching
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 183}
-    m_SelectedIDs: 020a0000
-    m_LastClickedID: 2562
-    m_ExpandedIDs: 00000000ac090000ea0900009c0b00002a0d0000320d0000120e0000320f0000b60f00005c36000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: f40d0000
+    m_LastClickedID: 3572
+    m_ExpandedIDs: 00000000b4090000f20900001c0c0000f40d0000fc0d0000de0e00000210000086100000543a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac090000ea0900009c0b00002a0d0000320d0000120e0000320f0000b60f00005c360000
+    m_ExpandedIDs: 00000000b4090000f20900001c0c0000f40d0000fc0d0000de0e00000210000086100000543a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -479,10 +479,10 @@ MonoBehaviour:
     height: 632
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 48}
-    m_SelectedIDs: c4fbf9ffc2fbf9ff
-    m_LastClickedID: 0
-    m_ExpandedIDs: 883df8ff8e49f8ff8085f8ff288cf8ff7058f9ffd2b9ffffe6fbffff00000000541200000213000038360200f2360200883c0200
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8ecaffff
+    m_LastClickedID: -13682
+    m_ExpandedIDs: 94caffffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.13030627, y: -0.4449764, z: 0.065590285, w: -0.883636}
     speed: 2
-    m_Value: {x: -0.13029988, y: -0.44495454, z: 0.065587066, w: -0.8835926}
+    m_Value: {x: 0.13030626, y: 0.44497636, z: -0.065590285, w: 0.88363594}
   m_Size:
     m_Target: 124.23912
     speed: 2

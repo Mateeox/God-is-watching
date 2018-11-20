@@ -7,9 +7,10 @@ public class Player : MonoBehaviour {
 
     public static GameObject pickedObject;
     public static float maxPickUpDistance;
-	
-	//Abilities
-	[SerializeField]
+    private GameObject Checkpoint;
+
+    //Abilities
+    [SerializeField]
 	private SlowZone slowZone;
 	private LightningBoltScript lightningBolt;
 	
@@ -24,6 +25,11 @@ public class Player : MonoBehaviour {
 	private float subtractFactor = 0.8f;
 	// Use this for initialization
 	void Start () {
+        if (GlobalControl.Position != null && GlobalControl.Rotation != null)
+        {
+            transform.position = GlobalControl.Position;
+            transform.rotation = GlobalControl.Rotation;
+        }
         pickedObject = null;
         maxPickUpDistance = 4.0f;
 		healthBar.init(100.0f, 100.0f);
@@ -115,12 +121,34 @@ public class Player : MonoBehaviour {
 		healthBar.addValue(-damage);
 		if (healthBar.Value < 0.0001f)
 		{
-			//player is dead...
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-		}
-	}
-	
-	void useMana(float amount)
+            //player is dead...
+            Camera heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            heroCam.enabled = false;
+            //player is dead...
+            if (Checkpoint != null)
+            {
+                Vector3 checkpointPos = Checkpoint.transform.position;
+                GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
+                GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
+            }
+            FullHealthMana();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
+    public void SetCheckpoint(GameObject checkpoint)
+    {
+        FullHealthMana();
+        this.Checkpoint = checkpoint;
+    }
+
+    private void FullHealthMana()
+    {
+        healthBar.addValue(healthBar.MaxValue - healthBar.Value);
+        manaBar.addValue(manaBar.MaxValue - manaBar.Value);
+    }
+
+    void useMana(float amount)
 	{
 		manaBar.addValue(-amount);
 	}
