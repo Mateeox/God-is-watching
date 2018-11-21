@@ -48,8 +48,11 @@ public class UIBar : MonoBehaviour {
 		content = GetComponent<Image>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public void boostMaxValue(float newMaxValue)
+	{
+		RectTransform contentTransform = content.GetComponent<RectTransform>();
+		contentTransform.sizeDelta = new Vector2(contentTransform.sizeDelta.x * newMaxValue / MaxValue, contentTransform.sizeDelta.y);
+		MaxValue = newMaxValue;
+		addValue(newMaxValue);
+	}	
 }
