@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
 	private float subtractFactor = 0.8f;
 	// Use this for initialization
 	void Start () {
-        if (GlobalControl.Position != null && GlobalControl.Rotation != null)
+        if (GlobalControl.Set)
         {
             transform.position = GlobalControl.Position;
             transform.rotation = GlobalControl.Rotation;
@@ -128,6 +128,7 @@ public class Player : MonoBehaviour {
             if (Checkpoint != null)
             {
                 Vector3 checkpointPos = Checkpoint.transform.position;
+                GlobalControl.Set = true;
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
