@@ -17,8 +17,8 @@ public class Footsteps : MonoBehaviour {
 	void Update () {
 		if(cc.isGrounded == true && cc.velocity.magnitude > 2f && MusicSource.isPlaying == false)
         {
-            MusicSource.volume = Random.Range(0.1f, 0.3f);
-            MusicSource.pitch = Random.Range(0.6f, 1.1f);
+            MusicSource.volume = Random.Range(0.04f, 0.07f);
+            MusicSource.pitch = Random.Range(0.5f, 0.9f);
             MusicSource.Play();
         }
 	}

@@ -14175,7 +14175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad94b4784e0de7944a6bf56c32aae673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicClip: {fileID: 8300000, guid: e744f9d3d5e8d59419e3731a261b291b, type: 3}
+  MusicClip: {fileID: 8300000, guid: e16a5016b94c2964482a9d722cadbbda, type: 3}
   MusicSource: {fileID: 1207995357}
 --- !u!1001 &1211606338
 Prefab:
@@ -20367,6 +20367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 500204548}
   speed: 3
+  amountOfDelay: 2
 --- !u!136 &1649868530
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24442,7 +24443,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.308
+  m_Volume: 0.17
   m_Pitch: 1
   Loop: 0
   Mute: 0
