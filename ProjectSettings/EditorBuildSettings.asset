@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype.unity
     guid: c22cf63a21f40dd4a93e783b3263663e
+  - enabled: 1
+    path: Assets/Scenes/Medieval.unity
+    guid: 4218024d109dbad4f8f06ebc651bd683
   m_configObjects: {}

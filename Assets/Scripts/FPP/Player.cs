@@ -25,7 +25,7 @@ public class Player : MonoBehaviour {
 	private float subtractFactor = 0.8f;
 	// Use this for initialization
 	void Start () {
-        if (GlobalControl.Position != null && GlobalControl.Rotation != null)
+        if (GlobalControl.Set)
         {
             transform.position = GlobalControl.Position;
             transform.rotation = GlobalControl.Rotation;
@@ -108,9 +108,9 @@ public class Player : MonoBehaviour {
 	
 	void healthToMana()
 	{
-		if (healthBar.Value >= subtractFactor && manaBar.Value < manaBar.MaxValue)
+		if (manaBar.Value < manaBar.MaxValue)
 		{
-			healthBar.addValue(-subtractFactor);
+			takeDamage(subtractFactor);
 			manaBar.addValue(addFactor);
 		}
 	}
@@ -124,10 +124,11 @@ public class Player : MonoBehaviour {
             //player is dead...
             Camera heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             heroCam.enabled = false;
-            //player is dead...
+            
             if (Checkpoint != null)
             {
                 Vector3 checkpointPos = Checkpoint.transform.position;
+				GlobalControl.Set = true;
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
@@ -151,5 +152,16 @@ public class Player : MonoBehaviour {
     void useMana(float amount)
 	{
 		manaBar.addValue(-amount);
+	}
+	
+	public void beforeBossConversion() 
+	{
+		if (manaBar.Value + healthBar.Value > healthBar.MaxValue) {
+			healthBar.boostMaxValue(manaBar.Value + healthBar.Value);
+		}
+		else {
+			healthBar.addValue(manaBar.Value);
+		}
+		manaBar.addValue(-manaBar.Value);
 	}
 }

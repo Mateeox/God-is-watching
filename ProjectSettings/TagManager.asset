@@ -14,6 +14,7 @@ TagManager:
   - rockBig
   - SlowZone
   - Weapon
+  - chandelierBase
   layers:
   - Default
   - TransparentFX
