@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class VaseShardScript : MonoBehaviour {
 
+    public GameObject vase;
+    private string bulletTagName = "Bullet";
     Rigidbody rg;
 
     private void Awake()
@@ -20,4 +22,12 @@ public class VaseShardScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnCollisionEnter(Collision collider)
+    {
+        if (collider.gameObject.tag == bulletTagName)
+        {
+            vase.GetComponent<TutorialVaseDestroy>().OnDestroy();
+        }
+    }
 }

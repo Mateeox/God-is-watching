@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15682614, g: 0.24071798, b: 0.39216062, a: 1}
+  m_IndirectSpecularColor: {r: 0.15682547, g: 0.24071664, b: 0.39216086, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3748,6 +3748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282203442}
   - component: {fileID: 282203443}
+  - component: {fileID: 282203444}
   m_Layer: 0
   m_Name: fenceGate
   m_TagString: Untagged
@@ -3784,6 +3785,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationPointLeft: {fileID: 573330032}
   rotationPointRight: {fileID: 1436918956}
+--- !u!114 &282203444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282203441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd4384e7fdb3894d97e17f106ee3773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vases:
+  - {fileID: 451293591}
+  - {fileID: 1644788368}
+  - {fileID: 1269659686}
+  leftWicket: {fileID: 1328514259}
+  rightWicket: {fileID: 759753049}
+  openAngle: 0
+  openSpeed: 10
 --- !u!1 &294839575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 413612cb2c7e6814a9bed5acb07f71ed,
@@ -5823,6 +5843,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &451293591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1987038564261412, guid: c444c4242f4131d429ff918df4500e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1634150861}
+--- !u!114 &451293593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451293591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fbc63b4d143904d88f457e911184d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDestroyed: 0
 --- !u!1 &454845766 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fa2abab1aa281124ca1a24bcaf6eda68,
@@ -6400,6 +6437,26 @@ Prefab:
       propertyPath: m_Name
       value: Vase (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114480822044576356, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1644788368}
+    - target: {fileID: 114468654047378226, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1644788368}
+    - target: {fileID: 114109344437400956, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1644788368}
+    - target: {fileID: 114586078533979690, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1644788368}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c444c4242f4131d429ff918df4500e53, type: 2}
   m_IsPrefabAsset: 0
@@ -15132,6 +15189,26 @@ Prefab:
       propertyPath: m_Name
       value: Vase (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114480822044576356, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1269659686}
+    - target: {fileID: 114468654047378226, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1269659686}
+    - target: {fileID: 114109344437400956, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1269659686}
+    - target: {fileID: 114586078533979690, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 1269659686}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c444c4242f4131d429ff918df4500e53, type: 2}
   m_IsPrefabAsset: 0
@@ -15611,6 +15688,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   afterThunderRemainder: {fileID: 1297298514206420, guid: f2bf2cda717639a4cb059d0ed551dd13,
     type: 2}
+--- !u!1 &1269659686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1987038564261412, guid: c444c4242f4131d429ff918df4500e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 1246227584}
+--- !u!114 &1269659688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269659686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fbc63b4d143904d88f457e911184d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDestroyed: 0
 --- !u!1001 &1270408704
 Prefab:
   m_ObjectHideFlags: 0
@@ -20422,6 +20516,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114480822044576356, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 451293591}
+    - target: {fileID: 114468654047378226, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 451293591}
+    - target: {fileID: 114109344437400956, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 451293591}
+    - target: {fileID: 114586078533979690, guid: c444c4242f4131d429ff918df4500e53,
+        type: 2}
+      propertyPath: vase
+      value: 
+      objectReference: {fileID: 451293591}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c444c4242f4131d429ff918df4500e53, type: 2}
   m_IsPrefabAsset: 0
@@ -20527,6 +20641,23 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1642070672}
   m_CullTransparentMesh: 0
+--- !u!1 &1644788368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1987038564261412, guid: c444c4242f4131d429ff918df4500e53,
+    type: 2}
+  m_PrefabInternal: {fileID: 492854345}
+--- !u!114 &1644788370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644788368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62fbc63b4d143904d88f457e911184d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDestroyed: 0
 --- !u!1001 &1649351398
 Prefab:
   m_ObjectHideFlags: 0
