@@ -25,7 +25,19 @@ public class Enemy : MonoBehaviour {
     {
         if (other.CompareTag("Weapon"))
         {
+            Debug.Log("Hit");
             health -= 40;
         }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collision");
+        if (collision.gameObject.CompareTag("Weapon"))
+        {
+            Debug.Log("Hit");
+            health -= 40;
+        }
+    }
+
 }
