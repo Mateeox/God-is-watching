@@ -10,8 +10,11 @@ public class FPPCloseAttack : MonoBehaviour {
     public attackDirection attack;
     private Vector3 localScale;
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip MusicClipSwing;
+    public AudioSource MusicSource;
+
+    // Use this for initialization
+    void Start () {
         attack = attackDirection.none;
         currentRotation = 0;
         localScale = gameObject.transform.localScale;
@@ -35,6 +38,10 @@ public class FPPCloseAttack : MonoBehaviour {
                 currentRotation += angle;
                 if (attack == attackDirection.down)
                 {
+                    if (MusicSource.isPlaying == false)
+                    {
+                        MusicSource.PlayOneShot(MusicClipSwing);
+                    }
                     if (currentRotation > -maxRotation)
                     {
                         gameObject.transform.Rotate(transform.forward * angle, Space.World);
