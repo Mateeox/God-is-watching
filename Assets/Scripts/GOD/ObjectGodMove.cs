@@ -130,9 +130,9 @@ public class ObjectGodMove : MonoBehaviour{
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+   /* private void OnTriggerEnter(Collider other)
     {
-        rigidbody.isKinematic = false;
-        disableMoving();
-    }
+        //rigidbody.isKinematic = false;
+        //disableMoving();
+    }*/
 }
