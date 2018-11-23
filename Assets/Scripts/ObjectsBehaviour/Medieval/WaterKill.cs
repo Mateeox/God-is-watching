@@ -17,7 +17,7 @@ public class WaterKill : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogError("Hello World");
+        //Debug.LogError("Hello World");
         if (other.gameObject.name == "Player")
         {
             GlobalControl.Set = false;
