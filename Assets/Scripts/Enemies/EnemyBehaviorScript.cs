@@ -22,7 +22,7 @@ public class EnemyBehaviorScript : MonoBehaviour {
 
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) < detectionDistance && Vector3.Distance(target.position, transform.position) > 6.0f)
+        if (Vector3.Distance(target.position, transform.position) < detectionDistance && Vector3.Distance(target.position, transform.position) > 0.5f)
         {
             detectionDistance = 30.0f;
             anim.SetTrigger("run");
@@ -36,7 +36,7 @@ public class EnemyBehaviorScript : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(newDir);
             transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
         }
-        else if (Vector3.Distance(transform.position, target.position) > detectionDistance)
+        else
         {
             Vector3 targetDir = originPosition - transform.position;
             float step = speed * Time.deltaTime;
@@ -45,7 +45,7 @@ public class EnemyBehaviorScript : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, originPosition, step);
         }
         if (Vector3.Distance(transform.position, originPosition) == 0)
-            anim.SetTrigger("idle");
+            anim.SetTrigger("idleProtect");
         float distance = Vector3.Distance(target.position, transform.position);
         if (distance > 3.0f && distance < 5.0f)
         {
