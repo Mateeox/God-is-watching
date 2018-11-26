@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 12006, y: 14042}
   vertical: 1
-  controlID: 153
+  controlID: 117
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 221}
   m_MaxSize: {x: 12006, y: 4021}
   vertical: 0
-  controlID: 154
+  controlID: 118
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,29 +343,29 @@ MonoBehaviour:
     height: 655
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 1042}
-    m_SelectedIDs: 8e0d0000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 820f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: e6fbffff00000000
+    m_ExpandedIDs: 4653feffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Crate
-      m_OriginalName: Crate
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -102564
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
   m_ExpandedScenes:
-  - Medieval
+  - Prototype
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -401,9 +401,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 181.92627, y: 41.38902, z: 0.92055464}
+    m_Target: {x: 80.01138, y: -21.725277, z: 21.711632}
     speed: 2
-    m_Value: {x: 181.92627, y: 41.38902, z: 0.92055464}
+    m_Value: {x: 80.01138, y: -21.725277, z: 21.711632}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -431,13 +431,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.10258898, y: 0.6685007, z: -0.09387305, w: 0.7306582}
+    m_Target: {x: 0.14411479, y: 0.6231353, z: -0.118242726, w: 0.7596394}
     speed: 2
-    m_Value: {x: 0.10258431, y: 0.66847026, z: -0.09386877, w: 0.7306249}
+    m_Value: {x: 0.1441076, y: 0.6231042, z: -0.11823682, w: 0.7596014}
   m_Size:
-    m_Target: 28.980234
+    m_Target: 191.69154
     speed: 2
-    m_Value: 28.980234
+    m_Value: 191.69154
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -604,20 +604,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Game Objects/Prefabs/Medieval
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Game Objects/Prefabs/Medieval
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Studies\Basics_of_computer_games\God-is-watching
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0c0a0000
-    m_LastClickedID: 2572
-    m_ExpandedIDs: 00000000ce090000120a0000300a0000d20c0000a00e0000a80e0000aa0f0000ce1000003011000084110000a8110000dc110000343d000000ca9a3b
+    scrollPos: {x: 0, y: 155}
+    m_SelectedIDs: 5e0c0000
+    m_LastClickedID: 3166
+    m_ExpandedIDs: 00000000ce090000120a0000520a0000f40c0000ca0e0000cc0f0000f010000052110000a6110000ca110000783d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce090000300a0000720c0000d20c0000a00e0000a80e0000aa0f0000ce1000003011000084110000a8110000dc110000343d0000
+    m_ExpandedIDs: 00000000ce090000120a0000520a0000f40c0000c20e0000ca0e0000cc0f0000f010000052110000a6110000ca110000fe110000783d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
