@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private Rigidbody rgb;
+    private Collider collid;
+    // Use this for initialization
+    void Start () {
+        rgb = gameObject.GetComponent<Rigidbody>();
+        collid = gameObject.GetComponent<Collider>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		if(gameObject.GetComponent<Rigidbody>().velocity == Vector3.zero)
+        if (rgb.velocity == Vector3.zero && collid.enabled)
         {
             Destroy(gameObject);
+        }else if(rgb.velocity != Vector3.zero && !collid.enabled)
+        {
+            collid.enabled = true;
         }
 	}
 
