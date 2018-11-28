@@ -8,11 +8,11 @@ public class AfterHitChandelier : LightningHitable {
 		GameObject chandelier = this.transform.parent.gameObject;
 		foreach (Transform child in chandelier.transform) {
 			if (child.GetComponent<Rigidbody>() != null) {
-				child.GetComponent<Rigidbody>().WakeUp();
+				child.GetComponent<Rigidbody>().isKinematic = false;
 			}
 			foreach (Transform childOfChild in child.transform) {
 				if (childOfChild.GetComponent<Rigidbody>() != null) {
-					childOfChild.GetComponent<Rigidbody>().WakeUp();
+					childOfChild.GetComponent<Rigidbody>().isKinematic = false;
 				}
 			}
 		}
