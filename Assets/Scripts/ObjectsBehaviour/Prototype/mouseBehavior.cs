@@ -11,6 +11,7 @@ public class mouseBehavior : MonoBehaviour {
     public float speed;
     Animator anim;
     private float detectionDistance = 10.0f;
+    private float attackDistance = 5.0f;
     private float damageDelay = 0;
     public float amountOfDelay = 2.0f;
 
@@ -22,7 +23,8 @@ public class mouseBehavior : MonoBehaviour {
 
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) < detectionDistance && Vector3.Distance(target.position, transform.position) > 0.5f)
+        float distance = Vector3.Distance(target.position, transform.position);
+        if (distance < detectionDistance && distance > attackDistance)
         {
             detectionDistance = 30.0f;
             anim.SetTrigger("running");
@@ -37,16 +39,9 @@ public class mouseBehavior : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
         } else
         {
-            Vector3 targetDir = originPosition - transform.position;
-            float step = speed * Time.deltaTime;
-            Vector3 newDir = Vector3.RotateTowards(transform.forward, -originPosition, step * 1.5f, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDir);
-            transform.position = Vector3.MoveTowards(transform.position, originPosition, step);
-        }
-        if (Vector3.Distance(transform.position, originPosition) == 0)
             anim.ResetTrigger("running");
-        float distance = Vector3.Distance(target.position, transform.position);
-        if (distance > 3.0f && distance < 5.0f)
+        }            
+        if (distance <= 5.0f)
         {
             Attack(target.gameObject);
         }
@@ -56,6 +51,7 @@ public class mouseBehavior : MonoBehaviour {
     {
         if (damageDelay <= 0)
         {
+            this.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 100.0f);
             target.GetComponent<Player>().takeDamage(10);
             //animation
             damageDelay = amountOfDelay;
