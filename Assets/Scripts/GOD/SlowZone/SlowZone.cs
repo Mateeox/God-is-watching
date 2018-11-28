@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.GOD.SlowZone;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,12 +15,13 @@ public class SlowZone : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _godCam = GameObject.FindGameObjectsWithTag("GodCamera")[0].GetComponent<Camera>();
-	}
+    }
 
     private bool _attched = false;
     private bool _set = false;
     private DateTime _timer;
     private GameObject _currZone;
+
 
 	// Update is called once per frame
 	public bool manualUpdate (float currentMana, ref bool isTooLittleMana) {
@@ -47,8 +49,9 @@ public class SlowZone : MonoBehaviour {
 					{
 						abilityUsed = true;
 						_attched = false;
-						_set = true;
-					}
+                        _set = true;
+                        _currZone.GetComponent<SlowZoneCubeBehaviour>().SetActive();
+                    }
 					else
 					{
 						//not enough mana!!!oneoneone
@@ -72,14 +75,8 @@ public class SlowZone : MonoBehaviour {
             {
                 Destroy(_currZone);
                 _set = false;
-                
-                if (!MillColiderZoneScript.isBlocked)
-                {
-                    MillBehaviorScript.SetMaxSpeed();
-                }
             }
         }
 		return abilityUsed;
     }
-    
 }

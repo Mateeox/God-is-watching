@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.GOD.SlowZone;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MillColiderZoneScript : MonoBehaviour {
+public class MillColiderZoneScript : MonoBehaviour, ISlowable {
 
     public static bool isSlowed = false;
     public static bool isBlocked = false;
@@ -28,11 +29,11 @@ public class MillColiderZoneScript : MonoBehaviour {
             isBlocked = true;
             MillBehaviorScript.SetSpeed(0);
         }
-        if(other.gameObject.tag == "SlowZone")
-        {
-            isSlowed = true;
-            MillBehaviorScript.SlowDown(4);
-        }
+        //if(other.gameObject.tag == "SlowZone")
+        //{
+        //    isSlowed = true;
+        //    MillBehaviorScript.SlowDown(4);
+        //}
     }
 
     private void OnTriggerExit(Collider other)
@@ -47,14 +48,29 @@ public class MillColiderZoneScript : MonoBehaviour {
                 MillBehaviorScript.SlowDown(4);
             }
         }
-        if(other.gameObject.tag == "SlowZone")
-        {
-            isSlowed = false;
-            if (!isBlocked)
-            {
-                MillBehaviorScript.SetMaxSpeed();
-            }
+        //if(other.gameObject.tag == "SlowZone")
+        //{
+        //    isSlowed = false;
+        //    if (!isBlocked)
+        //    {
+        //        MillBehaviorScript.SetMaxSpeed();
+        //    }
             
+        //}
+    }
+
+    public void SetMaxSpeed()
+    {
+        isSlowed = false;
+        if (!MillColiderZoneScript.isBlocked)
+        {
+            MillBehaviorScript.SetMaxSpeed();
         }
+    }
+
+    public void SlowDown()
+    {
+        isSlowed = true;
+        MillBehaviorScript.SlowDown(4);
     }
 }

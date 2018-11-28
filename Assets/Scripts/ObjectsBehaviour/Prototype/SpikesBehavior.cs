@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.GOD.SlowZone;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikesBehavior : MonoBehaviour {
+public class SpikesBehavior : MonoBehaviour, ISlowable {
 
     private Vector3 MovingDirection = Vector3.up;
     public float Speed;
@@ -50,12 +51,12 @@ public class SpikesBehavior : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "SlowZone")
-        {
-            triggered = true;
-            this.slowZone = other;
-            CurrentSpeed = Speed / 10;
-        }
+        //if (other.gameObject.tag == "SlowZone")
+        //{
+        //    triggered = true;
+        //    this.slowZone = other;
+        //    CurrentSpeed = Speed / 10;
+        //}
 
         if (other.gameObject.name == "Player")
         {
@@ -65,10 +66,22 @@ public class SpikesBehavior : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "SlowZone")
-        {
-            triggered = false;
-            CurrentSpeed = Speed;
-        }
+        //if (other.gameObject.tag == "SlowZone")
+        //{
+        //    triggered = false;
+        //    CurrentSpeed = Speed;
+        //}
+    }
+
+    public void SetMaxSpeed()
+    {
+        triggered = false;
+        CurrentSpeed = Speed;
+    }
+
+    public void SlowDown()
+    {
+        triggered = true;
+        CurrentSpeed = Speed / 10;
     }
 }
