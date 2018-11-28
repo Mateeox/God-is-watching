@@ -16,12 +16,11 @@ public class WaterKill : MonoBehaviour {
 	}
 
     private void OnTriggerEnter(Collider other)
-    {
-        //Debug.LogError("Hello World");
+    {        
+
         if (other.gameObject.name == "Player")
         {
-            GlobalControl.Set = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            other.gameObject.GetComponentInParent<Player>().takeDamage(int.MaxValue);
         }
     }
 }

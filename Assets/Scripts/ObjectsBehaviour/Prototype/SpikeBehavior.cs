@@ -18,7 +18,7 @@ public class SpikeBehavior : MonoBehaviour {
     {
         if (other.gameObject.name == "Player")
         {
-            other.transform.position = new Vector3(60.0f, 2.0f, 0.0f);
+            other.gameObject.GetComponentInParent<Player>().takeDamage(int.MaxValue);
         }
     }
 }

@@ -34,13 +34,12 @@ public class SlowZone : MonoBehaviour {
                 {
                     _attched = true;
                     _currZone = Instantiate(TimePrefab);
-                    _timer = DateTime.Now;
-
                 }
                 else if (!_set)
                 {
                     Vector3 point = Input.mousePosition;
                     _currZone.transform.position = _godCam.ScreenToWorldPoint(new Vector3(point.x, point.y, Distance));
+                    _timer = DateTime.Now;
                 }
                 
                 if(Input.GetButtonDown("Fire1") && !_set)
@@ -50,7 +49,7 @@ public class SlowZone : MonoBehaviour {
 						abilityUsed = true;
 						_attched = false;
                         _set = true;
-                        _currZone.GetComponent<SlowZoneCubeBehaviour>().SetActive();
+                        //_currZone.GetComponent<SlowZoneCubeBehaviour>().SetActive();
                     }
 					else
 					{

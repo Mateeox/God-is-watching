@@ -19,6 +19,6 @@ public class RespawnMill : MonoBehaviour {
     private void OnTriggerEnter(Collider collider)
     {
         if(collider.gameObject.name == "Player")
-            collider.gameObject.GetComponentInParent<Player>().takeDamage(1000);
+            collider.gameObject.GetComponentInParent<Player>().takeDamage(int.MaxValue);
     }
 }

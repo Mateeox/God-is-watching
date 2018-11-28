@@ -42,11 +42,11 @@ public class SpikesBehavior : MonoBehaviour, ISlowable {
             MovingDirection = Vector3.up;
         }
 
-        if (triggered && !slowZone)
+       /* if (triggered && !slowZone)
         {
             triggered = false;
             CurrentSpeed = Speed;
-        }
+        }*/
     }
 
     void OnTriggerEnter(Collider other)
@@ -75,13 +75,13 @@ public class SpikesBehavior : MonoBehaviour, ISlowable {
 
     public void SetMaxSpeed()
     {
-        triggered = false;
+        //triggered = false;
         CurrentSpeed = Speed;
     }
 
     public void SlowDown()
     {
-        triggered = true;
+        //triggered = true;
         CurrentSpeed = Speed / 10;
     }
 }

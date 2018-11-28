@@ -35,6 +35,7 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
         if (slow != null)
         {
             _slowableObjects.Add(slow);
+            slow.SlowDown();
         }
     }
 
@@ -48,6 +49,7 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
         if (slow != null)
         {
             _slowableObjects.Remove(slow);
+            slow.SetMaxSpeed();
         }
     }
 
