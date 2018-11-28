@@ -85,14 +85,14 @@ public class Player : MonoBehaviour {
 		
 		//***********************************
 		//for debug only!
-		if (Input.GetKeyDown(KeyCode.I))
+		/*if (Input.GetKeyDown(KeyCode.I))
 		{
 			takeDamage(-10);
 		}
 		if (Input.GetKeyDown(KeyCode.O))
 		{
 			takeDamage(10);
-		}
+		}*/
 		//***********************************
 
 	}

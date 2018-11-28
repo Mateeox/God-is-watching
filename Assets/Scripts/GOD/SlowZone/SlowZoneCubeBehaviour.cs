@@ -9,8 +9,17 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
     private List<ISlowable> _slowableObjects;
     // Use this for initialization
     void Start () {
-        SlowZoneEffect = GameObject.Find("Main Camera").transform.GetChild(0).gameObject;
-        _slowableObjects = new List<ISlowable>();
+        GameObject mainCamera = GameObject.Find("Main Camera");
+        for (int i = 0; i < mainCamera.transform.childCount; i++)
+        {
+            if(mainCamera.transform.GetChild(i).gameObject.name == "SlowZoneEffect")
+            {
+                SlowZoneEffect = mainCamera.transform.GetChild(i).gameObject;
+                _slowableObjects = new List<ISlowable>();
+            }
+            
+        }
+       
     }
 	
 	// Update is called once per frame
@@ -32,8 +41,10 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
             SlowZoneEffect.SetActive(true);
         }
         ISlowable slow = other.gameObject.GetComponent<ISlowable>();
+        Debug.Log(other);
         if (slow != null)
         {
+            Debug.Log("++"  + other);
             _slowableObjects.Add(slow);
             slow.SlowDown();
         }
