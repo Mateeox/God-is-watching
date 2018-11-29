@@ -6,8 +6,11 @@ public class TutorialVaseDestroy : MonoBehaviour {
        
     public bool isDestroyed;
 
-	// Use this for initialization
-	void Start () {
+    public AudioClip MusicClip;
+    public AudioSource MusicSource;
+
+    // Use this for initialization
+    void Start () {
         isDestroyed = false;
 	}
 	
@@ -20,6 +23,8 @@ public class TutorialVaseDestroy : MonoBehaviour {
     {
         if (!isDestroyed)
         {
+            MusicSource.PlayOneShot(MusicClip);
+
             isDestroyed = true;
         }
         
