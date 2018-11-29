@@ -9,6 +9,9 @@ public class Player : MonoBehaviour {
     public static float maxPickUpDistance;
     private GameObject Checkpoint;
 
+    public AudioClip MusicClip;
+    public AudioSource MusicSource;
+
     //Abilities
     [SerializeField]
 	private SlowZone slowZone;
@@ -85,14 +88,14 @@ public class Player : MonoBehaviour {
 		
 		//***********************************
 		//for debug only!
-		if (Input.GetKeyDown(KeyCode.I))
+		/*if (Input.GetKeyDown(KeyCode.I))
 		{
 			takeDamage(-10);
 		}
 		if (Input.GetKeyDown(KeyCode.O))
 		{
 			takeDamage(10);
-		}
+		}*/
 		//***********************************
 
 	}
@@ -118,6 +121,10 @@ public class Player : MonoBehaviour {
 	
 	public void takeDamage(float damage)
 	{
+        MusicSource.volume = 2.7f;
+        MusicSource.pitch = Random.Range(0.8f, 1.1f);
+        MusicSource.PlayOneShot(MusicClip);
+
 		healthBar.addValue(-damage);
 		if (healthBar.Value < 0.0001f)
 		{

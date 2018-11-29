@@ -10,7 +10,6 @@ public class Footsteps : MonoBehaviour {
 
 	void Start () {
         cc = GetComponent<CharacterController>();
-        MusicSource.clip = MusicClip;
 	}
 	
 	// Update is called once per frame

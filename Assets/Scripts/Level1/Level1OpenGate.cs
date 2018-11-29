@@ -9,14 +9,21 @@ public class Level1OpenGate : MonoBehaviour {
     public GameObject[] rightChain;
     public GameObject rightChainHolder;
 
+    public AudioSource AudioSource;
+    bool AlreadyPlayed = false;
+
     // Use this for initialization
     void Start () {
-       
+        AudioSource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-       
+        if (rightChainHolder == null && leftChainHolder == null && AudioSource.isPlaying == false && AlreadyPlayed == false)
+        {
+            AlreadyPlayed = true;
+            AudioSource.Play();
+        }
     }
 
     public void OnLeftChainDestroy()
