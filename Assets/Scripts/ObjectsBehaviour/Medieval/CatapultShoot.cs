@@ -14,8 +14,10 @@ public class CatapultShoot : MonoBehaviour {
 	void OnTriggerStay(Collider other) {
 		if (other.CompareTag("rockSmall") && shouldShoot)
 		{
-			other.GetComponent<Rigidbody>().AddForce(power / 100.0f * force, power / 100.0f * force, 0.0f, ForceMode.Impulse);
-			shouldShoot = false;
+			other.GetComponent<Rigidbody>().AddForce(gameObject.transform.forward * power / 100.0f * force + gameObject.transform.up* power / 100.0f * force, ForceMode.Impulse);
+            //other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX |
+            //    RigidbodyConstraints.FreezeRotationY;
+            shouldShoot = false;
 		}
 	}
 	
