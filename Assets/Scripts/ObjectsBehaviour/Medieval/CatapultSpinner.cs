@@ -14,14 +14,14 @@ public class CatapultSpinner : MonoBehaviour {
 	void OnTriggerStay(Collider other) {
 		if (other.CompareTag("Player"))
 		{
-			if (Input.GetKey(KeyCode.Keypad4) && spoon.increasePower())
+			if (Input.GetButton("PickUpObject") && spoon.increasePower())
 			{
 				this.transform.Rotate(0.0f, -rotationPitch, 0.0f);
 			}
-			else if (Input.GetKey(KeyCode.Keypad6) && spoon.decreasePower())
+			/*else if (Input.GetKey(KeyCode.Keypad6) && spoon.decreasePower())
 			{
 				this.transform.Rotate(0.0f, rotationPitch, 0.0f);
-			}
+			}*/
 		}
     }
 }

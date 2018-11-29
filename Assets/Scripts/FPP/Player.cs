@@ -12,6 +12,13 @@ public class Player : MonoBehaviour {
     public AudioClip MusicClip;
     public AudioSource MusicSource;
 
+    public Texture texture;
+    public float hittedTime = 0.1f;
+    public float hittedCounter;
+    public bool playerHitted;
+
+    private CharacterController characterController;
+
     //Abilities
     [SerializeField]
 	private SlowZone slowZone;
@@ -38,11 +45,28 @@ public class Player : MonoBehaviour {
 		healthBar.init(100.0f, 100.0f);
 		manaBar.init(100.0f, 100.0f);
 		lightningBolt = GameObject.FindGameObjectWithTag("LightningBolt").GetComponent<LightningBoltScript>();
-	}
+        playerHitted = false;
+        hittedCounter = 0.0f;
+        characterController = GetComponent<CharacterController>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		bool isTooLittleMana = false;
+
+        if (playerHitted)
+        {
+            if (hittedCounter < hittedTime)
+            {
+                hittedCounter += Time.deltaTime;
+            }
+            else
+            {
+                hittedCounter = 0.0f;
+                playerHitted = false;
+            }
+
+        }
+        bool isTooLittleMana = false;
 		if (slowZone.manualUpdate(manaBar.Value, ref isTooLittleMana))
 		{
 			useMana((int)GameVariables.Abilities.Time);
@@ -85,6 +109,12 @@ public class Player : MonoBehaviour {
 		{
 				healthToMana();
 		}
+
+        if(characterController.isGrounded && !gameObject.GetComponent<FPPMove>().enabled)
+        {
+            gameObject.GetComponent<FPPMove>().enabled = true;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        }
 		
 		//***********************************
 		//for debug only!
@@ -171,4 +201,22 @@ public class Player : MonoBehaviour {
 		}
 		manaBar.addValue(-manaBar.Value);
 	}
+
+    private void OnGUI()
+    {
+        if (playerHitted)
+        {
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), texture);
+        }
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+        if (!gameObject.GetComponent<FPPMove>().enabled && collision.gameObject.name!="spoon" && collision.gameObject.name != "Player")
+        {
+            gameObject.GetComponent<FPPMove>().enabled = true;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        }
+    }
 }

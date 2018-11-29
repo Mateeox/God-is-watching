@@ -46,7 +46,7 @@ public class CatapultLever : MonoBehaviour {
 	void OnTriggerStay(Collider other) {
 		if (other.CompareTag("Player"))
 		{
-			if (Input.GetKey(KeyCode.E) && canBePulled)
+			if (Input.GetButtonDown("PickUpObject") && canBePulled)
 			{
 				canBePulled = false;
 			}
