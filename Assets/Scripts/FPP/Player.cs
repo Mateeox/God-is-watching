@@ -109,12 +109,7 @@ public class Player : MonoBehaviour {
 		{
 				healthToMana();
 		}
-
-        if(characterController.isGrounded && !gameObject.GetComponent<FPPMove>().enabled)
-        {
-            gameObject.GetComponent<FPPMove>().enabled = true;
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        }
+               
 		
 		//***********************************
 		//for debug only!
@@ -210,13 +205,5 @@ public class Player : MonoBehaviour {
         }
 
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log(collision.gameObject.name);
-        if (!gameObject.GetComponent<FPPMove>().enabled && collision.gameObject.name!="spoon" && collision.gameObject.name != "Player")
-        {
-            gameObject.GetComponent<FPPMove>().enabled = true;
-            gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        }
-    }
+    
 }

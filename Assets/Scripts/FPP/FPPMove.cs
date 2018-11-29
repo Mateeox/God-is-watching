@@ -66,14 +66,12 @@ public class FPPMove : MonoBehaviour
                     moveDirections.y = jumpSpeed;
                 }
 
-                if (isShot)
-                {
-                    moveDirections = new Vector3(0, 0, 0);
-                    isShot = false;
-                }
+                
             } 
-            moveDirections.y -= gravity * Time.deltaTime;
+
+            moveDirections.y -= gravity * Time.deltaTime;           
             characterController.Move(moveDirections * Time.deltaTime);
+            
         }
 
     }
