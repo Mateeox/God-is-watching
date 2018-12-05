@@ -166,9 +166,9 @@ public class Player : MonoBehaviour {
 				GlobalControl.Set = true;
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
-                _lightList = FindObjectsOfType<Light>();
-                AnimateDeath();
             }
+            _lightList = FindObjectsOfType<Light>();
+            AnimateDeath();
         }
     }
 
@@ -190,8 +190,11 @@ public class Player : MonoBehaviour {
             curIntensity = light.intensity;
         }
         _heroCam.transform.LookAt(_startPos);
-        _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, GlobalControl.Position, 15.0f * Time.deltaTime);
-        if(curIntensity > topIntensity) { 
+        if(GlobalControl.Position != new Vector3())
+            _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, GlobalControl.Position, 15.0f * Time.deltaTime);
+        else
+            _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, this.transform.position - new Vector3(20.0f, -3.0f, 0), 15.0f * Time.deltaTime);
+        if (curIntensity > topIntensity) { 
             _deathAnimation = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
