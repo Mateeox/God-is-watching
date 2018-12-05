@@ -43,11 +43,12 @@ public class FPPMove : MonoBehaviour
             {
                 dodgeCooldown -= Time.deltaTime;
             }
+			moveDirections = transform.up * moveDirections.y + transform.forward * forwardSpeed * Input.GetAxis("Vertical")
+                    + transform.right * sideSpeed * Input.GetAxis("Horizontal");
             
             if (characterController.isGrounded)
             {
-                moveDirections = transform.forward * forwardSpeed * Input.GetAxis("Vertical")
-                    + transform.right * sideSpeed * Input.GetAxis("Horizontal");
+                
                 if (Input.GetButton("Dodge") && dodgeCooldown <=0 && dodgeTime > 0)
                 {
                     dodgeTime -= Time.deltaTime;
