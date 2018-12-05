@@ -17,7 +17,6 @@ public class FPPMove : MonoBehaviour
     private Vector3 moveDirections;
     public float dodgeTime;
     public float dodgeCooldown;
-    public bool isShot;
 
     // Use this for initialization
     void Start()
@@ -31,7 +30,6 @@ public class FPPMove : MonoBehaviour
         moveDirections = new Vector3(0, 0, 0);
         dodgeTime = dodgeMaxTime;
         dodgeCooldown = 0;
-        isShot = false;
     }
 
     // Update is called once per frame

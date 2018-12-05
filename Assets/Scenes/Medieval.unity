@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09077871, g: 0.11532995, b: 0.16449079, a: 1}
+  m_IndirectSpecularColor: {r: 0.090779014, g: 0.11532489, b: 0.16442558, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1516,7 +1516,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &106542180
 Rigidbody:
@@ -2895,7 +2895,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &175376193
 Rigidbody:
@@ -7609,7 +7609,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &349548305
 Rigidbody:
@@ -15843,7 +15843,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 596307838}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -15851,6 +15851,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &596307849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596307838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca2715a4b5011b4ba5df3f69e9c7d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &597792934
 Prefab:
   m_ObjectHideFlags: 0
@@ -19423,7 +19434,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &694787275
 Rigidbody:
@@ -24341,7 +24352,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &888808798
 Rigidbody:
@@ -27993,7 +28004,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &1092178342
 Rigidbody:
@@ -33743,7 +33754,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &1381944719
 Rigidbody:
@@ -49605,7 +49616,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &1941051055
 Rigidbody:
@@ -51159,7 +51170,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &2017397679
 Rigidbody:
@@ -52039,7 +52050,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.77, y: 2, z: 2}
+  m_Size: {x: 2.83, y: 2, z: 2.2}
   m_Center: {x: 2.63, y: 1.08, z: 5.62}
 --- !u!54 &2058562638
 Rigidbody:
@@ -53173,15 +53184,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4833892430963172, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -318.5
+      value: -122
       objectReference: {fileID: 0}
     - target: {fileID: 4833892430963172, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.02
+      value: 2.53
       objectReference: {fileID: 0}
     - target: {fileID: 4833892430963172, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.11
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 4833892430963172, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 2}
       propertyPath: m_LocalRotation.x
