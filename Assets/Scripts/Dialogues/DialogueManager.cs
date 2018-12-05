@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour {
     public Text dialogueText;
     public Text dialogueContinue;
     private GameObject dialoguePanel;
+    private bool isActiveDialogue = false;
 
     private Queue<string> sentences;
 
@@ -27,11 +28,18 @@ public class DialogueManager : MonoBehaviour {
     {
         dialoguePanel.SetActive(true);
         nameText.text = dialouge.characterName;
-        sentences.Clear();
+        //sentences.Clear();
         foreach (string sentence in dialouge.sentences) {
             sentences.Enqueue(sentence);
         }
-        DisplayNextSentence();
+        if (sentences.Count > 0)
+        {
+            dialogueContinue.text = "Continue... [E]";
+        }
+        if (!isActiveDialogue) {
+            DisplayNextSentence();
+        }
+        isActiveDialogue = true;
     }
 
     public void DisplayNextSentence()
@@ -61,6 +69,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void EndDialogue()
     {
+        isActiveDialogue = false;
         dialoguePanel.SetActive(false);
     }
 }
