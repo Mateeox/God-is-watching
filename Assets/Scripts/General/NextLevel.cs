@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour {
 	
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == "Player")
-        {
-			GlobalControl.Set = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-    }
+	public void proceedToNextLevel(float delay) {
+		StartCoroutine(proceed(delay));
+	}
+	
+	private IEnumerator proceed(float delay) {
+		if (delay > 0.0f) 
+		{
+			yield return new WaitForSeconds(delay);
+		}
+		GlobalControl.Set = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
 }

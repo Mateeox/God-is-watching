@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainCharacterAnimatorScript : MonoBehaviour {
+public class MainCharacterAnimatorScript : Enemy{
 
     // The target marker.
     public Transform target;
@@ -22,7 +22,14 @@ public class MainCharacterAnimatorScript : MonoBehaviour {
 
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) < detectionDistance && Vector3.Distance(target.position, transform.position) > 0.5f)
+		if(health <= 0)
+        {
+            Destroy(gameObject);
+			GameObject.Find("GameVariables").GetComponent<NextLevel>().proceedToNextLevel(2.0f);
+        }
+		
+		float distance = Vector3.Distance(target.position, transform.position);		
+        if (distance < detectionDistance && distance > 5.0f)
         {
             detectionDistance = 30.0f;
             anim.SetTrigger("run");
@@ -36,7 +43,7 @@ public class MainCharacterAnimatorScript : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(newDir);
             transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
         }
-        else
+        else if (distance > 5.0f)
         {
             Vector3 targetDir = originPosition - transform.position;
             float step = speed * Time.deltaTime;
@@ -44,10 +51,11 @@ public class MainCharacterAnimatorScript : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(newDir);
             transform.position = Vector3.MoveTowards(transform.position, originPosition, step);
         }
-        if (Vector3.Distance(transform.position, originPosition) == 0)
+		
+        if (Vector3.Distance(transform.position, originPosition) == 0 || distance <= 5.0f)
             anim.SetTrigger("idle");
-        float distance = Vector3.Distance(target.position, transform.position);
-        if (distance > 3.0f && distance < 5.0f)
+        
+        if (distance < 6.0f)
         {
             Attack(target.gameObject);
         }
@@ -57,13 +65,22 @@ public class MainCharacterAnimatorScript : MonoBehaviour {
     {
         if (damageDelay <= 0)
         {
-            target.GetComponent<Player>().takeDamage(10);
-            //animation
+            target.GetComponent<Player>().takeDamage(20);
             damageDelay = amountOfDelay;
         }
         else if (damageDelay > 0)
         {
             damageDelay -= Time.deltaTime;
+        }
+    }
+	
+	private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Weapon"))
+        {
+            health -= weaponDamage;
+			Vector3 pos = new Vector3(gameObject.transform.position.x, 4.0f, gameObject.transform.position.z);
+            Instantiate(bloodParticles, pos, new Quaternion()); // generate blood effect
         }
     }
 }
