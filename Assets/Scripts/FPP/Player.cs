@@ -109,7 +109,9 @@ public class Player : MonoBehaviour {
 		{
 				healthToMana();
 		}
-               
+
+        if (_deathAnimation)
+            AnimateDeath();
 		
 		//***********************************
 		//for debug only!
@@ -155,9 +157,10 @@ public class Player : MonoBehaviour {
 		if (healthBar.Value < 0.0001f)
 		{
             //player is dead...
-            Camera heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-            heroCam.enabled = false;
-            
+            _deathAnimation = true;
+            _heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            _heroCam.transform.position += Vector3.up * 4.0f;
+            _startPos = _heroCam.transform.position;
             if (Checkpoint != null)
             {
                 Vector3 checkpointPos = Checkpoint.transform.position;
@@ -165,7 +168,35 @@ public class Player : MonoBehaviour {
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
-            FullHealthMana();
+            _lightList = FindObjectsOfType<Light>();
+            AnimateDeath();
+        }
+    }
+
+    private bool _deathAnimation = false;
+    private Light[] _lightList;
+    private float sign = -0.2f;
+    private float topIntensity = 15.0f;
+    private float lowIntensity = 0;
+    private float curIntensity = 5.0f;
+    private Camera _heroCam;
+    private Vector3 _startPos;
+    private void AnimateDeath()
+    {
+        foreach (Light light in _lightList)
+        {
+            if (light.intensity == lowIntensity)
+                sign *= -1.0f;
+            light.intensity += sign;                
+            curIntensity = light.intensity;
+        }
+        _heroCam.transform.LookAt(_startPos);
+        if(GlobalControl.Position != new Vector3())
+            _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, GlobalControl.Position, 15.0f * Time.deltaTime);
+        else
+            _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, this.transform.position - new Vector3(20.0f, -3.0f, 0), 15.0f * Time.deltaTime);
+        if (curIntensity > topIntensity) { 
+            _deathAnimation = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
