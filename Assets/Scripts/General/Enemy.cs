@@ -29,8 +29,13 @@ public class Enemy : LightningHitable
     {
         if (other.CompareTag("Weapon"))
         {
-            health -= weaponDamage;
-            Instantiate(bloodParticles, gameObject.transform.position, new Quaternion()); // generate blood effect
+            FPPCloseAttackSpear spear = other.gameObject.GetComponent<FPPCloseAttackSpear>();
+            if(spear.attack == FPPCloseAttackSpear.attackDirection.down)
+            {
+                health -= weaponDamage;
+                Instantiate(bloodParticles, gameObject.transform.position, new Quaternion()); // generate blood effect
+            }
+           
         }
     }
 

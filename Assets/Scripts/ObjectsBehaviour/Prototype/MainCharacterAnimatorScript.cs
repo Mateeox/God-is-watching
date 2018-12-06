@@ -93,9 +93,13 @@ public class MainCharacterAnimatorScript : Enemy{
     {
         if (other.CompareTag("Weapon"))
         {
-            health -= weaponDamage;
-			Vector3 pos = new Vector3(gameObject.transform.position.x, 4.0f, gameObject.transform.position.z);
-            Instantiate(bloodParticles, pos, new Quaternion()); // generate blood effect
+            FPPCloseAttackSpear spear = other.gameObject.GetComponent<FPPCloseAttackSpear>();
+            if (spear.attack == FPPCloseAttackSpear.attackDirection.down)
+            {
+                health -= weaponDamage;
+                Vector3 pos = new Vector3(gameObject.transform.position.x, 4.0f, gameObject.transform.position.z);
+                Instantiate(bloodParticles, pos, new Quaternion()); // generate blood effect
+            }
         }
     }
 
