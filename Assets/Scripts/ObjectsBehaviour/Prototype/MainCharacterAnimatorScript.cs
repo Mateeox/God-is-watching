@@ -14,6 +14,11 @@ public class MainCharacterAnimatorScript : Enemy{
     private float damageDelay = 0;
     public float amountOfDelay = 2.0f;
 
+    private void Awake()
+    {
+       DisableRagdoll();
+    }
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -24,14 +29,17 @@ public class MainCharacterAnimatorScript : Enemy{
     {
 		if(health <= 0)
         {
-            Destroy(gameObject);
-			GameObject.Find("GameVariables").GetComponent<NextLevel>().proceedToNextLevel(2.0f);
+            //Destroy(gameObject);
+            EnableRagdoll();
+			GameObject.Find("GameVariables").GetComponent<NextLevel>().proceedToNextLevel(20.0f);
         }
 		
 		float distance = Vector3.Distance(target.position, transform.position);		
         if (distance < detectionDistance && distance > 5.0f)
         {
             detectionDistance = 30.0f;
+            anim.ResetTrigger("idle");
+            anim.ResetTrigger("attack");
             anim.SetTrigger("run");
             Vector3 targetDir = target.position - transform.position;
             // The step size is equal to speed times frame time.
@@ -51,12 +59,19 @@ public class MainCharacterAnimatorScript : Enemy{
             transform.rotation = Quaternion.LookRotation(newDir);
             transform.position = Vector3.MoveTowards(transform.position, originPosition, step);
         }
-		
+
         if (Vector3.Distance(transform.position, originPosition) == 0 || distance <= 5.0f)
+        {
+            anim.ResetTrigger("run");
+            anim.ResetTrigger("attack");
             anim.SetTrigger("idle");
+        }
         
         if (distance < 6.0f)
         {
+            anim.ResetTrigger("run");
+            anim.ResetTrigger("idle");
+            anim.SetTrigger("attack");
             Attack(target.gameObject);
         }
     }
@@ -81,6 +96,31 @@ public class MainCharacterAnimatorScript : Enemy{
             health -= weaponDamage;
 			Vector3 pos = new Vector3(gameObject.transform.position.x, 4.0f, gameObject.transform.position.z);
             Instantiate(bloodParticles, pos, new Quaternion()); // generate blood effect
+        }
+    }
+
+    private void DisableRagdoll()
+    {
+        Rigidbody[] rbJoints = GetComponentsInChildren<Rigidbody>();
+        foreach(Rigidbody rbJoint in rbJoints)
+        {
+            rbJoint.isKinematic = true;
+        }
+    }
+
+    private void EnableRagdoll()
+    {
+        Collider baseCollider = GetComponent<Collider>();
+        baseCollider.enabled = false;
+        GameObject spear = transform.Find("pCylinder1").gameObject;
+        spear.transform.parent = null;
+        spear.GetComponent<Rigidbody>().isKinematic = false;
+        anim.enabled = false;
+        enabled = false;
+        Rigidbody[] rbJoints = GetComponentsInChildren<Rigidbody>();
+        foreach (Rigidbody rbJoint in rbJoints)
+        {
+            rbJoint.isKinematic = false;
         }
     }
 }
