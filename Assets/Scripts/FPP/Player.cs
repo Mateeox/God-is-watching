@@ -197,6 +197,20 @@ public class Player : MonoBehaviour {
             _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, this.transform.position - new Vector3(20.0f, -3.0f, 0), 15.0f * Time.deltaTime);
         if (curIntensity > topIntensity) { 
             _deathAnimation = false;
+            MoveToLastCheckPoint();
+            //Restart of the scene 15.12.2018 - removed due to change of respawn concept
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
+    private void MoveToLastCheckPoint()
+    {
+        if (GlobalControl.Set)
+        {
+            transform.position = GlobalControl.Position;
+            transform.rotation = GlobalControl.Rotation;
+        } else
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
