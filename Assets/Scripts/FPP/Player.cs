@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
     public float hittedTime = 0.1f;
     public float hittedCounter;
     public bool playerHitted;
+    public GameObject DeathPlane;
 
     private CharacterController characterController;
 
@@ -168,34 +169,30 @@ public class Player : MonoBehaviour {
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
-            _lightList = FindObjectsOfType<Light>();
+            currDeathPlane = Instantiate(DeathPlane);
+            _heroCam.transform.parent = null;
             AnimateDeath();
         }
     }
 
     private bool _deathAnimation = false;
-    private Light[] _lightList;
-    private float sign = -0.2f;
-    private float topIntensity = 15.0f;
-    private float lowIntensity = 0;
-    private float curIntensity = 5.0f;
+    private GameObject currDeathPlane;
     private Camera _heroCam;
     private Vector3 _startPos;
     private void AnimateDeath()
     {
-        foreach (Light light in _lightList)
-        {
-            if (light.intensity == lowIntensity)
-                sign *= -1.0f;
-            light.intensity += sign;                
-            curIntensity = light.intensity;
-        }
+        currDeathPlane.transform.parent = _heroCam.transform;
+        currDeathPlane.transform.position = _heroCam.transform.position + _heroCam.transform.forward * 1.0f;
         _heroCam.transform.LookAt(_startPos);
         if(GlobalControl.Position != new Vector3())
             _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, GlobalControl.Position, 15.0f * Time.deltaTime);
         else
             _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, this.transform.position - new Vector3(20.0f, -3.0f, 0), 15.0f * Time.deltaTime);
-        if (curIntensity > topIntensity) { 
+        Color crl = currDeathPlane.GetComponent<Renderer>().materials[0].color;
+        crl.a -= 0.4f * Time.deltaTime;
+        currDeathPlane.GetComponent<Renderer>().materials[0].color = crl;
+        if (crl.a <= 0) {
+            DestroyImmediate(currDeathPlane);
             _deathAnimation = false;
             MoveToLastCheckPoint();
             //Restart of the scene 15.12.2018 - removed due to change of respawn concept
@@ -209,6 +206,9 @@ public class Player : MonoBehaviour {
         {
             transform.position = GlobalControl.Position;
             transform.rotation = GlobalControl.Rotation;
+            _heroCam.transform.parent = transform;
+            _heroCam.transform.localPosition = new Vector3(0.07f, 0.37f, -0.03f);
+            _heroCam.transform.localRotation = new Quaternion();
         } else
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -249,7 +249,6 @@ public class Player : MonoBehaviour {
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), texture);
         }
-
     }
     
 }
