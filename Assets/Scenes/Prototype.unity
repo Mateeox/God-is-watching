@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15682593, g: 0.24071763, b: 0.3921608, a: 1}
+  m_IndirectSpecularColor: {r: 0.15681744, g: 0.24071865, b: 0.3919193, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25932,6 +25932,12 @@ Prefab:
       propertyPath: MusicClip
       value: 
       objectReference: {fileID: 8300000, guid: e744f9d3d5e8d59419e3731a261b291b, type: 3}
+    - target: {fileID: 114755662954403892, guid: f0af2fe25282ad540bb067d3ca3a0ed1,
+        type: 2}
+      propertyPath: DeathPlane
+      value: 
+      objectReference: {fileID: 1808645464643170, guid: c8945ded2e539c2448bd9c37921c9667,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 2}
   m_IsPrefabAsset: 0
