@@ -35,44 +35,62 @@ public class GameVariables : MonoBehaviour
                 GameMode = GameModes.Hero;
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+
+        if (GameMode == GameModes.God)
         {
-            Ability = Abilities.Move;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            Ability = Abilities.Thunder;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            Ability = Abilities.Time;
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                Ability = Abilities.Move;
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                Ability = Abilities.Thunder;
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                Ability = Abilities.Time;
+            }
         }
 
-        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (GameMode == GameModes.Hero)
         {
-           
-            if(PlayerWeapon == PlayerWeapons.Close)
+            if (Input.GetAxis("Mouse ScrollWheel") > 0)
+            {
+
+                if (PlayerWeapon == PlayerWeapons.Close)
+                {
+                    PlayerWeapon = PlayerWeapons.None;
+                }
+                else
+                {
+                    PlayerWeapon++;
+                }
+            }
+
+            if (Input.GetAxis("Mouse ScrollWheel") < 0)
+            {
+                if (PlayerWeapon == PlayerWeapons.None)
+                {
+                    PlayerWeapon = PlayerWeapons.Close;
+                }
+                else
+                {
+                    PlayerWeapon--;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 PlayerWeapon = PlayerWeapons.None;
             }
-            else
-            {
-                PlayerWeapon++;
-            }
-        }
-
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
-        {
-            if (PlayerWeapon == PlayerWeapons.None)
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 PlayerWeapon = PlayerWeapons.Close;
             }
-            else
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                PlayerWeapon--;
+                PlayerWeapon = PlayerWeapons.Range;
             }
-          
-            
         }
     }
 
