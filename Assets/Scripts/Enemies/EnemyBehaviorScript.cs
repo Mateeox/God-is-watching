@@ -57,11 +57,11 @@ public class EnemyBehaviorScript : MonoBehaviour {
 
             if (righthanded)
             {
-                newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * -1.5f + transform.up * -2.0f, step * 0.4f, 0.0f);
+                newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * -1.5f + transform.up * -2.0f, step * 0.3f, 0.0f);
             }
             else
             {
-                newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * 1.5f + transform.up * -2.0f, step * 0.4f, 0.0f);
+                newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * 1.5f + transform.up * -2.0f, step * 0.3f, 0.0f);
             }
             
             transform.rotation = Quaternion.LookRotation(newDir);
@@ -80,11 +80,11 @@ public class EnemyBehaviorScript : MonoBehaviour {
                 Vector3 targetDir = target.position - transform.position;
                 if (righthanded)
                 {
-                    newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * -1.5f + transform.up * -2.0f, step * 0.5f, 0.0f);
+                    newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * -1.5f + transform.up * -2.0f, step * 0.4f, 0.0f);
                 }
                 else
                 {
-                    newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * 1.5f + transform.up * -2.0f, step * 0.5f, 0.0f);
+                    newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * 1.5f + transform.up * -2.0f, step * 0.4f, 0.0f);
                 }
                 newDir.y = 0;
                 // Move our position a step closer to the target.
