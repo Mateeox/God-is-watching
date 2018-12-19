@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 09b269a9330bae047abe02910a09be10
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ankle_L
+    100002: ankle_R
+    100004: bottomnurbsSquare1
+    100006: cape
+    100008: character
+    100010: crown
+    100012: elbow_L
+    100014: elbow_PoleVector
+    100016: elbow_R
+    100018: fettMid_L
+    100020: fettMid_R
+    100022: fingerBase_L
+    100024: fingerBase_R
+    100026: fingerTip_L
+    100028: fingerTip_R
+    100030: hand_L
+    100032: hand_R
+    100034: headMock
+    100036: joint7
+    100038: joint7 1
+    100040: //RootNode
+    100042: left_arm_IK
+    100044: left_arm_IKC
+    100046: left_hand_IK
+    100048: left_leg_IK
+    100050: left_leg_IKC
+    100052: left_thumb_IK
+    100054: leftnurbsSquare1
+    100056: mace
+    100058: pelvis_J
+    100060: rib_CTRL
+    100062: rib_J
+    100064: right_arm_IK
+    100066: right_arm_IKC
+    100068: right_hand_IK
+    100070: right_leg_IK
+    100072: right_leg_IKC
+    100074: right_thumb_IK
+    100076: rightnurbsSquare1
+    100078: thigh_L
+    100080: thigh_R
+    100082: thumbBase_L
+    100084: thumbBase_R
+    100086: thumbTip_L
+    100088: thumbTip_R
+    100090: tibia_L
+    100092: tibia_R
+    100094: toe_L
+    100096: toe_R
+    100098: topnurbsSquare1
+    100100: uparm_L
+    100102: uparm_R
+    100104: wrist_L
+    100106: wrist_R
+    400000: ankle_L
+    400002: ankle_R
+    400004: bottomnurbsSquare1
+    400006: cape
+    400008: character
+    400010: crown
+    400012: elbow_L
+    400014: elbow_PoleVector
+    400016: elbow_R
+    400018: fettMid_L
+    400020: fettMid_R
+    400022: fingerBase_L
+    400024: fingerBase_R
+    400026: fingerTip_L
+    400028: fingerTip_R
+    400030: hand_L
+    400032: hand_R
+    400034: headMock
+    400036: joint7
+    400038: joint7 1
+    400040: //RootNode
+    400042: left_arm_IK
+    400044: left_arm_IKC
+    400046: left_hand_IK
+    400048: left_leg_IK
+    400050: left_leg_IKC
+    400052: left_thumb_IK
+    400054: leftnurbsSquare1
+    400056: mace
+    400058: pelvis_J
+    400060: rib_CTRL
+    400062: rib_J
+    400064: right_arm_IK
+    400066: right_arm_IKC
+    400068: right_hand_IK
+    400070: right_leg_IK
+    400072: right_leg_IKC
+    400074: right_thumb_IK
+    400076: rightnurbsSquare1
+    400078: thigh_L
+    400080: thigh_R
+    400082: thumbBase_L
+    400084: thumbBase_R
+    400086: thumbTip_L
+    400088: thumbTip_R
+    400090: tibia_L
+    400092: tibia_R
+    400094: toe_L
+    400096: toe_R
+    400098: topnurbsSquare1
+    400100: uparm_L
+    400102: uparm_R
+    400104: wrist_L
+    400106: wrist_R
+    2100000: lambert6
+    2100002: lambert5
+    2100004: lambert2
+    2100006: lambert3
+    2100008: lambert4
+    2300000: cape
+    2300002: crown
+    2300004: mace
+    3300000: cape
+    3300002: crown
+    3300004: mace
+    4300000: character
+    4300002: crown
+    4300004: cape
+    4300006: mace
+    7400000: Spin
+    9500000: //RootNode
+    13700000: character
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Spin
+      takeName: Spin
+      firstFrame: 80
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
