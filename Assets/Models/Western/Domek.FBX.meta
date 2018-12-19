@@ -1,0 +1,326 @@
+fileFormatVersion: 2
+guid: 7c6edd03547e964409740c2f07fd5479
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box002
+    100002: Box003
+    100004: Box004
+    100006: Box005
+    100008: Cylinder009
+    100010: Cylinder010
+    100012: Cylinder011
+    100014: Cylinder012
+    100016: Cylinder013
+    100018: Cylinder014
+    100020: Cylinder015
+    100022: Cylinder016
+    100024: //RootNode
+    100026: FixedWindow018
+    100028: FixedWindow019
+    100030: FixedWindow020
+    100032: FixedWindow021
+    100034: FixedWindow022
+    100036: FixedWindow023
+    100038: FixedWindow024
+    100040: FixedWindow025
+    100042: FixedWindow029
+    100044: FixedWindow030
+    100046: FixedWindow031
+    100048: FixedWindow032
+    100050: FixedWindow035
+    100052: FixedWindow036
+    100054: FixedWindow037
+    100056: FixedWindow038
+    100058: FixedWindow039
+    100060: FixedWindow040
+    100062: FixedWindow041
+    100064: FixedWindow042
+    100066: FixedWindow043
+    100068: FixedWindow044
+    100070: FixedWindow045
+    100072: FixedWindow046
+    100074: FixedWindow047
+    100076: Plane011
+    100078: Plane012
+    100080: Plane013
+    100082: Plane014
+    100084: Plane015
+    100086: Podstawka001
+    100088: Podstawka002
+    100090: TextPlus001
+    400000: Box002
+    400002: Box003
+    400004: Box004
+    400006: Box005
+    400008: Cylinder009
+    400010: Cylinder010
+    400012: Cylinder011
+    400014: Cylinder012
+    400016: Cylinder013
+    400018: Cylinder014
+    400020: Cylinder015
+    400022: Cylinder016
+    400024: //RootNode
+    400026: FixedWindow018
+    400028: FixedWindow019
+    400030: FixedWindow020
+    400032: FixedWindow021
+    400034: FixedWindow022
+    400036: FixedWindow023
+    400038: FixedWindow024
+    400040: FixedWindow025
+    400042: FixedWindow029
+    400044: FixedWindow030
+    400046: FixedWindow031
+    400048: FixedWindow032
+    400050: FixedWindow035
+    400052: FixedWindow036
+    400054: FixedWindow037
+    400056: FixedWindow038
+    400058: FixedWindow039
+    400060: FixedWindow040
+    400062: FixedWindow041
+    400064: FixedWindow042
+    400066: FixedWindow043
+    400068: FixedWindow044
+    400070: FixedWindow045
+    400072: FixedWindow046
+    400074: FixedWindow047
+    400076: Plane011
+    400078: Plane012
+    400080: Plane013
+    400082: Plane014
+    400084: Plane015
+    400086: Podstawka001
+    400088: Podstawka002
+    400090: TextPlus001
+    2100000: 05 - Default
+    2100002: 02 - Default
+    2100004: 09 - Default
+    2100006: 06 - Default
+    2100008: No Name
+    2100010: 03 - Default
+    2100012: 04 - Default
+    2100014: 07 - Default
+    2100016: 10 - Default
+    2100018: 11 - Default
+    2100020: 12 - Default
+    2100022: 13 - Default
+    2300000: Box002
+    2300002: Box003
+    2300004: Box004
+    2300006: Box005
+    2300008: Cylinder009
+    2300010: Cylinder010
+    2300012: Cylinder011
+    2300014: Cylinder012
+    2300016: Cylinder013
+    2300018: Cylinder014
+    2300020: Cylinder015
+    2300022: Cylinder016
+    2300024: FixedWindow018
+    2300026: FixedWindow019
+    2300028: FixedWindow020
+    2300030: FixedWindow021
+    2300032: FixedWindow022
+    2300034: FixedWindow023
+    2300036: FixedWindow024
+    2300038: FixedWindow025
+    2300040: FixedWindow029
+    2300042: FixedWindow030
+    2300044: FixedWindow031
+    2300046: FixedWindow032
+    2300048: FixedWindow035
+    2300050: FixedWindow036
+    2300052: FixedWindow037
+    2300054: FixedWindow038
+    2300056: FixedWindow039
+    2300058: FixedWindow040
+    2300060: FixedWindow041
+    2300062: FixedWindow042
+    2300064: FixedWindow043
+    2300066: FixedWindow044
+    2300068: FixedWindow045
+    2300070: FixedWindow046
+    2300072: FixedWindow047
+    2300074: Plane011
+    2300076: Plane012
+    2300078: Plane013
+    2300080: Plane014
+    2300082: Plane015
+    2300084: Podstawka001
+    2300086: Podstawka002
+    2300088: TextPlus001
+    3300000: Box002
+    3300002: Box003
+    3300004: Box004
+    3300006: Box005
+    3300008: Cylinder009
+    3300010: Cylinder010
+    3300012: Cylinder011
+    3300014: Cylinder012
+    3300016: Cylinder013
+    3300018: Cylinder014
+    3300020: Cylinder015
+    3300022: Cylinder016
+    3300024: FixedWindow018
+    3300026: FixedWindow019
+    3300028: FixedWindow020
+    3300030: FixedWindow021
+    3300032: FixedWindow022
+    3300034: FixedWindow023
+    3300036: FixedWindow024
+    3300038: FixedWindow025
+    3300040: FixedWindow029
+    3300042: FixedWindow030
+    3300044: FixedWindow031
+    3300046: FixedWindow032
+    3300048: FixedWindow035
+    3300050: FixedWindow036
+    3300052: FixedWindow037
+    3300054: FixedWindow038
+    3300056: FixedWindow039
+    3300058: FixedWindow040
+    3300060: FixedWindow041
+    3300062: FixedWindow042
+    3300064: FixedWindow043
+    3300066: FixedWindow044
+    3300068: FixedWindow045
+    3300070: FixedWindow046
+    3300072: FixedWindow047
+    3300074: Plane011
+    3300076: Plane012
+    3300078: Plane013
+    3300080: Plane014
+    3300082: Plane015
+    3300084: Podstawka001
+    3300086: Podstawka002
+    3300088: TextPlus001
+    4300000: Box002
+    4300002: Cylinder009
+    4300004: Cylinder010
+    4300006: Cylinder011
+    4300008: Cylinder012
+    4300010: FixedWindow018
+    4300012: FixedWindow019
+    4300014: FixedWindow020
+    4300016: FixedWindow021
+    4300018: FixedWindow022
+    4300020: FixedWindow023
+    4300022: FixedWindow024
+    4300024: FixedWindow025
+    4300026: FixedWindow029
+    4300028: FixedWindow030
+    4300030: FixedWindow031
+    4300032: Plane011
+    4300034: Plane012
+    4300036: Plane013
+    4300038: Plane014
+    4300040: Plane015
+    4300042: Podstawka001
+    4300044: FixedWindow032
+    4300046: FixedWindow035
+    4300048: FixedWindow036
+    4300050: FixedWindow037
+    4300052: FixedWindow038
+    4300054: FixedWindow039
+    4300056: FixedWindow040
+    4300058: FixedWindow041
+    4300060: Podstawka002
+    4300062: Box003
+    4300064: Cylinder013
+    4300066: FixedWindow042
+    4300068: FixedWindow043
+    4300070: TextPlus001
+    4300072: FixedWindow044
+    4300074: Cylinder014
+    4300076: Cylinder015
+    4300078: Cylinder016
+    4300080: Box004
+    4300082: Box005
+    4300084: FixedWindow045
+    4300086: FixedWindow046
+    4300088: FixedWindow047
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
