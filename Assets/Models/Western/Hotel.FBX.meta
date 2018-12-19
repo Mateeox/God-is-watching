@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 7b68dcb0555e3e44481765c0629958be
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Cylinder001
+    100004: Cylinder002
+    100006: Cylinder003
+    100008: Cylinder004
+    100010: Cylinder005
+    100012: Cylinder006
+    100014: Cylinder007
+    100016: Cylinder008
+    100018: FixedWindow001
+    100020: FixedWindow002
+    100022: FixedWindow003
+    100024: FixedWindow004
+    100026: FixedWindow005
+    100028: FixedWindow006
+    100030: FixedWindow007
+    100032: FixedWindow008
+    100034: FixedWindow009
+    100036: FixedWindow010
+    100038: FixedWindow012
+    100040: FixedWindow013
+    100042: FixedWindow014
+    100044: FixedWindow015
+    100046: FixedWindow016
+    100048: FixedWindow017
+    100050: //RootNode
+    100052: Plane001
+    100054: Plane002
+    100056: Plane003
+    100058: Plane004
+    100060: Plane005
+    100062: Plane006
+    100064: Plane007
+    100066: Plane008
+    100068: Plane009
+    100070: Plane010
+    100072: Podstawka
+    100074: Star001
+    100076: Star002
+    100078: Star003
+    100080: TextPlus001
+    400000: Box001
+    400002: Cylinder001
+    400004: Cylinder002
+    400006: Cylinder003
+    400008: Cylinder004
+    400010: Cylinder005
+    400012: Cylinder006
+    400014: Cylinder007
+    400016: Cylinder008
+    400018: FixedWindow001
+    400020: FixedWindow002
+    400022: FixedWindow003
+    400024: FixedWindow004
+    400026: FixedWindow005
+    400028: FixedWindow006
+    400030: FixedWindow007
+    400032: FixedWindow008
+    400034: FixedWindow009
+    400036: FixedWindow010
+    400038: FixedWindow012
+    400040: FixedWindow013
+    400042: FixedWindow014
+    400044: FixedWindow015
+    400046: FixedWindow016
+    400048: FixedWindow017
+    400050: //RootNode
+    400052: Plane001
+    400054: Plane002
+    400056: Plane003
+    400058: Plane004
+    400060: Plane005
+    400062: Plane006
+    400064: Plane007
+    400066: Plane008
+    400068: Plane009
+    400070: Plane010
+    400072: Podstawka
+    400074: Star001
+    400076: Star002
+    400078: Star003
+    400080: TextPlus001
+    2100000: 02 - Default
+    2100002: 05 - Default
+    2100004: 06 - Default
+    2100006: 03 - Default
+    2100008: 04 - Default
+    2100010: No Name
+    2100012: 07 - Default
+    2100014: 08 - Default
+    2300000: Box001
+    2300002: Cylinder001
+    2300004: Cylinder002
+    2300006: Cylinder003
+    2300008: Cylinder004
+    2300010: Cylinder005
+    2300012: Cylinder006
+    2300014: Cylinder007
+    2300016: Cylinder008
+    2300018: FixedWindow001
+    2300020: FixedWindow002
+    2300022: FixedWindow003
+    2300024: FixedWindow004
+    2300026: FixedWindow005
+    2300028: FixedWindow006
+    2300030: FixedWindow007
+    2300032: FixedWindow008
+    2300034: FixedWindow009
+    2300036: FixedWindow010
+    2300038: FixedWindow012
+    2300040: FixedWindow013
+    2300042: FixedWindow014
+    2300044: FixedWindow015
+    2300046: FixedWindow016
+    2300048: FixedWindow017
+    2300050: Plane001
+    2300052: Plane002
+    2300054: Plane003
+    2300056: Plane004
+    2300058: Plane005
+    2300060: Plane006
+    2300062: Plane007
+    2300064: Plane008
+    2300066: Plane009
+    2300068: Plane010
+    2300070: Podstawka
+    2300072: Star001
+    2300074: Star002
+    2300076: Star003
+    2300078: TextPlus001
+    3300000: Box001
+    3300002: Cylinder001
+    3300004: Cylinder002
+    3300006: Cylinder003
+    3300008: Cylinder004
+    3300010: Cylinder005
+    3300012: Cylinder006
+    3300014: Cylinder007
+    3300016: Cylinder008
+    3300018: FixedWindow001
+    3300020: FixedWindow002
+    3300022: FixedWindow003
+    3300024: FixedWindow004
+    3300026: FixedWindow005
+    3300028: FixedWindow006
+    3300030: FixedWindow007
+    3300032: FixedWindow008
+    3300034: FixedWindow009
+    3300036: FixedWindow010
+    3300038: FixedWindow012
+    3300040: FixedWindow013
+    3300042: FixedWindow014
+    3300044: FixedWindow015
+    3300046: FixedWindow016
+    3300048: FixedWindow017
+    3300050: Plane001
+    3300052: Plane002
+    3300054: Plane003
+    3300056: Plane004
+    3300058: Plane005
+    3300060: Plane006
+    3300062: Plane007
+    3300064: Plane008
+    3300066: Plane009
+    3300068: Plane010
+    3300070: Podstawka
+    3300072: Star001
+    3300074: Star002
+    3300076: Star003
+    3300078: TextPlus001
+    4300000: Podstawka
+    4300002: Box001
+    4300004: FixedWindow001
+    4300006: FixedWindow002
+    4300008: FixedWindow003
+    4300010: FixedWindow004
+    4300012: FixedWindow005
+    4300014: FixedWindow006
+    4300016: FixedWindow007
+    4300018: FixedWindow008
+    4300020: FixedWindow009
+    4300022: FixedWindow010
+    4300024: FixedWindow012
+    4300026: Cylinder001
+    4300028: Cylinder002
+    4300030: Cylinder003
+    4300032: Cylinder004
+    4300034: Plane001
+    4300036: Plane002
+    4300038: Plane003
+    4300040: Plane004
+    4300042: Cylinder005
+    4300044: Cylinder006
+    4300046: Cylinder007
+    4300048: Cylinder008
+    4300050: Plane005
+    4300052: Plane006
+    4300054: Plane007
+    4300056: Plane008
+    4300058: Plane009
+    4300060: Plane010
+    4300062: FixedWindow013
+    4300064: FixedWindow014
+    4300066: FixedWindow015
+    4300068: FixedWindow016
+    4300070: FixedWindow017
+    4300072: TextPlus001
+    4300074: Star001
+    4300076: Star002
+    4300078: Star003
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
