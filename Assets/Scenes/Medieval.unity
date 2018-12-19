@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.090779014, g: 0.11532489, b: 0.16442558, a: 1}
+  m_IndirectSpecularColor: {r: 0.09077871, g: 0.11532995, b: 0.16449079, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -364,6 +364,11 @@ Prefab:
     - target: {fileID: 4032097293997852, guid: ce4c52ec2d21cb741afe1c4409a12646, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 64166524885512630, guid: ce4c52ec2d21cb741afe1c4409a12646,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce4c52ec2d21cb741afe1c4409a12646, type: 2}
@@ -1317,6 +1322,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224140398329255806, guid: c88cab1d017fa424793cbecda1dbb66e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.2999268
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c88cab1d017fa424793cbecda1dbb66e, type: 2}
   m_IsPrefabAsset: 0
@@ -1457,11 +1467,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 89511988}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.09140458, y: 0.15, z: 0.09140491}
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &89511994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 89511988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5285940c0df4a1a49bfd9190d38acb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1001 &90400104
 Prefab:
   m_ObjectHideFlags: 0
@@ -11208,21 +11230,23 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 430677711}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 479880aec398b194ab5f686e3feb5cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1769437946}
   speed: 6
+  attackDistance: 7
   amountOfDelay: 2
+  righthanded: 1
 --- !u!114 &430677713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 430677711}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bdd39316bc7764b893066873c8d554, type: 3}
   m_Name: 
@@ -11230,7 +11254,9 @@ MonoBehaviour:
   health: 200
   weaponDamage: 40
   lighteningDamage: 80
-  bloodParticles: {fileID: 0}
+  particlesYOffset: 5
+  bloodParticles: {fileID: 1093211742537260, guid: 8f3935cfc7e12d046b633744ddc6dcec,
+    type: 2}
 --- !u!136 &430677714
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11240,10 +11266,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.7
-  m_Height: 2
+  m_Radius: 1.0711385
+  m_Height: 2.1422777
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: -0.02549068, y: 1, z: -0.03402511}
 --- !u!1001 &432475550
 Prefab:
   m_ObjectHideFlags: 0
@@ -13235,6 +13261,7 @@ MonoBehaviour:
   health: 100
   weaponDamage: 40
   lighteningDamage: 80
+  particlesYOffset: 0
   bloodParticles: {fileID: 1093211742537260, guid: 8f3935cfc7e12d046b633744ddc6dcec,
     type: 2}
 --- !u!114 &548175877
@@ -26886,6 +26913,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 64166524885512630, guid: ce4c52ec2d21cb741afe1c4409a12646,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce4c52ec2d21cb741afe1c4409a12646, type: 2}
   m_IsPrefabAsset: 0
@@ -27603,11 +27635,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1060023344}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.09140458, y: 0.15, z: 0.09140491}
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &1060023350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1060023344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5285940c0df4a1a49bfd9190d38acb69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1062766865
 GameObject:
   m_ObjectHideFlags: 0
@@ -27798,17 +27842,17 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.7
-  m_Height: 2
+  m_Radius: 1.084794
+  m_Height: 2.1695888
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0.056900818, y: 1, z: -0.012629827}
 --- !u!114 &1066162551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1066162547}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8bdd39316bc7764b893066873c8d554, type: 3}
   m_Name: 
@@ -27816,21 +27860,25 @@ MonoBehaviour:
   health: 200
   weaponDamage: 40
   lighteningDamage: 80
-  bloodParticles: {fileID: 0}
+  particlesYOffset: 5
+  bloodParticles: {fileID: 1093211742537260, guid: 8f3935cfc7e12d046b633744ddc6dcec,
+    type: 2}
 --- !u!114 &1066162552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1066162547}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 479880aec398b194ab5f686e3feb5cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1769437946}
   speed: 6
+  attackDistance: 7
   amountOfDelay: 2
+  righthanded: 0
 --- !u!1001 &1070333268
 Prefab:
   m_ObjectHideFlags: 0

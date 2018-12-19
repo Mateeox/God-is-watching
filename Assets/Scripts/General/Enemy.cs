@@ -8,6 +8,7 @@ public class Enemy : LightningHitable
     public float health = 100;
     public float weaponDamage = 40;
     public float lighteningDamage = 80;
+    public float particlesYOffset = 0.0f;
     public GameObject bloodParticles;
 
 	// Use this for initialization
@@ -33,7 +34,7 @@ public class Enemy : LightningHitable
             if(spear.attack == FPPCloseAttackSpear.attackDirection.down)
             {
                 health -= weaponDamage;
-                Instantiate(bloodParticles, gameObject.transform.position, new Quaternion()); // generate blood effect
+                Instantiate(bloodParticles, gameObject.transform.position + transform.up * particlesYOffset, new Quaternion()); // generate blood effect
             }
            
         }
