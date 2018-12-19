@@ -21,6 +21,7 @@ public class SetCheckpoint : MonoBehaviour
         {
             _checkpointCaptured = true;
             other.GetComponentInParent<Player>().SetCheckpoint(this.gameObject);
+            this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
         }
     }
 }
