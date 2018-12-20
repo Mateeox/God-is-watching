@@ -169,7 +169,12 @@ public class Player : MonoBehaviour {
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
-            currDeathPlane = Instantiate(DeathPlane);
+            if (!isDead)
+            {
+                isDead = true;
+                currDeathPlane = Instantiate(DeathPlane);
+            }
+            
             _heroCam.transform.parent = null;
             AnimateDeath();
         }
@@ -179,6 +184,7 @@ public class Player : MonoBehaviour {
     private GameObject currDeathPlane;
     private Camera _heroCam;
     private Vector3 _startPos;
+    private bool isDead = false;
     private void AnimateDeath()
     {
         currDeathPlane.transform.parent = _heroCam.transform;
@@ -193,6 +199,7 @@ public class Player : MonoBehaviour {
         currDeathPlane.GetComponent<Renderer>().materials[0].color = crl;
         if (crl.a <= 0) {
             DestroyImmediate(currDeathPlane);
+            isDead = false;
             _deathAnimation = false;
             MoveToLastCheckPoint();
             //Restart of the scene 15.12.2018 - removed due to change of respawn concept
@@ -215,16 +222,24 @@ public class Player : MonoBehaviour {
         }
     }
 
-    public void SetCheckpoint(GameObject checkpoint)
+    public void SetCheckpoint(GameObject checkpoint, bool isBoss)
     {
-        FullHealthMana();
+        if (!isBoss)
+        {
+            FullMana();
+        }
+        FullHealth();
         this.Checkpoint = checkpoint;
     }
 
-    private void FullHealthMana()
+    private void FullMana()
     {
-        healthBar.addValue(healthBar.MaxValue - healthBar.Value);
         manaBar.addValue(manaBar.MaxValue - manaBar.Value);
+    }
+
+    private void FullHealth()
+    {
+        healthBar.addValue(1000000);
     }
 
     void useMana(float amount)

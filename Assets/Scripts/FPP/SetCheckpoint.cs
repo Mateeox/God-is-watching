@@ -4,6 +4,7 @@ using UnityEngine;
 public class SetCheckpoint : MonoBehaviour
 {
     private bool _checkpointCaptured = false;
+    public bool isBoss = false;
     // Use this for initialization
     void Start()
     {
@@ -20,7 +21,7 @@ public class SetCheckpoint : MonoBehaviour
         if (other.gameObject.name == "Player" && !_checkpointCaptured)
         {
             _checkpointCaptured = true;
-            other.GetComponentInParent<Player>().SetCheckpoint(this.gameObject);
+            other.GetComponentInParent<Player>().SetCheckpoint(this.gameObject, isBoss);
             this.gameObject.GetComponentInChildren<ParticleSystem>().Play();
         }
     }
