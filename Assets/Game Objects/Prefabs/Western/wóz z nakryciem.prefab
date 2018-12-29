@@ -733,6 +733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4880056956445240}
+  - component: {fileID: 64373003931687470}
   m_Layer: 0
   m_Name: "w\xF3z z nakryciem"
   m_TagString: Untagged
@@ -1460,7 +1461,7 @@ Transform:
   m_GameObject: {fileID: 1846750603190642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4931213201325202}
   - {fileID: 4818126241574230}
@@ -3762,3 +3763,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1638459406781818}
   m_Mesh: {fileID: 4300072, guid: e70ba1619139c614396b3ed5b6ba4f0a, type: 3}
+--- !u!64 &64373003931687470
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846750603190642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
