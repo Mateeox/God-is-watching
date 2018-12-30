@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Western.unity
+- path: Assets/Scenes/Medieval.unity
   isLoaded: 1
   isActive: 1
