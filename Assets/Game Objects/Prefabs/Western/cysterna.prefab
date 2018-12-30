@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4310833186219822}
   - component: {fileID: 33268689411921764}
   - component: {fileID: 23261872067652676}
+  - component: {fileID: 64675237112810862}
   m_Layer: 0
   m_Name: cysterna
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1785075303919436}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 1.451175, y: 2.2965872, z: -3.2039533}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,4 +86,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1785075303919436}
+  m_Mesh: {fileID: 4300000, guid: b6e5a389dae9d8f4ea77f643343e10ca, type: 3}
+--- !u!64 &64675237112810862
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1785075303919436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b6e5a389dae9d8f4ea77f643343e10ca, type: 3}

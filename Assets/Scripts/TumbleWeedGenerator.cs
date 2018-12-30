@@ -15,18 +15,18 @@ public class TumbleWeedGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        int rndInt = randomGenerator.Next(1, 500);
+        int rndInt = randomGenerator.Next(1, 7500);
         if (rndInt >= 10 && rndInt <= 20)
         {
-            float rndX = (float)randomGenerator.Next(-10, 10);
-            float rndZ = (float)randomGenerator.Next(-300, -100);
-            Debug.Log(rndZ);
+            float rndX = (float)randomGenerator.Next(-100, 100);
+            float rndZ = (float)randomGenerator.Next(-50, -20);
             GameObject tumbleWeed = Instantiate(tumbleweedPrefab, new Vector3(rndX,1.2f,rndZ), Quaternion.identity) as GameObject;
             tumbleWeed.GetComponent<TumbleweedBehavior>().SetMinZ(rndZ);
             tumbleweeds.Add(tumbleWeed);
-            if(tumbleweeds.Count+1 > 10)
+            Debug.Log(tumbleweeds.Count);
+            if(tumbleweeds.Count >= 20)
             {
-                Debug.Log("Deleted tumbleweed!");
+                Destroy(tumbleweeds[0]);
                 tumbleweeds.RemoveAt(0);
             }
         }

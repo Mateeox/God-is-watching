@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4422012750917576}
   - component: {fileID: 33691294405742776}
   - component: {fileID: 23351138813156470}
+  - component: {fileID: 64405086766399286}
   m_Layer: 0
   m_Name: "du\u017Ca g\xF3ra 2"
   m_TagString: Untagged
@@ -82,4 +83,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1346610865940562}
+  m_Mesh: {fileID: 4300000, guid: 2ad82c82761e3d7408f9b697e98af29a, type: 3}
+--- !u!64 &64405086766399286
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346610865940562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2ad82c82761e3d7408f9b697e98af29a, type: 3}

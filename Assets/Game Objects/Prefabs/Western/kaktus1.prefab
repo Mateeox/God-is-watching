@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4855729663881328}
   - component: {fileID: 33444195597093848}
   - component: {fileID: 23861926697307000}
+  - component: {fileID: 64770477880305328}
   m_Layer: 0
   m_Name: kaktus1
   m_TagString: Untagged
@@ -82,4 +83,18 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1409582190503148}
+  m_Mesh: {fileID: 4300000, guid: 63560cd826cda0f4c9f7af306acda663, type: 3}
+--- !u!64 &64770477880305328
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409582190503148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 63560cd826cda0f4c9f7af306acda663, type: 3}

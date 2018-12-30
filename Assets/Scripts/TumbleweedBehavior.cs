@@ -11,7 +11,7 @@ public class TumbleweedBehavior : MonoBehaviour {
     float minimum1 = 2f;
     float maximum1 = 3;
     float minimum2 = -1000;
-    float maximum2 = 9000;
+    float maximum2 = 1000;
 
     // Use this for initialization
     void Start() {
@@ -56,5 +56,15 @@ public class TumbleweedBehavior : MonoBehaviour {
             minimum2 = temp;
             t2 = 0.0f;
         }
+
+        if (transform.position.x > 1000)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
     }
 }

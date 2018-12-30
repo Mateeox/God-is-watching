@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33335650950760148}
   - component: {fileID: 23052170318752292}
   - component: {fileID: 114339853055505960}
+  - component: {fileID: 135900509830161976}
   m_Layer: 0
   m_Name: tumbleweed
   m_TagString: Untagged
@@ -95,5 +96,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a7b2902f03eb414e8c7b65ddaeb1f18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YSpeed: 1
-  ZSpeed: 0.0015
+  YSpeed: 1.25
+  ZSpeed: 0.0025
+--- !u!135 &135900509830161976
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515553064916554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.73827827
+  m_Center: {x: 0.0072091827, y: -0.0022997856, z: -0.0031097243}
