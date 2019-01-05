@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Medieval.unity
     guid: 4218024d109dbad4f8f06ebc651bd683
+  - enabled: 1
+    path: Assets/Scenes/Western.unity
+    guid: c732a6ba72f99b64d93c513e5d92700b
   m_configObjects: {}
