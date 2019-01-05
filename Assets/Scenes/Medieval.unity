@@ -43107,6 +43107,8 @@ GameObject:
   - component: {fileID: 956119653}
   - component: {fileID: 956119652}
   - component: {fileID: 956119655}
+  - component: {fileID: 956119656}
+  - component: {fileID: 956119657}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -43170,6 +43172,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingMenu: {fileID: 1433124252}
   sliderProgress: {fileID: 136199810}
+--- !u!114 &956119656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956119651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38539f2f0cd7b984fab96e977998ba60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minHeight: 0.5
+  maxHeight: 1.5
+--- !u!114 &956119657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956119651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fec6a9e9c5696c4390534fc51c5f05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angles: {x: 0, y: 45, z: 0}
 --- !u!1001 &959152242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51744,7 +51773,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 801b0a0a9340dbe4da3022596a86862b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
