@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09077849, g: 0.1153295, b: 0.16449091, a: 1}
+  m_IndirectSpecularColor: {r: 0.090778634, g: 0.115329765, b: 0.16449091, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26189,6 +26189,22 @@ CapsuleCollider:
   m_Height: 2.1422777
   m_Direction: 1
   m_Center: {x: -0.02549068, y: 1, z: -0.03402511}
+--- !u!54 &430677717
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430677711}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1001 &432475550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45925,6 +45941,22 @@ MonoBehaviour:
   attackDistance: 7
   amountOfDelay: 2
   righthanded: 0
+--- !u!54 &1066162553
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066162547}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1001 &1070333268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83706,7 +83738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4833892430963172, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 425.8
+      value: 127.35
       objectReference: {fileID: 0}
     - target: {fileID: 4833892430963172, guid: f0af2fe25282ad540bb067d3ca3a0ed1, type: 3}
       propertyPath: m_LocalPosition.y

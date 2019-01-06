@@ -98,7 +98,7 @@ public class CameraChangeMode : MonoBehaviour
         Vector3 angles = _cam.transform.rotation.eulerAngles;
         _animtionsPos.Add(new Vector3(-1.0f * (Mathf.Cos(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.x, -1.0f * (Mathf.Sin(angles.y / 180 * Mathf.PI) * 3.0f) + playerPos.y, playerPos.z));
         Vector3 pos;
-        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y + height, playerStartPositionZ - Mathf.Cos(angle / 180 * Mathf.PI) * distance);
+        pos = new Vector3(playerPos.x, Mathf.Sin(angle / 180 * Mathf.PI) * distance + playerPos.y + height, heroCam.transform.position.z - Mathf.Cos(angle / 180 * Mathf.PI) * distance);
         _animtionsPos.Add(pos);
         godCam.transform.position = pos;
         godCam.transform.eulerAngles = new Vector3(angle, 0, 0);

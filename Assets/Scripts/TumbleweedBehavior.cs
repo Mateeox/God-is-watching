@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.GOD.SlowZone;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TumbleweedBehavior : MonoBehaviour {
+public class TumbleweedBehavior : LightningHitable, ISlowable
+{
 
     public float YSpeed;
     public float ZSpeed;
@@ -15,6 +17,7 @@ public class TumbleweedBehavior : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+
     }
 
     public void SetMinZ(float minZ)
@@ -57,13 +60,39 @@ public class TumbleweedBehavior : MonoBehaviour {
             t2 = 0.0f;
         }
 
-        if (transform.position.x > 1000)
+        if (transform.position.x > 500)
         {
             Destroy(gameObject);
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
+    {
+       
+        if (collision.gameObject.name == "Player")
+        {
+            collision.gameObject.GetComponentInParent<Player>().takeDamage(int.MaxValue);
+        }
+        if(collision.gameObject.tag != "SlowZone")
+        {
+            Destroy(gameObject);
+        }
+        
+    }
+    
+    public void SetMaxSpeed()
+    {
+        YSpeed = YSpeed * 4;
+        ZSpeed = ZSpeed * 4;
+    }
+
+    public void SlowDown()
+    {
+       YSpeed = YSpeed/4;
+       ZSpeed = ZSpeed/4;
+    }
+
+    public override void afterHit()
     {
         Destroy(gameObject);
     }
