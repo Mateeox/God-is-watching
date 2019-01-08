@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b821045c47042544833585c4f669520
+guid: 463d2d02023c5b6488c9dcce8090a563
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -452,66 +452,67 @@ ModelImporter:
     100892: Object022
     100894: Object023
     100896: Object024
-    100898: Piano
-    100900: Podkowa1
-    100902: Podkowa2
-    100904: Podkowa3
-    100906: Podkowa4
-    100908: Podkowa5
-    100910: Podkowa6
-    100912: //RootNode
-    100914: Stol1
-    100916: Stol2
-    100918: Szklanka
-    100920: Szklanka001
-    100922: Szklanka002
-    100924: Wanted  5
-    100926: Wanted 011
-    100928: Wanted 1
-    100930: Wanted 10
-    100932: Wanted 2
-    100934: Wanted 3
-    100936: Wanted 4
-    100938: Wanted 6
-    100940: Wanted 7
-    100942: Wanted 8
-    100944: Wanted 9
-    100946: whisky001
-    100948: whisky008
-    100950: whisky009
-    100952: whisky010
-    100954: whisky013
-    100956: whisky014
-    100958: whisky015
-    100960: whisky016
-    100962: whisky021
-    100964: whisky022
-    100966: whisky023
-    100968: whisky024
-    100970: whisky025
-    100972: whisky026
-    100974: whisky027
-    100976: whisky028
-    100978: whisky029
-    100980: whisky030
-    100982: whisky031
-    100984: whisky032
-    100986: whisky033
-    100988: whisky034
-    100990: whisky035
-    100992: whisky036
-    100994: whisky037
-    100996: whisky038
-    100998: whisky039
-    101000: whisky040
-    101002: whisky041
-    101004: whisky042
-    101006: whisky043
-    101008: whisky044
-    101010: whisky045
-    101012: whisky046
-    101014: whisky047
-    101016: whisky048
+    100898: Object025
+    100900: Piano
+    100902: Podkowa1
+    100904: Podkowa2
+    100906: Podkowa3
+    100908: Podkowa4
+    100910: Podkowa5
+    100912: Podkowa6
+    100914: //RootNode
+    100916: Stol1
+    100918: Stol2
+    100920: Szklanka
+    100922: Szklanka001
+    100924: Szklanka002
+    100926: Wanted  5
+    100928: Wanted 011
+    100930: Wanted 1
+    100932: Wanted 10
+    100934: Wanted 2
+    100936: Wanted 3
+    100938: Wanted 4
+    100940: Wanted 6
+    100942: Wanted 7
+    100944: Wanted 8
+    100946: Wanted 9
+    100948: whisky001
+    100950: whisky008
+    100952: whisky009
+    100954: whisky010
+    100956: whisky013
+    100958: whisky014
+    100960: whisky015
+    100962: whisky016
+    100964: whisky021
+    100966: whisky022
+    100968: whisky023
+    100970: whisky024
+    100972: whisky025
+    100974: whisky026
+    100976: whisky027
+    100978: whisky028
+    100980: whisky029
+    100982: whisky030
+    100984: whisky031
+    100986: whisky032
+    100988: whisky033
+    100990: whisky034
+    100992: whisky035
+    100994: whisky036
+    100996: whisky037
+    100998: whisky038
+    101000: whisky039
+    101002: whisky040
+    101004: whisky041
+    101006: whisky042
+    101008: whisky043
+    101010: whisky044
+    101012: whisky045
+    101014: whisky046
+    101016: whisky047
+    101018: whisky048
     400000: Bar
     400002: Bar001
     400004: Beczka
@@ -961,66 +962,67 @@ ModelImporter:
     400892: Object022
     400894: Object023
     400896: Object024
-    400898: Piano
-    400900: Podkowa1
-    400902: Podkowa2
-    400904: Podkowa3
-    400906: Podkowa4
-    400908: Podkowa5
-    400910: Podkowa6
-    400912: //RootNode
-    400914: Stol1
-    400916: Stol2
-    400918: Szklanka
-    400920: Szklanka001
-    400922: Szklanka002
-    400924: Wanted  5
-    400926: Wanted 011
-    400928: Wanted 1
-    400930: Wanted 10
-    400932: Wanted 2
-    400934: Wanted 3
-    400936: Wanted 4
-    400938: Wanted 6
-    400940: Wanted 7
-    400942: Wanted 8
-    400944: Wanted 9
-    400946: whisky001
-    400948: whisky008
-    400950: whisky009
-    400952: whisky010
-    400954: whisky013
-    400956: whisky014
-    400958: whisky015
-    400960: whisky016
-    400962: whisky021
-    400964: whisky022
-    400966: whisky023
-    400968: whisky024
-    400970: whisky025
-    400972: whisky026
-    400974: whisky027
-    400976: whisky028
-    400978: whisky029
-    400980: whisky030
-    400982: whisky031
-    400984: whisky032
-    400986: whisky033
-    400988: whisky034
-    400990: whisky035
-    400992: whisky036
-    400994: whisky037
-    400996: whisky038
-    400998: whisky039
-    401000: whisky040
-    401002: whisky041
-    401004: whisky042
-    401006: whisky043
-    401008: whisky044
-    401010: whisky045
-    401012: whisky046
-    401014: whisky047
-    401016: whisky048
+    400898: Object025
+    400900: Piano
+    400902: Podkowa1
+    400904: Podkowa2
+    400906: Podkowa3
+    400908: Podkowa4
+    400910: Podkowa5
+    400912: Podkowa6
+    400914: //RootNode
+    400916: Stol1
+    400918: Stol2
+    400920: Szklanka
+    400922: Szklanka001
+    400924: Szklanka002
+    400926: Wanted  5
+    400928: Wanted 011
+    400930: Wanted 1
+    400932: Wanted 10
+    400934: Wanted 2
+    400936: Wanted 3
+    400938: Wanted 4
+    400940: Wanted 6
+    400942: Wanted 7
+    400944: Wanted 8
+    400946: Wanted 9
+    400948: whisky001
+    400950: whisky008
+    400952: whisky009
+    400954: whisky010
+    400956: whisky013
+    400958: whisky014
+    400960: whisky015
+    400962: whisky016
+    400964: whisky021
+    400966: whisky022
+    400968: whisky023
+    400970: whisky024
+    400972: whisky025
+    400974: whisky026
+    400976: whisky027
+    400978: whisky028
+    400980: whisky029
+    400982: whisky030
+    400984: whisky031
+    400986: whisky032
+    400988: whisky033
+    400990: whisky034
+    400992: whisky035
+    400994: whisky036
+    400996: whisky037
+    400998: whisky038
+    401000: whisky039
+    401002: whisky040
+    401004: whisky041
+    401006: whisky042
+    401008: whisky043
+    401010: whisky044
+    401012: whisky045
+    401014: whisky046
+    401016: whisky047
+    401018: whisky048
     2100000: 01 - Default
     2100002: 02 - Default
     2100004: 08 - Default
@@ -1421,65 +1423,66 @@ ModelImporter:
     2300738: Object022
     2300740: Object023
     2300742: Object024
-    2300744: Piano
-    2300746: Podkowa1
-    2300748: Podkowa2
-    2300750: Podkowa3
-    2300752: Podkowa4
-    2300754: Podkowa5
-    2300756: Podkowa6
-    2300758: Stol1
-    2300760: Stol2
-    2300762: Szklanka
-    2300764: Szklanka001
-    2300766: Szklanka002
-    2300768: Wanted  5
-    2300770: Wanted 011
-    2300772: Wanted 1
-    2300774: Wanted 10
-    2300776: Wanted 2
-    2300778: Wanted 3
-    2300780: Wanted 4
-    2300782: Wanted 6
-    2300784: Wanted 7
-    2300786: Wanted 8
-    2300788: Wanted 9
-    2300790: whisky001
-    2300792: whisky008
-    2300794: whisky009
-    2300796: whisky010
-    2300798: whisky013
-    2300800: whisky014
-    2300802: whisky015
-    2300804: whisky016
-    2300806: whisky021
-    2300808: whisky022
-    2300810: whisky023
-    2300812: whisky024
-    2300814: whisky025
-    2300816: whisky026
-    2300818: whisky027
-    2300820: whisky028
-    2300822: whisky029
-    2300824: whisky030
-    2300826: whisky031
-    2300828: whisky032
-    2300830: whisky033
-    2300832: whisky034
-    2300834: whisky035
-    2300836: whisky036
-    2300838: whisky037
-    2300840: whisky038
-    2300842: whisky039
-    2300844: whisky040
-    2300846: whisky041
-    2300848: whisky042
-    2300850: whisky043
-    2300852: whisky044
-    2300854: whisky045
-    2300856: whisky046
-    2300858: whisky047
-    2300860: whisky048
+    2300744: Object025
+    2300746: Piano
+    2300748: Podkowa1
+    2300750: Podkowa2
+    2300752: Podkowa3
+    2300754: Podkowa4
+    2300756: Podkowa5
+    2300758: Podkowa6
+    2300760: Stol1
+    2300762: Stol2
+    2300764: Szklanka
+    2300766: Szklanka001
+    2300768: Szklanka002
+    2300770: Wanted  5
+    2300772: Wanted 011
+    2300774: Wanted 1
+    2300776: Wanted 10
+    2300778: Wanted 2
+    2300780: Wanted 3
+    2300782: Wanted 4
+    2300784: Wanted 6
+    2300786: Wanted 7
+    2300788: Wanted 8
+    2300790: Wanted 9
+    2300792: whisky001
+    2300794: whisky008
+    2300796: whisky009
+    2300798: whisky010
+    2300800: whisky013
+    2300802: whisky014
+    2300804: whisky015
+    2300806: whisky016
+    2300808: whisky021
+    2300810: whisky022
+    2300812: whisky023
+    2300814: whisky024
+    2300816: whisky025
+    2300818: whisky026
+    2300820: whisky027
+    2300822: whisky028
+    2300824: whisky029
+    2300826: whisky030
+    2300828: whisky031
+    2300830: whisky032
+    2300832: whisky033
+    2300834: whisky034
+    2300836: whisky035
+    2300838: whisky036
+    2300840: whisky037
+    2300842: whisky038
+    2300844: whisky039
+    2300846: whisky040
+    2300848: whisky041
+    2300850: whisky042
+    2300852: whisky043
+    2300854: whisky044
+    2300856: whisky045
+    2300858: whisky046
+    2300860: whisky047
+    2300862: whisky048
     3300000: Bar
     3300002: Bar001
     3300004: Beczka
@@ -1852,65 +1855,66 @@ ModelImporter:
     3300738: Object022
     3300740: Object023
     3300742: Object024
-    3300744: Piano
-    3300746: Podkowa1
-    3300748: Podkowa2
-    3300750: Podkowa3
-    3300752: Podkowa4
-    3300754: Podkowa5
-    3300756: Podkowa6
-    3300758: Stol1
-    3300760: Stol2
-    3300762: Szklanka
-    3300764: Szklanka001
-    3300766: Szklanka002
-    3300768: Wanted  5
-    3300770: Wanted 011
-    3300772: Wanted 1
-    3300774: Wanted 10
-    3300776: Wanted 2
-    3300778: Wanted 3
-    3300780: Wanted 4
-    3300782: Wanted 6
-    3300784: Wanted 7
-    3300786: Wanted 8
-    3300788: Wanted 9
-    3300790: whisky001
-    3300792: whisky008
-    3300794: whisky009
-    3300796: whisky010
-    3300798: whisky013
-    3300800: whisky014
-    3300802: whisky015
-    3300804: whisky016
-    3300806: whisky021
-    3300808: whisky022
-    3300810: whisky023
-    3300812: whisky024
-    3300814: whisky025
-    3300816: whisky026
-    3300818: whisky027
-    3300820: whisky028
-    3300822: whisky029
-    3300824: whisky030
-    3300826: whisky031
-    3300828: whisky032
-    3300830: whisky033
-    3300832: whisky034
-    3300834: whisky035
-    3300836: whisky036
-    3300838: whisky037
-    3300840: whisky038
-    3300842: whisky039
-    3300844: whisky040
-    3300846: whisky041
-    3300848: whisky042
-    3300850: whisky043
-    3300852: whisky044
-    3300854: whisky045
-    3300856: whisky046
-    3300858: whisky047
-    3300860: whisky048
+    3300744: Object025
+    3300746: Piano
+    3300748: Podkowa1
+    3300750: Podkowa2
+    3300752: Podkowa3
+    3300754: Podkowa4
+    3300756: Podkowa5
+    3300758: Podkowa6
+    3300760: Stol1
+    3300762: Stol2
+    3300764: Szklanka
+    3300766: Szklanka001
+    3300768: Szklanka002
+    3300770: Wanted  5
+    3300772: Wanted 011
+    3300774: Wanted 1
+    3300776: Wanted 10
+    3300778: Wanted 2
+    3300780: Wanted 3
+    3300782: Wanted 4
+    3300784: Wanted 6
+    3300786: Wanted 7
+    3300788: Wanted 8
+    3300790: Wanted 9
+    3300792: whisky001
+    3300794: whisky008
+    3300796: whisky009
+    3300798: whisky010
+    3300800: whisky013
+    3300802: whisky014
+    3300804: whisky015
+    3300806: whisky016
+    3300808: whisky021
+    3300810: whisky022
+    3300812: whisky023
+    3300814: whisky024
+    3300816: whisky025
+    3300818: whisky026
+    3300820: whisky027
+    3300822: whisky028
+    3300824: whisky029
+    3300826: whisky030
+    3300828: whisky031
+    3300830: whisky032
+    3300832: whisky033
+    3300834: whisky034
+    3300836: whisky035
+    3300838: whisky036
+    3300840: whisky037
+    3300842: whisky038
+    3300844: whisky039
+    3300846: whisky040
+    3300848: whisky041
+    3300850: whisky042
+    3300852: whisky043
+    3300854: whisky044
+    3300856: whisky045
+    3300858: whisky046
+    3300860: whisky047
+    3300862: whisky048
     4300000: Beczka
     4300002: Beczka001
     4300004: Beczka002
@@ -2342,14 +2346,10 @@ ModelImporter:
     4300856: butelka286
     4300858: Butelka041
     4300860: butelka289
+    4300862: Object025
     7400000: Take 001
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: WANTED
-    second: {fileID: 2800000, guid: f60b7aa7edc7fce40a8148a22f9f3f92, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -2383,6 +2383,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -2407,6 +2408,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
