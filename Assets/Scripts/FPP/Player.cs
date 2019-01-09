@@ -201,6 +201,7 @@ public class Player : MonoBehaviour {
             DestroyImmediate(currDeathPlane);
             isDead = false;
             _deathAnimation = false;
+			FullHealth();
             MoveToLastCheckPoint();
             //Restart of the scene 15.12.2018 - removed due to change of respawn concept
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
