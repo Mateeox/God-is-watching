@@ -17,6 +17,8 @@ TagManager:
   - chandelierBase
   - Bullet
   - Barrel
+  - ClockHandMinute
+  - ClockHandHour
   layers:
   - Default
   - TransparentFX
