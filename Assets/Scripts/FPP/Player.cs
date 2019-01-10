@@ -158,6 +158,8 @@ public class Player : MonoBehaviour {
 		if (healthBar.Value < 0.0001f)
 		{
             //player is dead...
+            GameVariables.DisableWeapons();
+            GameVariables.ChangeToHero();
             _deathAnimation = true;
             _heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             _heroCam.transform.position += Vector3.up * 4.0f;
@@ -202,6 +204,7 @@ public class Player : MonoBehaviour {
             isDead = false;
             _deathAnimation = false;
             MoveToLastCheckPoint();
+            GameVariables.EnableWeapons();
             //Restart of the scene 15.12.2018 - removed due to change of respawn concept
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -260,7 +263,7 @@ public class Player : MonoBehaviour {
 
     private void OnGUI()
     {
-        if (playerHitted)
+        if (playerHitted && !isDead)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), texture);
         }

@@ -79,19 +79,36 @@ public class GameVariables : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha1) && !_weaponsDisabled)
             {
                 PlayerWeapon = PlayerWeapons.None;
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            else if (Input.GetKeyDown(KeyCode.Alpha2) && !_weaponsDisabled)
             {
                 PlayerWeapon = PlayerWeapons.Close;
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && !_weaponsDisabled)
             {
                 PlayerWeapon = PlayerWeapons.Range;
             }
         }
+    }
+
+    private static bool _weaponsDisabled = false;
+    public static void DisableWeapons()
+    {
+        PlayerWeapon = PlayerWeapons.None;
+        _weaponsDisabled = true;
+    }
+
+    public static void EnableWeapons()
+    {
+        _weaponsDisabled = false;
+    }
+
+    public static void ChangeToHero()
+    {
+        GameMode = GameModes.Hero;
     }
 
     public static Vector3 getPos()
