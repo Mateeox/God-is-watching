@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 12008, y: 14048}
   vertical: 1
-  controlID: 28
+  controlID: 135
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 224}
   m_MaxSize: {x: 12008, y: 4024}
   vertical: 0
-  controlID: 29
+  controlID: 136
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -160,8 +160,8 @@ MonoBehaviour:
     y: 0
     width: 1379
     height: 673
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 229
     height: 673
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 312
     height: 673
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 433.06216, y: 36.14235, z: -3.9080367}
+    m_Target: {x: 433.34616, y: 13.755187, z: 9.901562}
     speed: 2
-    m_Value: {x: 433.06216, y: 36.14235, z: -3.9080367}
+    m_Value: {x: 433.34616, y: 13.755187, z: 9.901562}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -416,13 +416,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.06433705, y: -0.8154329, z: 0.09017787, w: 0.5681644}
+    m_Target: {x: -0.064336635, y: 0.81542766, z: -0.09017729, w: -0.5681608}
     speed: 2
-    m_Value: {x: 0.064336635, y: -0.81542766, z: 0.09017729, w: 0.5681608}
+    m_Value: {x: -0.064336635, y: 0.81542766, z: -0.09017729, w: -0.5681608}
   m_Size:
-    m_Target: 110.4197
+    m_Target: -5.352849
     speed: 2
-    m_Value: 110.4197
+    m_Value: -5.352849
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -539,10 +539,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 320}
-      m_SelectedIDs: 2ea0fdff
-      m_LastClickedID: -155602
-      m_ExpandedIDs: 24bcfdff4cbefdff2821feff
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1a7bfdff5a7efdff607efdffda84fdffae9efdffc8d8fdffae11feff5414feff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -639,20 +639,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Game Objects/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Game Objects/Prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Studies\Basics_of_computer_games\Reopsitory\God-is-watching
+  m_LastProjectPath: C:\Users\Kamil\Desktop\GIWGry
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 420}
-    m_SelectedIDs: 8a800000
-    m_LastClickedID: 32906
-    m_ExpandedIDs: 00000000607f0000967f0000b47f00009c800000a6800000ba8000005c8100006281000074820000d6820000dc820000e682000036a1000000ca9a3b
+    scrollPos: {x: 0, y: 83}
+    m_SelectedIDs: 8a820000
+    m_LastClickedID: 33418
+    m_ExpandedIDs: 000000008e800000c4800000e2800000ca810000d4810000e88100008a82000090820000a4830000068400000c84000016840000b298000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,7 +680,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000607f0000967f0000b47f00009c800000a6800000ba8000005c8100006281000074820000d6820000dc820000e682000036a10000
+    m_ExpandedIDs: 000000008e800000c4800000e2800000ca810000d4810000e88100008a82000090820000a4830000068400000c84000016840000b2980000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
