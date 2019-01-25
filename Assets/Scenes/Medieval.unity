@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09077849, g: 0.1153295, b: 0.16449091, a: 1}
+  m_IndirectSpecularColor: {r: 0.09077865, g: 0.11532976, b: 0.16449091, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6411,6 +6411,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c88cab1d017fa424793cbecda1dbb66e, type: 3}
+--- !u!114 &82229564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114370406121736532, guid: c88cab1d017fa424793cbecda1dbb66e,
+    type: 3}
+  m_PrefabInstance: {fileID: 82229563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &82229565 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114147328231197794, guid: c88cab1d017fa424793cbecda1dbb66e,
+    type: 3}
+  m_PrefabInstance: {fileID: 82229563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &82229566 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114327612574973952, guid: c88cab1d017fa424793cbecda1dbb66e,
+    type: 3}
+  m_PrefabInstance: {fileID: 82229563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &82404572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4515199094592482, guid: 432c1e7e7fb12bd45bf334ffd06c5126,
@@ -89840,17 +89876,17 @@ PrefabInstance:
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 82229566}
     - target: {fileID: 114094717423457546, guid: a3b79ba0219e3fe4fbf80377565ac9e5,
         type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 82229565}
     - target: {fileID: 114094717423457546, guid: a3b79ba0219e3fe4fbf80377565ac9e5,
         type: 3}
       propertyPath: dialogueContinue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 82229564}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b79ba0219e3fe4fbf80377565ac9e5, type: 3}
 --- !u!1001 &2136696084

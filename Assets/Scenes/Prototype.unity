@@ -1001,6 +1001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4837308841173260, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.509998
@@ -3461,8 +3465,7 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
-      value: The order is important, so try to find some clue. If you wouldn't be
-        able to find anything, let me have a look.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
@@ -3472,8 +3475,17 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: Try to unlock the door ahead of you by placing stones on the pressure
-        plates.
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: Place stones on pressure plates in front of you to open the doors.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].text
+      value: If you are stuck - try to find some clues, either as a hero or a god.
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4085,7 +4097,7 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
-      value: In case of your death, you will be resurected at recently visited altar.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
@@ -4095,8 +4107,18 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: "During your journey you are going to find altars on your path. \nThey
-        will recover your <color=#1919ff>mana points</color> and <color=#ff1919>health</color>."
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: During your journey you will come across altars, they will restore your
+        mana and health - but only during your first visit.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].text
+      value: In case of death you will be resurected near lately visited altar.
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4392,6 +4414,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
       value: Arrrrr...
       objectReference: {fileID: 0}
@@ -4403,7 +4435,57 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: Use <b>WSAD</b> to move.
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[0]
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: Press <b>WSAD</b> to move.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[1]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[2]
+      value: s
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[3]
+      value: d
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].relation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4836,6 +4918,10 @@ PrefabInstance:
     - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_TagString
       value: rockSmall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4837308841173260, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6064,6 +6150,18 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 2129960496}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &448469079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114327612574973952, guid: c88cab1d017fa424793cbecda1dbb66e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897800013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &449967159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8332,6 +8430,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633840403}
   m_Mesh: {fileID: 4300004, guid: c53e972a2a05f8746a8b3965a1e463c6, type: 3}
+--- !u!114 &638807905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114147328231197794, guid: c88cab1d017fa424793cbecda1dbb66e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897800013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &641524208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: c1caf2bffbc3c1d42a58e7b2df0c8b4a,
@@ -10936,20 +11046,96 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.endingKeys.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[2].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
-      value: To open the gate destroy <b><color=#fcfd95>yellow vases</color></b> with
-        your ranged weapon - <b>the mighty rock</b>!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[2]
-      value: Press and hold <b>LMB</b> to throw it, the longer it's held, the further
-        it will go!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: Use <b>SCROLL</b> to choose between melee and ranged weapon.
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.relation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: Use <b>SCROLL</b> or <b>1</b>, <b>2</b> or <b>3</b> keys on keyboard
+        to change your weapon between empty hands, melee weapon and ranged weapon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].relation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].text
+      value: Destroy <color="#ffff00ff">yellow vases</color> on your left to open
+        the gate in front of you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[2].text
+      value: Press <b>3</b> to choose ranged weapon and press <b>LMB</b> to throw
+        a rock. The longer you hold it, the further it will go!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[2].endingKeys.Array.data[0]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11830,25 +12016,29 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1232420901894768, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
-      value: You can't destroy them by the way.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[2]
-      value: I'm god!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: You can pick up small objects via <b>holding E </b> key.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12374,17 +12564,17 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 638807905}
     - target: {fileID: 114094717423457546, guid: a3b79ba0219e3fe4fbf80377565ac9e5,
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 448469079}
     - target: {fileID: 114094717423457546, guid: a3b79ba0219e3fe4fbf80377565ac9e5,
         type: 3}
       propertyPath: dialogueContinue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1843514569}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b79ba0219e3fe4fbf80377565ac9e5, type: 3}
 --- !u!1 &941251765
@@ -13661,6 +13851,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
       value: You can't destroy them by the way.
       objectReference: {fileID: 0}
@@ -13672,7 +13872,22 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: Press <b>C</b> to let me handle some things.
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[0]
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: Press <b>C</b> to let me help you cross this wall ahead of you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: c
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13740,9 +13955,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
-      value: Press <color=#ff1919><b>H</b></color> key to convert your <color=#1919ff>mana</color>
-        into health.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
@@ -13752,9 +13976,38 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: "If you don't have enough mana to use one of your abillities you can
-        sacrifice your <color=#ff1919>health</color> for <color=#1919ff>mana points</color>
-        with <color=#1919ff><b>M</b></color> key \n- but beware - it can kill you!"
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: If you ran out of <b>mana</b> press <b>M</b> to convert your health into
+        mana. It isn't equal trade, so you won't transfer all given health into mana.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: m
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].endingKeys.Array.data[0]
+      value: h
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].text
+      value: You can also convert mana into health by pressing <b>H</b> key.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].relation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].relation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17886,6 +18139,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
       value: You can't destroy them by the way.
       objectReference: {fileID: 0}
@@ -17897,9 +18160,23 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: 'Let me show you something cool before you continue.
-
-        Press <b>C</b> again.'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[0]
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: By pressing <b>1</b>, <b>2</b> and <b>3</b> in <b>God Mode</b> you can
+        swap between different powers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: c
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18650,54 +18927,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1639171381}
     m_Modifications:
-    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.77
@@ -18745,6 +18974,54 @@ PrefabInstance:
     - target: {fileID: 400006, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a0bc0a830f420d44ea2772fceb1e53be, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -19544,6 +19821,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
       value: Press <color=#ff1919><b>H</b></color> key to convert your <color=#1919ff>mana</color>
         into health.
@@ -19556,8 +19843,23 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: These spikes are moving too fast to cross them easily. Let me show you
-        my third abillity - <color=#ff4cff>the slow zone</color>!
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[0]
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: These spikes are moving too fast to easily cross them. Try using third
+        ability - <b>slow zone.</b>
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: c
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22269,6 +22571,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1368192443}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1843514569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114370406121736532, guid: c88cab1d017fa424793cbecda1dbb66e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897800013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1847058634
 GameObject:
   m_ObjectHideFlags: 0
@@ -23015,6 +23329,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224254690985450958, guid: c88cab1d017fa424793cbecda1dbb66e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -53
+      objectReference: {fileID: 0}
+    - target: {fileID: 224867557721548090, guid: c88cab1d017fa424793cbecda1dbb66e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -53
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c88cab1d017fa424793cbecda1dbb66e, type: 3}
 --- !u!224 &1897800014 stripped
@@ -23091,22 +23415,47 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentencess.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
-      value: You can't destroy them by the way.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[2]
-      value: I'm god!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: Use <b>SCROLL</b> to switch to your melee weapon and attack these dummies!
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: Press <b>2</b> to switch to your melee weapon and attack these dummies!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24293,6 +24642,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
       value: Arrrrr...
       objectReference: {fileID: 0}
@@ -24304,7 +24663,27 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0]
-      value: Press <b>SPACE</b> to jump over obstacles.
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.endingKeys.Array.data[0]
+      value: space
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: Press <b>SPACE</b> to jump.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: space
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].relation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24340,7 +24719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.6113622
+      value: 9.641227
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}

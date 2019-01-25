@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class DialogueManager : MonoBehaviour {
 
@@ -10,8 +11,12 @@ public class DialogueManager : MonoBehaviour {
     public Text dialogueContinue;
     private GameObject dialoguePanel;
     private bool isActiveDialogue = false;
+    private int pressedKeys;
+    private Sentence[] currentDialogSentences;
+    Sentence activeSentence = null;
+    private bool relation;
 
-    private Queue<string> sentences;
+    private Queue<Sentence> sentences;
 
     public void Awake()
     {
@@ -21,15 +26,17 @@ public class DialogueManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        sentences = new Queue<string>();
+        sentences = new Queue<Sentence>();
+
 	}
 	
 	public void StartDialogue (Dialouge dialouge)
     {
         dialoguePanel.SetActive(true);
+        //Copy sentences from dialog
+        currentDialogSentences = dialouge.sentences.ToArray();
         nameText.text = dialouge.characterName;
-        //sentences.Clear();
-        foreach (string sentence in dialouge.sentences) {
+        foreach (Sentence sentence in currentDialogSentences) {
             sentences.Enqueue(sentence);
         }
         if (sentences.Count > 0)
@@ -44,7 +51,11 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence()
     {
-        dialogueContinue.text = "Continue... [E]";
+        //Get relation between keys in current sentence in dialog
+        if (sentences.Count > 1)
+        {
+            dialogueContinue.text = "Continue... [E]";
+        }
         if (sentences.Count == 1)
         {
             dialogueContinue.text = "End. [E]";
@@ -54,22 +65,66 @@ public class DialogueManager : MonoBehaviour {
             EndDialogue();
             return;
         }
-
-        string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        activeSentence = sentences.Dequeue();
+        dialogueText.text = activeSentence.text;
+        relation = activeSentence.relation;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (isActiveDialogue && activeSentence != null)
         {
-            DisplayNextSentence();
+            //Check if E key was pressed
+            if (Input.GetKeyDown("e"))
+            { 
+                DisplayNextSentence();
+            }
+            //Check if all required keys were pressed - and relation
+            if (relation)
+            {
+                if (activeSentence.endingKeys.Count != 0)
+                {
+                    for (int i = 0; i < activeSentence.endingKeys.Count; i++)
+                    {
+                        if (activeSentence.endingKeys[i] != null)
+                        {
+                            if (Input.GetKeyDown(activeSentence.endingKeys[i]))
+                            {
+                                activeSentence.endingKeys[i] = null;
+                                pressedKeys++;
+                                if (pressedKeys == activeSentence.endingKeys.Count)
+                                {
+                                    DisplayNextSentence();
+                                    pressedKeys = 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //Check if any from required keys was pressed - xor relation
+            if (!relation)
+            {
+                if (activeSentence.endingKeys.Count != 0)
+                {
+                    for (int i = 0; i < activeSentence.endingKeys.Count; i++)
+                    {
+                        if (Input.GetKeyDown(activeSentence.endingKeys[i]))
+                        {
+                            DisplayNextSentence();
+                        }
+                    }
+                }
+            }
         }
     }
 
     public void EndDialogue()
     {
         isActiveDialogue = false;
+        sentences.Clear();
         dialoguePanel.SetActive(false);
+        currentDialogSentences = null;
+        pressedKeys = 0;
     }
 }

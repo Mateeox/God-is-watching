@@ -6,7 +6,5 @@ using UnityEngine;
 public class Dialouge {
 
     public string characterName;
-
-    [TextArea(1,10)]
-	public string[] sentences;
+	public List<Sentence> sentences;
 }
