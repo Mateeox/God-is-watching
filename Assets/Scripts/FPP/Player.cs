@@ -16,7 +16,12 @@ public class Player : MonoBehaviour {
     public float hittedTime = 0.1f;
     public float hittedCounter;
     public bool playerHitted;
-    public GameObject DeathPlane;
+
+    public Texture deadTexture;
+    public bool isDead = false;
+    public float deadAnimationTime = 0.8f;
+    public float deadAnimationCounter;
+
 
     private CharacterController characterController;
 
@@ -49,6 +54,9 @@ public class Player : MonoBehaviour {
         playerHitted = false;
         hittedCounter = 0.0f;
         characterController = GetComponent<CharacterController>();
+        isDead = false;
+        deadAnimationCounter = 0.0f;
+
     }
 	
 	// Update is called once per frame
@@ -67,6 +75,21 @@ public class Player : MonoBehaviour {
             }
 
         }
+
+        if(isDead)
+        {
+            if (deadAnimationCounter < deadAnimationTime)
+            {
+                deadAnimationCounter += Time.deltaTime;
+            }
+            else
+            {
+                deadAnimationCounter = 0.0f;
+                isDead = false;
+            }
+
+        }
+
         bool isTooLittleMana = false;
 		if (slowZone.manualUpdate(manaBar.Value, ref isTooLittleMana))
 		{
@@ -111,8 +134,6 @@ public class Player : MonoBehaviour {
 				healthToMana();
 		}
 
-        if (_deathAnimation)
-            AnimateDeath();
 		
 		//***********************************
 		//for debug only!
@@ -153,17 +174,14 @@ public class Player : MonoBehaviour {
         MusicSource.volume = 2.7f;
         MusicSource.pitch = Random.Range(0.8f, 1.1f);
         MusicSource.PlayOneShot(MusicClip);
-
-		healthBar.addValue(-damage);
+        healthBar.addValue(-damage);
 		if (healthBar.Value < 0.0001f)
 		{
             //player is dead...
             GameVariables.DisableWeapons();
             GameVariables.ChangeToHero();
-            _deathAnimation = true;
-            _heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-            _heroCam.transform.position += Vector3.up * 4.0f;
-            _startPos = _heroCam.transform.position;
+            isDead = true;
+            
             if (Checkpoint != null)
             {
                 Vector3 checkpointPos = Checkpoint.transform.position;
@@ -171,43 +189,20 @@ public class Player : MonoBehaviour {
                 GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
-            if (!isDead)
-            {
-                isDead = true;
-                currDeathPlane = Instantiate(DeathPlane);
-            }
-            
-            _heroCam.transform.parent = null;
-            AnimateDeath();
+           
+            Die();
         }
     }
 
-    private bool _deathAnimation = false;
-    private GameObject currDeathPlane;
-    private Camera _heroCam;
-    private Vector3 _startPos;
-    private bool isDead = false;
-    private void AnimateDeath()
+      
+    private void Die()
     {
-        currDeathPlane.transform.parent = _heroCam.transform;
-        currDeathPlane.transform.position = _heroCam.transform.position + _heroCam.transform.forward * 1.0f;
-        _heroCam.transform.LookAt(_startPos);
-        if(GlobalControl.Position != new Vector3())
-            _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, GlobalControl.Position, 15.0f * Time.deltaTime);
-        else
-            _heroCam.transform.position = Vector3.MoveTowards(_heroCam.transform.position, this.transform.position - new Vector3(20.0f, -3.0f, 0), 15.0f * Time.deltaTime);
-        Color crl = currDeathPlane.GetComponent<Renderer>().materials[0].color;
-        crl.a -= 0.4f * Time.deltaTime;
-        currDeathPlane.GetComponent<Renderer>().materials[0].color = crl;
-        if (crl.a <= 0) {
-            DestroyImmediate(currDeathPlane);
-            isDead = false;
-            _deathAnimation = false;
-            MoveToLastCheckPoint();
-            GameVariables.EnableWeapons();
-            //Restart of the scene 15.12.2018 - removed due to change of respawn concept
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        isDead = true;
+        MoveToLastCheckPoint();
+        GameVariables.EnableWeapons();
+       //Restart of the scene 15.12.2018 - removed due to change of respawn concept
+       //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 
     private void MoveToLastCheckPoint()
@@ -216,6 +211,8 @@ public class Player : MonoBehaviour {
         {
             transform.position = GlobalControl.Position;
             transform.rotation = GlobalControl.Rotation;
+
+            Camera _heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             _heroCam.transform.parent = transform;
             _heroCam.transform.localPosition = new Vector3(0.07f, 0.37f, -0.03f);
             _heroCam.transform.localRotation = new Quaternion();
@@ -266,6 +263,12 @@ public class Player : MonoBehaviour {
         if (playerHitted && !isDead)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), texture);
+        }
+
+        if (isDead)
+        {
+            //float scale = deadAnimationTime / (deadAnimationTime - deadAnimationCounter);
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), deadTexture);
         }
     }
     
