@@ -999,11 +999,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_Name
-      value: stone_1 (1)
+      value: stone_pickup_big
       objectReference: {fileID: 0}
     - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4837308841173260, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1324,6 +1324,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 0}
+--- !u!1001 &82208247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1232420901894768, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_Name
+      value: BossDialogueTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232420901894768, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[2]
+      value: I'm god!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].text
+      value: It's time for your final challenge. At the end of each journey you are
+        going to face strong opponent without my help. Fingers crossed!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: e
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].relation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 290.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.386744
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2837429
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_RootOrder
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 24.60865
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
 --- !u!1001 &103599923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3464,6 +3563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
       propertyPath: dialouge.sentences.Array.data[1]
       value: 
       objectReference: {fileID: 0}
@@ -3480,12 +3584,18 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0].text
-      value: Place stones on pressure plates in front of you to open the doors.
+      value: Place stones on pressure plates in front of you to open the doors. You
+        can pick them up by holding <b>E</b> key.
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[1].text
       value: If you are stuck - try to find some clues, either as a hero or a god.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
+      value: e
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4921,7 +5031,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375919741237516, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
+      propertyPath: m_Name
+      value: stone_pickup_small
       objectReference: {fileID: 0}
     - target: {fileID: 4837308841173260, guid: 02c9af2aed232164793a0c12ae2adf53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11057,7 +11171,7 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[2].endingKeys.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
@@ -11135,7 +11249,12 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[2].endingKeys.Array.data[0]
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[2].endingKeys.Array.data[1]
+      value: mouse 0
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23415,7 +23534,7 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
@@ -23426,6 +23545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].endingKeys.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
@@ -23450,12 +23574,28 @@ PrefabInstance:
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[0]
-      value: 2
+      value: mouse 0
       objectReference: {fileID: 0}
     - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
         type: 3}
       propertyPath: dialouge.sentences.Array.data[0].endingKeys.Array.data[1]
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].text
+      value: Press <b>A</b> or <b>D</b> and <b>CTRL</b> while holding it to make a
+        dodge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].endingKeys.Array.data[0]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 114822358505534842, guid: 5b3fede93c64b0f478dc1cda1d0e9493,
+        type: 3}
+      propertyPath: dialouge.sentences.Array.data[1].endingKeys.Array.data[1]
+      value: left ctrl
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
