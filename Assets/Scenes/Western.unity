@@ -11690,6 +11690,16 @@ PrefabInstance:
       propertyPath: playerHitted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: deadAnimationTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: deadTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: a5e957f661669cd48a4e26346b9f6adf, type: 3}
     - target: {fileID: 1195122037241586, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_TagString
       value: MainCamera

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09077865, g: 0.11532976, b: 0.16449091, a: 1}
+  m_IndirectSpecularColor: {r: 0.090778634, g: 0.115329765, b: 0.16449091, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -87746,6 +87746,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1808645464643170, guid: c8945ded2e539c2448bd9c37921c9667,
         type: 3}
+    - target: {fileID: 114755662954403892, guid: f0af2fe25282ad540bb067d3ca3a0ed1,
+        type: 3}
+      propertyPath: deadAnimationTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114755662954403892, guid: f0af2fe25282ad540bb067d3ca3a0ed1,
+        type: 3}
+      propertyPath: deadTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: a5e957f661669cd48a4e26346b9f6adf, type: 3}
     - target: {fileID: 114379635198513430, guid: f0af2fe25282ad540bb067d3ca3a0ed1,
         type: 3}
       propertyPath: startBulletPosition

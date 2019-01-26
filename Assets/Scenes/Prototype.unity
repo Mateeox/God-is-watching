@@ -26657,7 +26657,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4488871878427608, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.8
+      value: -15.1
       objectReference: {fileID: 0}
     - target: {fileID: 4488871878427608, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26665,7 +26665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4488871878427608, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4
+      value: 3.13
       objectReference: {fileID: 0}
     - target: {fileID: 4488871878427608, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -26702,5 +26702,20 @@ PrefabInstance:
       propertyPath: manaBar
       value: 
       objectReference: {fileID: 1862246185}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: deadTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: a5e957f661669cd48a4e26346b9f6adf, type: 3}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: deadAnimationTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: playerHitted
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
