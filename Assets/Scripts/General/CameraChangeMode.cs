@@ -35,7 +35,7 @@ public class CameraChangeMode : MonoBehaviour
     {
 
         //Change camera during changing game mode
-        if (Input.GetButtonDown("ChangeMode"))
+        if (Input.GetButtonDown("ChangeMode") && !GameVariables.isGodDisabled)
         {
             DisableAll();
             if (_animation)

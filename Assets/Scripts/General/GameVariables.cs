@@ -13,6 +13,7 @@ public class GameVariables : MonoBehaviour
     public static GameModes GameMode { get; private set; }
     public static PlayerWeapons PlayerWeapon { get; private set; }
     public static Camera godCam;
+	public static bool isGodDisabled;
 
     void Start()
     {
@@ -20,11 +21,12 @@ public class GameVariables : MonoBehaviour
 		Ability = Abilities.Move;
         PlayerWeapon = PlayerWeapons.None;
         godCam = GameObject.FindGameObjectWithTag("GodCamera").GetComponent<Camera>() as Camera;
+		isGodDisabled = false;
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("ChangeMode"))
+        if (Input.GetButtonDown("ChangeMode") && !isGodDisabled)
         {
             if (GameMode == GameModes.Hero)
             {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.090778634, g: 0.115329765, b: 0.16449091, a: 1}
+  m_IndirectSpecularColor: {r: 0.09077897, g: 0.11532481, b: 0.16442557, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -47057,6 +47057,7 @@ GameObject:
   - component: {fileID: 994272306}
   - component: {fileID: 994272305}
   - component: {fileID: 994272308}
+  - component: {fileID: 994272309}
   m_Layer: 0
   m_Name: BeforeBoss
   m_TagString: Untagged
@@ -47124,6 +47125,18 @@ MonoBehaviour:
   arrow: {fileID: 7524048907039719587, guid: 48c0f382a6177b84faa3e4bd492d460f, type: 3}
   arrowsStartingHeightOffset: 50
   arrowsVerticalRange: 10
+--- !u!114 &994272309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994272304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2325b1be2185f4d8c05f54eff96f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &996622397
 PrefabInstance:
   m_ObjectHideFlags: 0
