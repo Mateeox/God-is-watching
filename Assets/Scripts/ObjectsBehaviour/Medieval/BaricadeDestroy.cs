@@ -24,7 +24,6 @@ public class BaricadeDestroy : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("T: " + other.tag);
         if (other.CompareTag("rockSmall"))
         {
             gameObject.GetComponent<Collider>().isTrigger = false;

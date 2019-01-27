@@ -19,6 +19,7 @@ TagManager:
   - Barrel
   - ClockHandMinute
   - ClockHandHour
+  - Arrow
   layers:
   - Default
   - TransparentFX
