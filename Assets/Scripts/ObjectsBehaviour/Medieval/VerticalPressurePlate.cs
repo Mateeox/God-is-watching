@@ -13,7 +13,7 @@ public class VerticalPressurePlate : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        startPosition = this.gameObject.transform.position;
+        startPosition = this.gameObject.transform.localPosition;
         isActivated = false;
     }
 	
@@ -21,20 +21,11 @@ public class VerticalPressurePlate : MonoBehaviour {
     {
         
         Vector3 target = new Vector3(startPosition.x, startPosition.y, endHorizontalPosition);
-        transform.position = Vector3.MoveTowards(transform.position, target, 4);
+        transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, 4);
 
         if (other.gameObject.tag == tagName)
         {
             isActivated = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        transform.position = startPosition;
-        if (other.gameObject.tag == tagName && isActivated)
-        {
-            isActivated = false;
         }
     }
 }
