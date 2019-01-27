@@ -11700,6 +11700,11 @@ PrefabInstance:
       propertyPath: deadTexture
       value: 
       objectReference: {fileID: 2800000, guid: a5e957f661669cd48a4e26346b9f6adf, type: 3}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: slowZoneTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce09a35ece13e8447a3350967a84991c, type: 3}
     - target: {fileID: 1195122037241586, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_TagString
       value: MainCamera

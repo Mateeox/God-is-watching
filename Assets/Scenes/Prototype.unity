@@ -4991,6 +4991,16 @@ PrefabInstance:
       propertyPath: objectToCheck
       value: 
       objectReference: {fileID: 123380424}
+    - target: {fileID: 1496938034026003056, guid: bcfba9fb171f6b944a803b2a58b00c16,
+        type: 3}
+      propertyPath: loadingMenu
+      value: 
+      objectReference: {fileID: 692669392}
+    - target: {fileID: 1496938034026003056, guid: bcfba9fb171f6b944a803b2a58b00c16,
+        type: 3}
+      propertyPath: sliderProgress
+      value: 
+      objectReference: {fileID: 692669391}
     - target: {fileID: 1496938034026003060, guid: bcfba9fb171f6b944a803b2a58b00c16,
         type: 3}
       propertyPath: m_IsActive
@@ -5006,16 +5016,6 @@ PrefabInstance:
       propertyPath: sceneName
       value: Medieval
       objectReference: {fileID: 0}
-    - target: {fileID: 1496938034026003056, guid: bcfba9fb171f6b944a803b2a58b00c16,
-        type: 3}
-      propertyPath: loadingMenu
-      value: 
-      objectReference: {fileID: 692669392}
-    - target: {fileID: 1496938034026003056, guid: bcfba9fb171f6b944a803b2a58b00c16,
-        type: 3}
-      propertyPath: sliderProgress
-      value: 
-      objectReference: {fileID: 692669391}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcfba9fb171f6b944a803b2a58b00c16, type: 3}
 --- !u!1001 &368314716
@@ -9296,6 +9296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.68277
@@ -9339,10 +9343,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
       propertyPath: m_LocalScale.z
       value: 136.0369
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
@@ -24410,6 +24410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 49.53477
@@ -24453,10 +24457,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
       propertyPath: m_LocalScale.z
       value: 293.166
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
@@ -24536,6 +24536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 44.1
@@ -24591,10 +24595,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.77300006
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
-      propertyPath: m_Convex
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cadeb0227e326e8448a4675b3efda0ea, type: 3}
@@ -26717,5 +26717,10 @@ PrefabInstance:
       propertyPath: playerHitted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
+        type: 3}
+      propertyPath: slowZoneTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce09a35ece13e8447a3350967a84991c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc485742c3805a84caeea7203ca357b3, type: 3}

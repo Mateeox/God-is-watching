@@ -38,7 +38,7 @@ public class MedievalBossBehaviour : MonoBehaviour
         enemyPos = target.position + target.transform.right * 4.0f;
 
         //
-        if (currentStateInfo.IsName("Spin"))
+        if (currentStateInfo.IsName("Spin"))//durring spinning attack
         {
             currentSpinTime -= Time.deltaTime;
             // Move our position a step closer to the target.
@@ -46,10 +46,11 @@ public class MedievalBossBehaviour : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
         }
 
-        if (currentSpinTime <= 0)
+        if (currentSpinTime <= 0)//after spinning attack
         {
 
-            anim.SetTrigger("Idle");
+            anim.SetTrigger("Dizzy");
+            anim.ResetTrigger("Idle");
             anim.ResetTrigger("Spin");
             anim.ResetTrigger("Run");
             currentSpinCooldown = spinCooldown;
@@ -58,7 +59,7 @@ public class MedievalBossBehaviour : MonoBehaviour
         }
 
 
-        if (currentStateInfo.IsName("Idle") && currentSpinCooldown > 0)
+        if (currentStateInfo.IsName("Dizzy") && currentSpinCooldown > 0)//when boss is exhausted
         {
             currentSpinCooldown -= Time.deltaTime;
         }
@@ -71,6 +72,7 @@ public class MedievalBossBehaviour : MonoBehaviour
                 anim.SetTrigger("Run");
                 anim.ResetTrigger("Idle");
                 anim.ResetTrigger("Spin");
+                anim.ResetTrigger("Dizzy");
                 Vector3 targetDir = target.position - transform.position;
 
                 newDir = Vector3.RotateTowards(transform.forward, targetDir + transform.right * -1.5f + transform.up * -2.0f, step * 0.5f, 0.0f);
@@ -83,17 +85,25 @@ public class MedievalBossBehaviour : MonoBehaviour
                     transform.rotation = Quaternion.LookRotation(newDir);
                     transform.position = Vector3.MoveTowards(transform.position, newPosition, step);
                 }
+            }else if(currentSpinCooldown > 0)
+            {
+                anim.SetTrigger("Dizzy");
+                anim.ResetTrigger("Idle");
+                anim.ResetTrigger("Run");
+                anim.ResetTrigger("Spin");
             }
             else
             {
                 anim.SetTrigger("Idle");
+                anim.ResetTrigger("Dizzy");
                 anim.ResetTrigger("Run");
                 anim.ResetTrigger("Spin");
             }
         }
-        else if (currentSpinCooldown <= 0)
+        else if (currentSpinCooldown <= 0)//starting next spinning attack
         {
             anim.SetTrigger("Spin");
+            anim.ResetTrigger("Dizzy");
             anim.ResetTrigger("Run");
             anim.ResetTrigger("Idle");
 

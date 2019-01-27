@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09077897, g: 0.11532481, b: 0.16442557, a: 1}
+  m_IndirectSpecularColor: {r: 0.090778634, g: 0.115329765, b: 0.16449091, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89969,6 +89969,11 @@ PrefabInstance:
       propertyPath: deadTexture
       value: 
       objectReference: {fileID: 2800000, guid: a5e957f661669cd48a4e26346b9f6adf, type: 3}
+    - target: {fileID: 114755662954403892, guid: f0af2fe25282ad540bb067d3ca3a0ed1,
+        type: 3}
+      propertyPath: slowZoneTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ce09a35ece13e8447a3350967a84991c, type: 3}
     - target: {fileID: 114379635198513430, guid: f0af2fe25282ad540bb067d3ca3a0ed1,
         type: 3}
       propertyPath: startBulletPosition

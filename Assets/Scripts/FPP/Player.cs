@@ -22,6 +22,8 @@ public class Player : MonoBehaviour {
     public float deadAnimationTime = 0.8f;
     public float deadAnimationCounter;
 
+    public Texture slowZoneTexture;
+    public bool isInSlowZone;
 
     private CharacterController characterController;
 
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour {
         hittedCounter = 0.0f;
         characterController = GetComponent<CharacterController>();
         isDead = false;
+        isInSlowZone = false;
         deadAnimationCounter = 0.0f;
 
     }
@@ -269,6 +272,11 @@ public class Player : MonoBehaviour {
         {
             //float scale = deadAnimationTime / (deadAnimationTime - deadAnimationCounter);
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), deadTexture);
+        }
+
+        if (isInSlowZone && GameVariables.GameMode == GameVariables.GameModes.Hero)
+        {
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), slowZoneTexture);
         }
     }
     

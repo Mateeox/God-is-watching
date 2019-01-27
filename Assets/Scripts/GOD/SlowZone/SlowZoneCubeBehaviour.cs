@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SlowZoneCubeBehaviour : MonoBehaviour {
-
-    private GameObject SlowZoneEffect;
+    
     private List<ISlowable> _slowableObjects;
     // Use this for initialization
     void Start () {
@@ -14,7 +13,6 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
         {
             if(mainCamera.transform.GetChild(i).gameObject.name == "SlowZoneEffect")
             {
-                SlowZoneEffect = mainCamera.transform.GetChild(i).gameObject;
                 _slowableObjects = new List<ISlowable>();
             }
             
@@ -38,7 +36,8 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
     {
         if (other.gameObject.name == "Player")
         {
-            SlowZoneEffect.SetActive(true);
+            Player player = other.GetComponent<Player>();
+            player.isInSlowZone = true;
         }
         ISlowable slow = other.gameObject.GetComponent<ISlowable>();
         Debug.Log(other);
@@ -54,7 +53,8 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
     {
         if (other.gameObject.name == "Player")
         {
-            SlowZoneEffect.SetActive(false);
+            Player player = other.GetComponent<Player>();
+            player.isInSlowZone = false;
         }
         ISlowable slow = other.gameObject.GetComponent<ISlowable>();
         if (slow != null)
@@ -70,6 +70,9 @@ public class SlowZoneCubeBehaviour : MonoBehaviour {
         {
             slow.SetMaxSpeed();
         }
-        SlowZoneEffect.SetActive(false);
+
+        Player player = GameObject.Find("Player").GetComponent<Player>();
+        player.isInSlowZone = false;
+
     }
 }
