@@ -205,7 +205,8 @@ public class Player : MonoBehaviour {
         GameVariables.EnableWeapons();
        //Restart of the scene 15.12.2018 - removed due to change of respawn concept
        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
+        FullMana();
+		FullHealth();
     }
 
     private void MoveToLastCheckPoint()
