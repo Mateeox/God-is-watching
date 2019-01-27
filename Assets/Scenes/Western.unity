@@ -11693,7 +11693,7 @@ PrefabInstance:
     - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
         type: 3}
       propertyPath: deadAnimationTime
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114468443495867324, guid: fc485742c3805a84caeea7203ca357b3,
         type: 3}

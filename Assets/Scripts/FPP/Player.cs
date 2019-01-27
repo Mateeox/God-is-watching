@@ -271,7 +271,22 @@ public class Player : MonoBehaviour {
         if (isDead)
         {
             //float scale = deadAnimationTime / (deadAnimationTime - deadAnimationCounter);
+            Color oldColor = GUI.color;
+            float alpha;
+            if(deadAnimationCounter < deadAnimationTime / 3.0f)
+            {
+                alpha = 1 - (deadAnimationTime - deadAnimationCounter - 0.66f * deadAnimationTime) * 3.0f;
+                Debug.Log(alpha);
+            }else if(deadAnimationCounter < deadAnimationTime * 2.0f / 3.0f)
+            {
+                alpha = 1;
+            }else
+            {
+                alpha = (deadAnimationTime - deadAnimationCounter) * 3.0f;
+            }
+            GUI.color = new Color(1.0f, 1.0f, 1.0f, alpha);
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), deadTexture);
+            GUI.color = oldColor;
         }
 
         if (isInSlowZone && GameVariables.GameMode == GameVariables.GameModes.Hero)
