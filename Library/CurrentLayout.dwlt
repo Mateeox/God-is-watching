@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 498}
   m_MaxSize: {x: 12002, y: 14048}
   vertical: 1
-  controlID: 59
+  controlID: 80
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 224}
   m_MaxSize: {x: 12002, y: 4024}
   vertical: 0
-  controlID: 60
+  controlID: 81
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 300.12427, y: 4.3902187, z: 13.118942}
+    m_Target: {x: 277.03888, y: 40.233364, z: 0.7326219}
     speed: 2
-    m_Value: {x: 300.12427, y: 4.3902187, z: 13.118942}
+    m_Value: {x: 277.03888, y: 40.233364, z: 0.7326219}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -416,13 +416,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.25657806, y: -0.33267802, z: 0.09434363, w: -0.90254915}
+    m_Target: {x: 0.095689595, y: 0.58838093, z: -0.07193995, w: 0.7996725}
     speed: 2
-    m_Value: {x: -0.25657773, y: -0.33267757, z: 0.094343506, w: -0.90254796}
+    m_Value: {x: 0.095689595, y: 0.58838093, z: -0.07193995, w: 0.7996725}
   m_Size:
-    m_Target: 127.689415
+    m_Target: -1.9925077
     speed: 2
-    m_Value: 127.689415
+    m_Value: -1.9925077
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -498,8 +498,12 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
+  m_AnimatorController: {fileID: 9100000, guid: c8a0a4e7e56ae7c4a9d13ceeff70ce17,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107066257935613370, guid: c8a0a4e7e56ae7c4a9d13ceeff70ce17,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -539,10 +543,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 3251}
-      m_SelectedIDs: d0b4fcff
-      m_LastClickedID: -215856
-      m_ExpandedIDs: b09bfcff8a9ffcff989ffcffe6b5fcff0811feffbe13feffbed0010016d10100a6d10100
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: c6210100
+      m_LastClickedID: 74182
+      m_ExpandedIDs: 4c45ffffc249ffff2090ffff9adbffffcef5ffffa4420000c6210100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -639,20 +643,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/FPP
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/FPP
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Studies\Basics_of_computer_games\Reopsitory\God-is-watching
+  m_LastProjectPath: C:\Users\Kamil\Desktop\GIWGry
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 376}
-    m_SelectedIDs: 6a830000
-    m_LastClickedID: 33642
-    m_ExpandedIDs: 000000001c81000052810000708100005c820000668200007a8200001e830000248300003a840000a0840000a6840000b0840000c699000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 082e0000
+    m_LastClickedID: 11784
+    m_ExpandedIDs: 00000000082e0000162f00005c2f00009a360000b8390000143a00006c3a0000d23b0000963c00009c3c0000ac3e000064400000604100007e410000b0410000de4e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -680,7 +684,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c8100005281000070810000668200007a8200001e830000248300003a840000a0840000a6840000b0840000c6990000
+    m_ExpandedIDs: 00000000082e0000162f00005c2f0000b8390000143a00006c3a0000963c00009c3c000064400000604100007e410000b0410000de4e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

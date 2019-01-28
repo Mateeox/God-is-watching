@@ -14,6 +14,9 @@ public class MainCharacterAnimatorScript : Enemy{
     private float damageDelay = 0;
     public float amountOfDelay = 2.0f;
 
+	[SerializeField]
+	private GameObject portal;
+
     private void Awake()
     {
        DisableRagdoll();
@@ -126,5 +129,10 @@ public class MainCharacterAnimatorScript : Enemy{
         {
             rbJoint.isKinematic = false;
         }
+
+		if(portal != null){
+			portal.SetActive(true);
+		}
+
     }
 }
