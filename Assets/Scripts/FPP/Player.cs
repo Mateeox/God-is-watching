@@ -46,7 +46,6 @@ public class Player : MonoBehaviour {
         GlobalControl.Position = transform.position;
         GlobalControl.Rotation = transform.rotation;
         GlobalControl.Set = true;
-        Cursor.visible = false;
         pickedObject = null;
         maxPickUpDistance = 4.0f;
 		healthBar.init(100.0f, 100.0f);
@@ -63,6 +62,26 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        switch(GameVariables.GameMode)
+        {
+            case GameVariables.GameModes.God : {
+                Cursor.visible = true;
+                break;
+            }
+
+            case GameVariables.GameModes.Hero:
+            {
+                Cursor.visible = false;
+                break;
+            }
+
+            default:
+            {
+                Cursor.visible = false;
+                break;
+            }
+        }
 
         if (playerHitted)
         {
