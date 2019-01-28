@@ -43,11 +43,10 @@ public class Player : MonoBehaviour {
 	private float subtractFactor = 0.8f;
 	// Use this for initialization
 	void Start () {
-        if (GlobalControl.Set)
-        {
-            transform.position = GlobalControl.Position;
-            transform.rotation = GlobalControl.Rotation;
-        }
+        GlobalControl.Position = transform.position;
+        GlobalControl.Rotation = transform.rotation;
+        GlobalControl.Set = true;
+        Cursor.visible = false;
         pickedObject = null;
         maxPickUpDistance = 4.0f;
 		healthBar.init(100.0f, 100.0f);
@@ -216,10 +215,10 @@ public class Player : MonoBehaviour {
             transform.position = GlobalControl.Position;
             transform.rotation = GlobalControl.Rotation;
 
-            Camera _heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-            _heroCam.transform.parent = transform;
-            _heroCam.transform.localPosition = new Vector3(0.07f, 0.37f, -0.03f);
-            _heroCam.transform.localRotation = new Quaternion();
+            //Camera _heroCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            //_heroCam.transform.parent = transform;
+            //_heroCam.transform.localPosition = new Vector3(0.07f, 0.37f, -0.03f);
+            //_heroCam.transform.localRotation = new Quaternion();
         } else
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
