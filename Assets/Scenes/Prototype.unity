@@ -1772,6 +1772,26 @@ MonoBehaviour:
   particlesYOffset: 0
   bloodParticles: {fileID: 1874212181283352, guid: 2e720f64bf57aae4b8986d71e1d48aef,
     type: 3}
+--- !u!114 &118685334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118685332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812aada4262f7b64a9cd5967a4852141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  weaponDamage: 40
+  lighteningDamage: 80
+  particlesYOffset: 0
+  bloodParticles: {fileID: 1874212181283352, guid: 2e720f64bf57aae4b8986d71e1d48aef,
+    type: 3}
+  afterDeadParticlesCooldown: 0.4
+  afterDeadParticlesTimer: 0
 --- !u!54 &118685339
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4238,7 +4258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 129.4
+      value: 104.6
       objectReference: {fileID: 0}
     - target: {fileID: 4632621286261852, guid: 5b3fede93c64b0f478dc1cda1d0e9493, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20429,7 +20449,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4961361964457964, guid: 324a4b9c450352b459e6a4cee73760de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 129.22609
+      value: 103.9
       objectReference: {fileID: 0}
     - target: {fileID: 4961361964457964, guid: 324a4b9c450352b459e6a4cee73760de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21363,15 +21383,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1719851874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8bdd39316bc7764b893066873c8d554, type: 3}
+  m_Script: {fileID: 11500000, guid: 812aada4262f7b64a9cd5967a4852141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  weaponDamage: 0
-  lighteningDamage: 0
+  weaponDamage: 40
+  lighteningDamage: 80
   particlesYOffset: 0
   bloodParticles: {fileID: 1874212181283352, guid: 2e720f64bf57aae4b8986d71e1d48aef,
     type: 3}
+  afterDeadParticlesCooldown: 0.4
+  afterDeadParticlesTimer: 0
 --- !u!54 &1719851880
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26618,7 +26640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4488871878427608, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 304.5
+      value: -34.6
       objectReference: {fileID: 0}
     - target: {fileID: 4488871878427608, guid: fc485742c3805a84caeea7203ca357b3, type: 3}
       propertyPath: m_LocalPosition.y

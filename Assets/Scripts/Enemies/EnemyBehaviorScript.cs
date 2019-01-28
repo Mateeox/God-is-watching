@@ -16,9 +16,11 @@ public class EnemyBehaviorScript : MonoBehaviour {
     private float damageDelay = 0;
     public float amountOfDelay = 2.0f;
     public bool righthanded = true;
+    private Rigidbody rigidbody;
 
     private void Start()
     {
+        rigidbody = gameObject.GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         originPosition = this.gameObject.transform.position;
         originRotation = this.gameObject.transform.rotation * gameObject.transform.right;
@@ -28,6 +30,7 @@ public class EnemyBehaviorScript : MonoBehaviour {
 
     void Update()
     {
+
 
         AnimatorStateInfo currentStateInfo = anim.GetCurrentAnimatorStateInfo(0);
         Vector3 newDir, enemyPos;
@@ -40,9 +43,15 @@ public class EnemyBehaviorScript : MonoBehaviour {
             enemyPos = target.position + target.transform.right * -2.0f;
         }
 
+        if(rigidbody.isKinematic && !currentStateInfo.IsName("idleProtect") && Vector3.Distance(transform.position, originPosition) > 3.0f)
+        {
+            rigidbody.isKinematic = false;
+        }
+
         if (Vector3.Distance(transform.position, originPosition) < 2.0f && Vector3.Distance(enemyPos, transform.position) >= detectionDistance)
         {
             anim.SetTrigger("idleProtect");
+            rigidbody.isKinematic = true;
         }
 
         // The step size is equal to speed times frame time.
