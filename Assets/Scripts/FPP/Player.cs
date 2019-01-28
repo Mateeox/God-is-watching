@@ -201,7 +201,7 @@ public class Player : MonoBehaviour {
     private void Die()
     {
         isDead = true;
-        MoveToLastCheckPoint();
+        Invoke("MoveToLastCheckPoint",2);
         GameVariables.EnableWeapons();
        //Restart of the scene 15.12.2018 - removed due to change of respawn concept
        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -274,11 +274,11 @@ public class Player : MonoBehaviour {
             //float scale = deadAnimationTime / (deadAnimationTime - deadAnimationCounter);
             Color oldColor = GUI.color;
             float alpha;
-            if(deadAnimationCounter < deadAnimationTime / 3.0f)
+            if (deadAnimationCounter < deadAnimationTime / 8.0f)
             {
-                alpha = 1 - (deadAnimationTime - deadAnimationCounter - 0.66f * deadAnimationTime) * 3.0f;
-                Debug.Log(alpha);
-            }else if(deadAnimationCounter < deadAnimationTime * 2.0f / 3.0f)
+                alpha = 1 - (deadAnimationTime - deadAnimationCounter - 7.0f / 8.0f * deadAnimationTime) * 8.0f;
+            }
+            else if(deadAnimationCounter < deadAnimationTime * 2.0f / 3.0f)
             {
                 alpha = 1;
             }else
