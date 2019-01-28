@@ -43,11 +43,11 @@ public class Player : MonoBehaviour {
 	private float subtractFactor = 0.8f;
 	// Use this for initialization
 	void Start () {
-        if (GlobalControl.Set)
-        {
+        //if (GlobalControl.Set)
+        //{
             transform.position = GlobalControl.Position;
             transform.rotation = GlobalControl.Rotation;
-        }
+        //}
         pickedObject = null;
         maxPickUpDistance = 4.0f;
 		healthBar.init(100.0f, 100.0f);
