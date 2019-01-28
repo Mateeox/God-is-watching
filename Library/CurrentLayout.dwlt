@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 498}
-  m_MaxSize: {x: 12002, y: 14048}
+  m_MinSize: {x: 679, y: 498}
+  m_MaxSize: {x: 12004, y: 14048}
   vertical: 1
-  controlID: 80
+  controlID: 133
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 562
-  m_MinSize: {x: 677, y: 224}
-  m_MaxSize: {x: 12002, y: 4024}
+  m_MinSize: {x: 679, y: 224}
+  m_MaxSize: {x: 12004, y: 4024}
   vertical: 0
-  controlID: 81
+  controlID: 134
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 474
     height: 562
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -544,9 +544,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c6210100
-      m_LastClickedID: 74182
-      m_ExpandedIDs: 4c45ffffc249ffff2090ffff9adbffffcef5ffffa4420000c6210100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1098ffff32a5ffff42c4ffff96dbffffccfbffff464a0000164b0000c44c00008a5600009a5600005a57000008590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -643,20 +643,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kamil\Desktop\GIWGry
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 082e0000
-    m_LastClickedID: 11784
-    m_ExpandedIDs: 00000000082e0000162f00005c2f00009a360000b8390000143a00006c3a0000d23b0000963c00009c3c0000ac3e000064400000604100007e410000b0410000de4e000000ca9a3b
+    scrollPos: {x: 0, y: 764}
+    m_SelectedIDs: 92330000
+    m_LastClickedID: 13202
+    m_ExpandedIDs: 00000000ec270000fc2800004229000084300000ac3300000834000060340000ce350000983600009e360000ba3800007c3a00007e3b00009c3b0000ce3b0000c649000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -684,7 +684,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000082e0000162f00005c2f0000b8390000143a00006c3a0000963c00009c3c000064400000604100007e410000b0410000de4e0000
+    m_ExpandedIDs: 00000000ec270000fc2800004229000084300000ac3300000834000060340000ce350000983600009e360000ba3800007c3a00007e3b00009c3b0000ce3b0000c6490000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -715,18 +715,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 00000000223800000e0b0000c20b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: MainMenu
+      m_OriginalName: MainMenu
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 12508
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
