@@ -188,7 +188,7 @@ public class Player : MonoBehaviour {
             {
                 Vector3 checkpointPos = Checkpoint.transform.position;
 				GlobalControl.Set = true;
-                GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.0f, checkpointPos.z + 2.0f);
+                GlobalControl.Position = new Vector3(checkpointPos.x, checkpointPos.y + 2.1f, checkpointPos.z + 2.0f);
                 GlobalControl.Rotation = new Quaternion(0, 0.7f, 0, 1.0f);
             }
            
